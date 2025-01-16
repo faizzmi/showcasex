@@ -69,5 +69,31 @@ export const projectList = [
         "framework": [],
         "projectURL": "https://github.com/faizzmi/Vending-Machine",
         "createdAt": "2024-11-27T15:46:38Z"
+    },
+    {
+        "projectName": "HASIL INTERNAL AUDIT SYSTEM (HIAS)",
+        "projectHeader": "An Internal Audit System for LHDN to streamline audit processes.",
+        "projectStack": ["TypeScript"],
+        "framework": ["Angular", "Ionic"],
+        "projectURL": "",
+        "createdAt": "2025-01-16T15:00:00Z"
+    },
+    {
+        "projectName": "MYKKP",
+        "projectHeader": "MyKKP is an online service provided by Kementerian Keselamatan dan Kesihatan Pekerja for its users.",
+        "projectStack": ["Javascript"],
+        "framework": ["Angular"],
+        "projectURL": "",
+        "createdAt": "2024-03-01T00:00:00Z"
+    },
+    {
+        "projectName": "ShowCase-X",
+        "projectHeader": "A personal portfolio showcasing projects and skills.",
+        "projectStack": ["JavaScript"],
+        "framework": ["React", "Next.js"],
+        "projectURL": "",
+        "createdAt": "2025-01-16T00:00:00Z"
     }
-]
+];
+
+export const desc = 'This portfolio highlights a curated selection of my work, demonstrating the variety and scope of projects I’ve completed. While certain pieces are excluded for reasons of client confidentiality, I’m confident that these examples reflect the wide range of skills and expertise I bring to every project.'
