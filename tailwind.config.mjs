@@ -8,8 +8,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        fontFamily: {
+          Outfit: ['Outfit', 'sans-serif'],
+          Ovo: ['Ovo', 'sans-serif'],
+        },
+        
       },
     },
   },
