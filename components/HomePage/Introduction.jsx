@@ -12,14 +12,14 @@ const Introduction = () => {
 
         <div className="flex flex-col md:flex-row justify-between z-10 relative m-10">
             <div className="mb-6 md:mb-0 md:w-2/3">
-                <h2 className="text-[62px] font-bold leading-none mb-2">
+                <h2 className="text-[52px] font-bold leading-none mb-2">
                     {introductory.header.split('/').map((sentence, index) => (
                         <span key={index}>
                             {sentence}{index !== introductory.header.split('/').length - 1 && <br />} 
                         </span>
                     ))}
                 </h2>
-                <p className="text-[26px] text-gray-600">
+                <p className="text-[20px] text-gray-600">
                     {introductory.subheader}
                     <Link href="/about">
                         <span className="text-gray-800 ml-2 cursor-pointer">
@@ -32,7 +32,7 @@ const Introduction = () => {
             <div className="md:w-1/3">
                 <ul className="list-none p-0 text-right">
                     {introductory.servicesOffer.map((service, index) => (
-                        <li key={index} className="text-lg text-gray-800">{service}</li>
+                        <li key={index} className="text-md text-gray-800">{service}</li>
                     ))}
                 </ul>
             </div>

@@ -1,7 +1,7 @@
 import { projectList } from "./projects"
 
 export const introductory = {
-    header: 'Crafting Sophisticated, Intuitive Digital Experiences.',
+    header: 'Crafting Sophisticated,/ Intuitive Digital Experiences.',
     subheader: 'My work revolves around transforming abstract concepts into functional, visually compelling solutions.',
     servicesOffer: [
         'Frontend Developemnet',

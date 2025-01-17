@@ -25,5 +25,5 @@ body {
 }
 
 .section {
-  @apply min-h-screen flex flex-col p-12;
+  @apply min-h-screen flex flex-col px-6 py-12;
 }

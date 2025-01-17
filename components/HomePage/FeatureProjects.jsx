@@ -9,7 +9,7 @@ const FeatureProjects = () => {
   return (
     <div className="section" id='featureProjects'>
         <div className="flex flex-row gap-4 items-center my-10">
-            <h2 className="text-5xl font-bold mb-2">feature projects</h2>
+            <h2 className="text-4xl font-bold mb-2">feature projects</h2>
             <button className="border border-gray-500 text-gray-500 rounded-md px-3 py-1">
                 More Projects
             </button>
