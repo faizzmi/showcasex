@@ -39,10 +39,10 @@ const NavigationBar = () => {
           DarkMode
         </button> */}
         <button
-          className="hidden sm:hidden text-lg"
+          className="block md:hidden text-4xl"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? '+' : '-'}
+          {isMenuOpen ? '-' : '+'}
         </button>
       </div>
     </nav>

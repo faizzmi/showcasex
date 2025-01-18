@@ -65,48 +65,49 @@ export const educationsLists = [
 export const certificationList = [
 ];
 
-export const valuesList =  [
-    {
-      "name": "Problem-Solving",
-      "description": "I value the ability to break down complex problems and find efficient, scalable solutions through code."
-    },
-    {
-      "name": "Continuous Learning",
-      "description": "I focus on learning new technologies like Next.js and improving React Native skills to stay updated in the field."
-    },
-    {
-      "name": "Code Quality",
-      "description": "I prioritize clean, maintainable, and efficient code, avoiding shortcuts like optional chaining unless absolutely necessary."
-    },
-    {
-      "name": "Efficiency and Productivity",
-      "description": "I value optimizing processes, whether in project management, workflows, or system performance."
-    },
-    {
-      "name": "User-Centric Design",
-      "description": "I am focused on creating tools like a money tracker app that solve real-world problems for users."
-    },
-    {
-      "name": "Collaboration and Teamwork",
-      "description": "As a software engineer, I value working with other developers and stakeholders to create impactful products."
-    },
-    {
-      "name": "Adaptability",
-      "description": "I value my ability to learn new frameworks and technologies quickly, highlighting my flexibility and willingness to adapt to industry trends."
-    },
-    {
-      "name": "Efficiency in Tools and Frameworks",
-      "description": "I value selecting the right tools, libraries, and frameworks that enable faster development and higher performance."
-    },
-    {
-      "name": "Achievement and Recognition",
-      "description": "Winning awards like the Silver Award at CITREX 2024 reflects my desire for recognition in my craft and contributions."
-    },
-    {
-      "name": "Impact and Contribution",
-      "description": "I aim to build software that makes a meaningful impact, whether it's through solving user problems or improving workflows."
-    }
+export const valuesList = [
+  {
+    "name": "Problem-Solving",
+    "description": "I value the ability to break down complex problems and find innovative, efficient solutions through code, always striving to improve the way challenges are tackled."
+  },
+  {
+    "name": "Continuous Learning",
+    "description": "I focus on learning new technologies like Next.js and enhancing my React Native skills to stay ahead in the ever-evolving field of software development."
+  },
+  {
+    "name": "Code Quality",
+    "description": "I prioritize writing clean, maintainable, and efficient code, avoiding shortcuts like optional chaining unless absolutely necessary to ensure precision and longevity."
+  },
+  {
+    "name": "Efficiency and Productivity",
+    "description": "I value optimizing processes, whether it’s in project management, workflows, or system performance, to work smarter, faster, and more effectively."
+  },
+  {
+    "name": "User-Centric Design",
+    "description": "I am focused on creating solutions like a money tracker app that directly address real-world problems and improve user experiences."
+  },
+  {
+    "name": "Collaboration and Teamwork",
+    "description": "As a software engineer, I value working alongside other developers and stakeholders to create impactful products that are stronger through collaboration."
+  },
+  {
+    "name": "Adaptability",
+    "description": "I embrace my ability to quickly learn new frameworks and technologies, adapting to industry changes and leveraging flexibility to stay relevant."
+  },
+  {
+    "name": "Efficiency in Tools and Frameworks",
+    "description": "I value selecting the right tools, libraries, and frameworks that empower faster development, higher performance, and superior outcomes."
+  },
+  {
+    "name": "Achievement and Recognition",
+    "description": "I am motivated by recognition like winning the Silver Award at CITREX 2024, but I focus more on the sense of accomplishment and the drive to refine my craft."
+  },
+  {
+    "name": "Impact and Contribution",
+    "description": "I aim to build software that makes a meaningful impact, solving real-world problems and improving workflows to contribute positively to the world."
+  }
 ];
+
 
 export const faqLists = [
     {

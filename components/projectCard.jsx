@@ -4,11 +4,11 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 
 const ProjectCard = ({ project }) => {
-  const { projectName, projectHeader, projectStack, framework } = project;
+  const { projectId, projectName, projectHeader, projectStack, framework } = project;
   const [hovered, setHovered] = useState(false);
-
+  
   return (
-    <Link href={`/project/${project.projectId}`}>
+    <Link href={`/project/${projectId}`}>
       <div
         className="transition-all duration-300 hover:bg-gray-200 cursor-pointer w-[90%] sm:w-[630px] mx-auto"
         onMouseEnter={() => setHovered(true)}

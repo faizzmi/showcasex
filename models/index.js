@@ -15,7 +15,8 @@ export const featureProjectsList = () => {
     const feature = projectList
         .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
         .slice(0, 3)
-        .map(({ projectName, projectHeader, framework, projectStack }) => ({
+        .map(({ projectId, projectName, projectHeader, framework, projectStack }) => ({
+            projectId,
             projectName,
             projectHeader,
             framework,

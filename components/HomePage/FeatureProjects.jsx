@@ -7,7 +7,7 @@ const FeatureProjects = () => {
     const projects = featureProjectsList();
 
     return (
-        <section className="section py-10 mt-20" id="featureProjects">
+        <section className="section max-h-auto py-10 mt-20" id="featureProjects">
             <div className="flex flex-col md:flex-row gap-2 mb-10 px-6">
                 <h2 className="text-4xl font-bold">feature projects</h2>
                 <a
