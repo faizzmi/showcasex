@@ -1,6 +1,6 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
-import NavigationBar from "@/components/navigationBar";
+import NavigationBar from "@/components/NavigationBar";
 import Footer from "@/components/Footer";
 
 const outfit = Outfit({
@@ -19,13 +19,43 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+  console.log(`
+                                                                                                        
+                                                 ████                                               
+                                               ██   ███████ ███                                     
+                                              ██     ███     ██   ███                               
+                                             ██     ███      ██████  ██                             
+                                       ████████     ███     ███      ██                             
+                                       █     ███   ████   ████       ██                             
+                                ████████      ████ █ ██  ██ █      ██████                           
+                                ██     █████   ███████  ██ ██    ████    ██                         
+                                 ██     ███████ ████████████  █████      ██                         
+                                  ██     ██████████████████ █████       ██                          
+                                    ████████ ██████████████████      ████                           
+                               ████    ████████████████████████████████                             
+                             ██               ███████████████████       ███                         
+                              ████          ████ ████████  █████         ██                         
+                                 ██████████████ ███████████ ██████████████                          
+                                         ██     ████████ ██     ███                                 
+                                        ██      ███ ███████      ██                                 
+                                        █      ████ ███ ████     ██                                 
+                                        █    ███ ██ █████  ███████                                  
+                                        ██████    ██████                                            
+                                                    █ ██                                            
+                                                   ████                                             
+                                                  ██ ██                                             
+                                                                                                    
+    Hi, I am Faiz, Welcome to my portfolio~
+  `);
+
   return (
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/logo.png" />
       </head>
       <body className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden `}>
-        <NavigationBar />
+        <NavigationBar className='my-6'/>
         {children}
         <Footer />
       </body>

@@ -4,8 +4,9 @@ import React from 'react';
 
 const Introduction = () => {
     return (
-        <section className="section bg-gray-200 py-16 flex flex-col justify-end" id="intro">
-            <div className="container flex flex-col md:flex-row justify-between items-center relative px-6">
+        <div className='bg-gray-200'>
+        <section className="section py-16 flex flex-col justify-end relative" id="intro">
+            <div className="container flex flex-col md:flex-row justify-between items-center relative bottom-10 left-0 px-6">
                 <div className="mb-6 md:mb-0 md:w-2/3">
                     <h2 className="text-4xl font-bold mb-4 leading-snug">
                         {introductory.header.split('/').map((sentence, index) => (
@@ -23,8 +24,8 @@ const Introduction = () => {
                     </p>
                 </div>
 
-                <div className="md:w-1/3 text-right">
-                    <ul className="list-none p-0">
+                <div className="hidden md:block md:w-1/3 text-right">
+                    <ul className="list-none p-0 leading-tight">
                         {introductory.servicesOffer.map((service, index) => (
                             <li key={index} className="text-md text-gray-800">{service}</li>
                         ))}
@@ -32,6 +33,7 @@ const Introduction = () => {
                 </div>
             </div>
         </section>
+        </div>
     );
 };
 

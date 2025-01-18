@@ -24,8 +24,9 @@
 }
 
 .section {
-  @apply w-full sm:w-[600px] md:w-[800px] lg:w-[1000px] xl:w-[1200px] 
-  min-h-screen mx-auto p-8;
+  @apply w-full sm:w-[600px] md:w-[800px] lg:w-[1000px] xl:w-[1200px] h-full 
+          min-h-screen max-h-[700px]
+          mx-auto md:p-8;
 }
 
 .btn-secondary {
