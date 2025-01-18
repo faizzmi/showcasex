@@ -1,4 +1,7 @@
+import FAQ from '@/components/AboutPage/FAQ'
+import Hobby from '@/components/AboutPage/Hobby'
 import Story from '@/components/AboutPage/Story'
+import Values from '@/components/AboutPage/Values'
 import Welcome from '@/components/AboutPage/Welcome'
 import React from 'react'
 
@@ -7,6 +10,9 @@ const AboutPage = () => {
     <div>
       <Welcome />
       <Story />
+      <Hobby />
+      <Values />
+      <FAQ />
     </div>
   )
 }

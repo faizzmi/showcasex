@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
   return (
     <Link href={`/project/${project.projectId}`}>
       <div
-        className="border border-black transition-all duration-300 hover:bg-gray-200 cursor-pointer w-[630px] mx-auto"
+        className="transition-all duration-300 hover:bg-gray-200 cursor-pointer w-[630px] mx-auto"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >

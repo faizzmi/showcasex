@@ -63,5 +63,91 @@ export const educationsLists = [
 ];
 
 export const certificationList = [
-]
+];
+
+export const valuesList =  [
+    {
+      "name": "Problem-Solving",
+      "description": "I value the ability to break down complex problems and find efficient, scalable solutions through code."
+    },
+    {
+      "name": "Continuous Learning",
+      "description": "I focus on learning new technologies like Next.js and improving React Native skills to stay updated in the field."
+    },
+    {
+      "name": "Code Quality",
+      "description": "I prioritize clean, maintainable, and efficient code, avoiding shortcuts like optional chaining unless absolutely necessary."
+    },
+    {
+      "name": "Efficiency and Productivity",
+      "description": "I value optimizing processes, whether in project management, workflows, or system performance."
+    },
+    {
+      "name": "User-Centric Design",
+      "description": "I am focused on creating tools like a money tracker app that solve real-world problems for users."
+    },
+    {
+      "name": "Collaboration and Teamwork",
+      "description": "As a software engineer, I value working with other developers and stakeholders to create impactful products."
+    },
+    {
+      "name": "Adaptability",
+      "description": "I value my ability to learn new frameworks and technologies quickly, highlighting my flexibility and willingness to adapt to industry trends."
+    },
+    {
+      "name": "Efficiency in Tools and Frameworks",
+      "description": "I value selecting the right tools, libraries, and frameworks that enable faster development and higher performance."
+    },
+    {
+      "name": "Achievement and Recognition",
+      "description": "Winning awards like the Silver Award at CITREX 2024 reflects my desire for recognition in my craft and contributions."
+    },
+    {
+      "name": "Impact and Contribution",
+      "description": "I aim to build software that makes a meaningful impact, whether it's through solving user problems or improving workflows."
+    }
+];
+
+export const faqLists = [
+    {
+      "question": "What kind of projects have you worked on?",
+      "answer": "I have worked on a variety of projects, including responsive websites, e-commerce platforms, mobile applications, and personal portfolio sites. I focus on delivering high-quality frontend experiences and ensuring seamless user interactions."
+    },
+    {
+      "question": "How do you ensure code quality in your projects?",
+      "answer": "I follow best practices like writing clean and readable code, adhering to coding standards, and using version control (Git). Additionally, I use automated testing frameworks to ensure functionality, and conduct code reviews to maintain high-quality code."
+    },
+    {
+      "question": "What are your strengths as a developer?",
+      "answer": "My strengths lie in problem-solving, attention to detail, and communication. I’m quick to learn new technologies, and I excel at breaking down complex problems and finding efficient, user-centric solutions."
+    },
+    {
+      "question": "What are some of your favorite tools and libraries?",
+      "answer": "I enjoy working with React, Next.js, and Tailwind CSS for building responsive and interactive interfaces. I also use Git for version control, Figma for design, and testing tools like Jest and Cypress to ensure quality."
+    },
+    {
+      "question": "Can you integrate third-party APIs into your projects?",
+      "answer": "Yes, I have experience integrating third-party APIs into web applications. This includes integrating payment gateways, weather services, social media logins, and other data-driven services."
+    },
+    {
+      "question": "How do you ensure performance optimization in your web projects?",
+      "answer": "I focus on optimizing both frontend and backend performance. On the frontend, I optimize images, use lazy loading, and minimize JavaScript and CSS files. On the backend, I ensure efficient database queries and API endpoints."
+    },
+    {
+      "question": "What is your experience with version control and collaborative workflows?",
+      "answer": "I am highly proficient in Git and GitHub for version control. I use branches for feature development, create pull requests, and participate in code reviews to ensure smooth collaboration in teams."
+    },
+    {
+      "question": "Do you have experience working with Agile methodologies?",
+      "answer": "Yes, I have worked in Agile environments, where I’ve collaborated in sprints, attended daily stand-ups, and participated in sprint planning and retrospectives. I am comfortable working in iterative cycles with regular feedback."
+    },
+    {
+      "question": "How do you handle client feedback or changes to a project?",
+      "answer": "I take client feedback seriously and consider it an opportunity for improvement. I listen carefully, clarify any questions, and implement changes in an efficient and timely manner while ensuring the project stays on track."
+    },
+    {
+      "question": "What kind of support do you offer after completing a project?",
+      "answer": "I offer post-launch support for bug fixes, feature enhancements, and performance improvements. I also provide training if needed, to ensure the client can manage the project independently moving forward."
+    }
+  ]
 
