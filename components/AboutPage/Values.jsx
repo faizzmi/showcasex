@@ -3,7 +3,7 @@ import React from 'react'
 
 const Values = () => {
   return (
-    <div className='section px-4 md:px-10'>
+    <div className='section mt-20 px-4 md:px-10'>
         <div className='px-6'>
         <p className='text-gray-700 text-sm'>Values</p>
         <h2 className='text-4xl my-4'>Things I Believe In</h2>

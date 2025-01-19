@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = ({project}) => {
   return (
-    <div className="w-full h-max p-4 md:p-6">
+    <div className="w-full h-max p-4 md:p-6" id="top">
         <div className="flex flex-col pt-[23vh] my-10">
           <p>{project.projectName}</p>
           <h2 className="text-5xl font-bold text-gray-900 mb-4 md:w-[60%] md:mb-0">

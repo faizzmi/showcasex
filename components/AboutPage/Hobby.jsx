@@ -3,7 +3,7 @@ import React from 'react'
 
 const Hobby = () => {
   return (
-    <div className="section px-4 md:px-10 py-10">
+    <div className="section px-4 mt-20 md:px-10 py-10">
       <div className="flex flex-col sm:flex-col-reverse gap-6">
         <div className="mt-8 px-4 md:px-0 text-center md:text-left">
           <h4 className="text-3xl font-semibold text-gray-800">
