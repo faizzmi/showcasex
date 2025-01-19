@@ -5,7 +5,7 @@ import React from 'react';
 const Welcome = () => {
   return (
     <section className="section max-h-[700px] py-16 flex flex-col md:justify-end relative" id="top">
-      <div className='absolute right-0 top-0 h-full'>
+      <div className='absolute right-0 top-0'>
         <Image
           src="/images/profilePicture.jpg"
           alt="Profile Image"

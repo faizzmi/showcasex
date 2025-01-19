@@ -1,8 +1,10 @@
 'use client'
 import React, { useState } from 'react';
+import Contact from './Contact';
 
 const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openContact, setOpenContact] = useState(false)
 
   return (
     <nav className="w-full fixed px-4 py-3 flex items-center justify-between z-50 bg-white bg-opacity-40">
@@ -27,13 +29,12 @@ const NavigationBar = () => {
           </a>
         </li>
         <li className="text-sm md:text-base font-medium">
-          <a href="/" className="hover:underline">
-            Contact
-          </a>
+          <button onClick={() => setOpenContact(true)}>
+            <span className="hover:underline"></span>Contact
+          </button>
         </li>
       </ul>
 
-      {/* Dark Mode Button & Hamburger */}
       <div className="flex items-center gap-4">
         {/* <button className="text-sm md:text-base font-medium">
           DarkMode
@@ -45,6 +46,9 @@ const NavigationBar = () => {
           {isMenuOpen ? '-' : '+'}
         </button>
       </div>
+
+      {openContact && <Contact isOpen={openContact} onClose={() => setOpenContact(false)} />}
+
     </nav>
   );
 };
