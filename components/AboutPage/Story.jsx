@@ -51,7 +51,7 @@ const Story = () => {
     <div className="section max-h-auto card-container">
       <div className="flex-gap px-6">
         <div className="md:w-2/3">
-          <p className="text-body">{story}</p>
+          <p className="text-gray-700 text-base md:text-[30px] leading-relaxed whitespace-pre-line">{story}</p>
         </div>
 
         <div className="md:w-1/3 flex justify-center">

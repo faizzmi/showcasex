@@ -18,8 +18,8 @@ const ProjectCard = ({ project }) => {
           <Image
             src="/images/default.png"
             alt="Project image"
-            layout="fill"
-            objectFit="cover"
+            fill
+            className="object-cover"
           />
         </div>
 

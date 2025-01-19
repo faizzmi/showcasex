@@ -30,7 +30,7 @@
 }
 
 .section-container {
-  @apply flex flex-col md:flex-row w-full gap-4;
+  @apply flex flex-col-reverse md:flex-row w-full gap-4;
 }
 
 .section-title {
@@ -70,6 +70,14 @@
   @apply flex flex-col md:flex-row gap-[var(--gap-base)];
 }
 
-.btn-secondary {
+.btn-url {
   @apply border border-gray-500 text-gray-500 px-4 py-2 rounded-md bg-transparent cursor-pointer transition-colors hover:bg-gray-100;
+}
+
+.desc-title {
+  @apply font-bold text-gray-700 md:text-sm;
+}
+
+.desc-info {
+  @apply text-gray-900 md:text-sm;
 }

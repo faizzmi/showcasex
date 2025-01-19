@@ -12,30 +12,19 @@ const Hobby = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-start sm:w-full md:w-full">
-          <div className="relative w-full sm:w-[calc(33.3333%-12px)] md:w-[calc(33.3333%-12px)] aspect-[3/4] overflow-hidden">
-            <Image
-              src="/images/default.png"
-              alt="Hobby Image 1"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-          <div className="relative w-full sm:w-[calc(33.3333%-12px)] md:w-[calc(33.3333%-12px)] aspect-[3/4] overflow-hidden">
-            <Image
-              src="/images/default.png"
-              alt="Hobby Image 2"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-          <div className="relative w-full sm:w-[calc(33.3333%-12px)] md:w-[calc(33.3333%-12px)] aspect-[3/4] overflow-hidden">
-            <Image
-              src="/images/default.png"
-              alt="Hobby Image 3"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
+          {[...Array(3)].map((_, index) => (
+            <div
+              key={index}
+              className="relative w-full sm:w-[calc(33.3333%-12px)] md:w-[calc(33.3333%-12px)] aspect-[3/4] overflow-hidden"
+            >
+              <Image
+                src="/images/default.png"
+                alt={`Hobby Image ${index + 1}`}
+                fill
+                className="object-cover"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
