@@ -85,3 +85,204 @@
 .btn-primary{
   @apply bg-gray-900 text-white px-4 rounded-md hover:bg-gray-700 transition-all duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-800
 }
+
+/* ball */
+/* In your global CSS (tailwind.css or similar) */
+
+@layer utilities {
+  .base {
+    width: 300px;
+    /* 150px * 2 */
+    height: 300px;
+    /* 150px * 2 */
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .circ {
+    position: absolute;
+    width: 150px;
+    /* size */
+    height: 150px;
+    /* size */
+    border-radius: 50%;
+    border: 10px solid white;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  .base .circ:nth-child(1) {
+    transform: translate(75px, 0);
+    /* translate($d, 0) */
+  }
+
+  .base .circ:nth-child(2) {
+    transform: translate(0, 75px);
+    /* translate(0, $d) */
+  }
+
+  .base .circ:nth-child(3) {
+    transform: translate(-75px, 0);
+    /* translate($d * -1, 0) */
+  }
+
+  .base .circ:nth-child(4) {
+    transform: translate(0, -75px);
+    /* translate(0, $d * -1) */
+  }
+
+  .base .circ:nth-child(5) {
+    transform: translate(53px, 53px);
+    /* translate($a, $a) */
+  }
+
+  .base .circ:nth-child(6) {
+    transform: translate(53px, -53px);
+    /* translate($a, -$a) */
+  }
+
+  .base .circ:nth-child(7) {
+    transform: translate(-53px, 53px);
+    /* translate(-$a, $a) */
+  }
+
+  .base .circ:nth-child(8) {
+    transform: translate(-53px, -53px);
+    /* translate(-$a, -$a) */
+  }
+
+  .base:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .base:nth-child(3) {
+    transform: rotate(90deg);
+  }
+
+  .base:nth-child(4) {
+    transform: rotate(135deg);
+  }
+
+  .base:nth-child(5) {
+    transform: rotate(180deg);
+  }
+
+  .base:nth-child(6) {
+    transform: rotate(225deg);
+  }
+
+  .base:nth-child(7) {
+    transform: rotate(270deg);
+  }
+
+  .base:nth-child(8) {
+    transform: rotate(315deg);
+  }
+
+  /* Adding keyframes for the rotating circles */
+  @keyframes turn-2 {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(45deg);
+    }
+  }
+
+  @keyframes turn-3 {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+
+  @keyframes turn-4 {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(135deg);
+    }
+  }
+
+  @keyframes turn-5 {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+
+  @keyframes turn-6 {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(225deg);
+    }
+  }
+
+  @keyframes turn-7 {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(270deg);
+    }
+  }
+
+  @keyframes turn-8 {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(315deg);
+    }
+  }
+
+  .base:nth-child(2) {
+    animation: turn-2 6s ease-in-out infinite alternate;
+  }
+
+  .base:nth-child(3) {
+    animation: turn-3 6s ease-in-out infinite alternate;
+  }
+
+  .base:nth-child(4) {
+    animation: turn-4 6s ease-in-out infinite alternate;
+  }
+
+  .base:nth-child(5) {
+    animation: turn-5 6s ease-in-out infinite alternate;
+  }
+
+  .base:nth-child(6) {
+    animation: turn-6 6s ease-in-out infinite alternate;
+  }
+
+  .base:nth-child(7) {
+    animation: turn-7 6s ease-in-out infinite alternate;
+  }
+
+  .base:nth-child(8) {
+    animation: turn-8 6s ease-in-out infinite alternate;
+  }
+}

@@ -1,19 +1,13 @@
 import { introductory } from '@/models';
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import Circulation from '../Circulation';
 
 const Introduction = () => {
     return (
         <section className="section max-h-[700px] py-16 flex flex-col justify-end relative" id="top">
-            <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-                <Image
-                    src="/images/logoLight.jpg"
-                    alt="Profile Image"
-                    width={500} 
-                    height={700}
-                    className='object-auto w-full md:h-screen'
-                />
+            <div className='absolute top-1/2 left-[40%] transform -translate-x-2/5 -translate-y-1/2'>
+                <Circulation />
             </div>
             <div className="container flex flex-col md:flex-row justify-between items-center relative bottom-10 left-0 px-6">
                 <div className="mb-6 md:mb-0 md:w-2/3">
