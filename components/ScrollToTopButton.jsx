@@ -10,7 +10,6 @@ const ScrollToTopButton = () => {
     } else {
       setShowButton(false);
     }
-    console.log(showButton);
   };
 
   const scrollToTop = () => {

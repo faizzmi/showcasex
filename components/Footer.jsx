@@ -46,7 +46,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className='flex items-center justify-center'>
+      <div className='flex flex-col items-center justify-center'>
         <Image
             src="/images/logo.png"
             alt="Profile Image"
@@ -54,6 +54,7 @@ const Footer = () => {
             height={400}
             className='object-auto'
         />
+        <p className='font-bold text-gray-600 text-lg'>THANK YOU.</p>
       </div>
     </footer>
   );

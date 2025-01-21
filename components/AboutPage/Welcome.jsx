@@ -1,6 +1,8 @@
+'use client'
 import { welcome } from '@/models/about';
 import Image from 'next/image';
 import React from 'react';
+import { motion } from "motion/react"
 
 const Welcome = () => {
   return (
@@ -17,13 +19,17 @@ const Welcome = () => {
 
       <div className="container flex flex-col md:flex-row justify-between items-center relative md:top-0 top-20 md:bottom-10 left-0 px-6">
         <div className="mb-6 md:mb-0 md:w-2/3">
-          <h2 className="text-4xl font-bold mb-4 leading-snug">
+          <motion.h2
+          initial={{ y: -20, opacity: 0 }} 
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="text-4xl font-bold mb-4 leading-snug">
             {welcome.split('.').map((sentence, index) => (
               <span key={index}>
                 {sentence}{index !== welcome.split('.').length - 1 && <br />} 
               </span>
             ))}
-          </h2>
+          </motion.h2>
         </div>
       </div>
     </section>
