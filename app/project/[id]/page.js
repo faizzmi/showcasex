@@ -8,30 +8,19 @@ import SpalashScreen from '@/components/SpalashScreen';
 import { projectList } from '@/models/projects';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
 
 const ProjectDetails = () => {
   const pathName = usePathname();
   const id = pathName.split('/').pop();
 
   const project = projectList.find((proj) => proj.projectId === id);
-  const [isLoading, setIsLoading] = useState(true);
-  
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setIsLoading(false);
-      }, 3000);
-  
-      return () => clearTimeout(timer);
-    }, []);
 
   if (!project) {
     return <p>Project not found.</p>;
   }
 
   return (
-    isLoading ? (<SpalashScreen />) :
-    (<>
+    <>
       <Header project={project}/>
       <HeaderImage img={"/images/default.png"}/>
       <div>
@@ -40,7 +29,7 @@ const ProjectDetails = () => {
         <Section title="reflections" desc={project.reflection} />
       </div>
       <Highlight />
-    </>)
+    </>
   );
 };
 

@@ -8,25 +8,14 @@ import SpalashScreen from '@/components/SpalashScreen'
 import React, { useEffect, useState } from 'react'
 
 const AboutPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setIsLoading(false);
-      }, 3000);
-  
-      return () => clearTimeout(timer);
-    }, []);
-  
   return (
-    isLoading ? (<SpalashScreen />) :
-    (<div>
+    <div>
       <Welcome />
       <Story />
       <Hobby />
       <Values />
       <FAQ />
-    </div>)
+    </div>
   )
 }
 

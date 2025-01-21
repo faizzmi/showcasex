@@ -1,3 +1,5 @@
+// import { project01 } from "@/assets";
+
 export const projectList = [
     {
         "projectId": "1",
@@ -9,6 +11,7 @@ export const projectList = [
         "projectLevel":"Final Year Project",
         "createdAt": "2024-02-04T03:10:42Z",
         "projectType": "Computer Vision",
+        // "videoURL": "../assets/01_video.avi",
         "projectFeatures": "This project focused on implementing real-time distance measurement using edge detection, specifically with Sobel edge detection. One of the most challenging aspects was accurately detecting and calculating distances under varying lighting conditions and edge complexities. The project required the combination of computer vision techniques and real-time processing, which helped refine my understanding of image processing and spatial recognition. Implementing this with Python and OpenCV was both rewarding and challenging as it involved continuous testing to ensure precision and accuracy in measurement.",
         "reflection": "Working on this project was a tremendous learning experience in the field of computer vision. It allowed me to dive deep into the practical application of edge detection algorithms and real-time data processing. The main takeaway was understanding how to handle challenges related to variable lighting and object detection, which often lead to inaccuracies. This hands-on experience strengthened my problem-solving skills and gave me the confidence to work with OpenCV in future machine vision projects. The project was both technically demanding and rewarding as it involved translating theory into working code, providing valuable insight into spatial awareness and distance calculation.",
         "projectDesc": "This project aimed to develop a system for real-time distance measurement using computer vision techniques. It utilized Sobel edge detection to identify and analyze object boundaries within images. The primary challenges involved ensuring accurate distance calculations under varying lighting conditions and dealing with complex edge scenarios. The project successfully demonstrated the application of computer vision principles for spatial awareness and distance measurement."

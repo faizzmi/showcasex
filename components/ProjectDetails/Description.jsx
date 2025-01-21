@@ -51,7 +51,7 @@ const Description = ({ project }) => {
           fill
           className="object-cover rounded-md"
         /> */}
-          <video 
+          {/* {project.videoURL && (<video 
             className="absolute top-0 left-0 w-full h-full object-cover"
             autoPlay
             muted
@@ -60,7 +60,9 @@ const Description = ({ project }) => {
           >
             <source src="/test_video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
-          </video>
+          </video>)} */}
+          <p>There will be image or video here.</p>
+          {/* {project.videoUrl} */}
       </div>
       
     </div>

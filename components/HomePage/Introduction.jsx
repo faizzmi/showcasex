@@ -6,7 +6,7 @@ import Circulation from '../Circulation';
 const Introduction = () => {
     return (
         <section className="section max-h-[700px] py-16 flex flex-col justify-end relative" id="top">
-            <div className='absolute top-1/2 left-[40%] transform -translate-x-2/5 -translate-y-1/2'>
+            <div className='h-screen w-screen flex justify-center items-center'>
                 <Circulation />
             </div>
             <div className="container flex flex-col md:flex-row justify-between items-center relative bottom-10 left-0 px-6">

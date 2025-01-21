@@ -39,16 +39,6 @@ const Footer = () => {
               className="text-gray-800 hover:text-blue-500 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.instagram.com/faizzmi_/?igsh=MTUzNHZpZGRyODFuag=="
-            >
-              Instagram
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-gray-800 hover:text-blue-500 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
               href="https://github.com/faizzmi"
             >
               GitHub

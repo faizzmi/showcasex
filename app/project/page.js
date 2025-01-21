@@ -6,19 +6,9 @@ import React, { useEffect, useState } from 'react'
 
 const ProjectPage = () => {
   const sortProject = projectList.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
-    isLoading ? (<SpalashScreen />) :
-    (<div className="section" id="top">
+    <div className="section" id="top">
       <div className="flex flex-col md:flex-row justify-between items-center pt-[23vh] my-10">
         <h2 className="text-5xl font-bold text-gray-900 mb-4 md:mb-0">my projects [{sortProject.length}.]</h2>
         <p className="text-lg text-gray-600 w-full md:w-1/3 text-center md:text-justify">{desc}</p>
@@ -37,7 +27,7 @@ const ProjectPage = () => {
           <p className="text-lg text-gray-500">No projects available at the moment.</p>
         )}
       </div>
-    </div>)
+    </div>
 
   )
 }

@@ -85,16 +85,11 @@
 .btn-primary{
   @apply bg-gray-900 text-white px-4 rounded-md hover:bg-gray-700 transition-all duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-800
 }
-
 /* ball */
-/* In your global CSS (tailwind.css or similar) */
-
 @layer utilities {
   .base {
     width: 300px;
-    /* 150px * 2 */
     height: 300px;
-    /* 150px * 2 */
     position: absolute;
     margin: auto;
     top: 0;
@@ -106,9 +101,7 @@
   .circ {
     position: absolute;
     width: 150px;
-    /* size */
     height: 150px;
-    /* size */
     border-radius: 50%;
     border: 10px solid white;
     margin: auto;
@@ -121,42 +114,34 @@
 
   .base .circ:nth-child(1) {
     transform: translate(75px, 0);
-    /* translate($d, 0) */
   }
 
   .base .circ:nth-child(2) {
     transform: translate(0, 75px);
-    /* translate(0, $d) */
   }
 
   .base .circ:nth-child(3) {
     transform: translate(-75px, 0);
-    /* translate($d * -1, 0) */
   }
 
   .base .circ:nth-child(4) {
     transform: translate(0, -75px);
-    /* translate(0, $d * -1) */
   }
 
   .base .circ:nth-child(5) {
     transform: translate(53px, 53px);
-    /* translate($a, $a) */
   }
 
   .base .circ:nth-child(6) {
     transform: translate(53px, -53px);
-    /* translate($a, -$a) */
   }
 
   .base .circ:nth-child(7) {
     transform: translate(-53px, 53px);
-    /* translate(-$a, $a) */
   }
 
   .base .circ:nth-child(8) {
     transform: translate(-53px, -53px);
-    /* translate(-$a, -$a) */
   }
 
   .base:nth-child(2) {
@@ -284,5 +269,120 @@
 
   .base:nth-child(8) {
     animation: turn-8 6s ease-in-out infinite alternate;
+  }
+
+  /* Media Queries for Mobile View */
+  @media (max-width: 768px) {
+    .base {
+      width: 200px;
+      height: 200px;
+    }
+
+    .circ {
+      width: 100px;
+      height: 100px;
+    }
+
+    /* Adjust the position and sizes of the circles */
+    .base .circ:nth-child(1) {
+      transform: translate(50px, 0);
+    }
+
+    .base .circ:nth-child(2) {
+      transform: translate(0, 50px);
+    }
+
+    .base .circ:nth-child(3) {
+      transform: translate(-50px, 0);
+    }
+
+    .base .circ:nth-child(4) {
+      transform: translate(0, -50px);
+    }
+
+    .base .circ:nth-child(5) {
+      transform: translate(35px, 35px);
+    }
+
+    .base .circ:nth-child(6) {
+      transform: translate(35px, -35px);
+    }
+
+    .base .circ:nth-child(7) {
+      transform: translate(-35px, 35px);
+    }
+
+    .base .circ:nth-child(8) {
+      transform: translate(-35px, -35px);
+    }
+
+    /* Adjust animation speed for smaller screens */
+    .base:nth-child(2),
+    .base:nth-child(3),
+    .base:nth-child(4),
+    .base:nth-child(5),
+    .base:nth-child(6),
+    .base:nth-child(7),
+    .base:nth-child(8) {
+      animation-duration: 4s;
+      /* Faster animation for mobile */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .base {
+      width: 150px;
+      height: 150px;
+    }
+
+    .circ {
+      width: 75px;
+      height: 75px;
+    }
+
+    /* Adjust the position and sizes of the circles for even smaller screens */
+    .base .circ:nth-child(1) {
+      transform: translate(35px, 0);
+    }
+
+    .base .circ:nth-child(2) {
+      transform: translate(0, 35px);
+    }
+
+    .base .circ:nth-child(3) {
+      transform: translate(-35px, 0);
+    }
+
+    .base .circ:nth-child(4) {
+      transform: translate(0, -35px);
+    }
+
+    .base .circ:nth-child(5) {
+      transform: translate(25px, 25px);
+    }
+
+    .base .circ:nth-child(6) {
+      transform: translate(25px, -25px);
+    }
+
+    .base .circ:nth-child(7) {
+      transform: translate(-25px, 25px);
+    }
+
+    .base .circ:nth-child(8) {
+      transform: translate(-25px, -25px);
+    }
+
+    /* Adjust animation speed even further for mobile */
+    .base:nth-child(2),
+    .base:nth-child(3),
+    .base:nth-child(4),
+    .base:nth-child(5),
+    .base:nth-child(6),
+    .base:nth-child(7),
+    .base:nth-child(8) {
+      animation-duration: 3s;
+      /* Even faster animation for very small screens */
+    }
   }
 }
