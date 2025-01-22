@@ -4,7 +4,6 @@ import Hobby from '@/components/AboutPage/Hobby'
 import Story from '@/components/AboutPage/Story'
 import Values from '@/components/AboutPage/Values'
 import Welcome from '@/components/AboutPage/Welcome'
-import SpalashScreen from '@/components/SpalashScreen'
 import React, { useEffect, useState } from 'react'
 
 const AboutPage = () => {

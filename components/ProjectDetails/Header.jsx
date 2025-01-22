@@ -10,7 +10,7 @@ const Header = ({project}) => {
           initial={{ y: 20, opacity: 0 }} 
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }} 
-          className='text-lg font-semibold text-gray-600'>
+          className='text-lg font-semibold text-zinc-600'>
             {project.projectName}
           </motion.p>
 
@@ -18,12 +18,12 @@ const Header = ({project}) => {
           initial={{ y: 20, opacity: 0 }} 
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.5 }} 
-          className="text-4xl font-bold text-gray-900 mb-4 md:w-[60%] md:mb-0">
+          className="text-4xl font-bold text-white mb-4 md:w-[60%] md:mb-0">
             {project.projectHeader}
           </motion.h2>
         </div>
 
-        <hr className="border-t-2 border-gray-300 my-6" />
+        <hr className="border-t-2 border-zinc-600 my-6" />
     </div>
   )
 }

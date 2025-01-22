@@ -12,7 +12,7 @@ const Section = ({ title, desc }) => {
           initial={{ y: 20, opacity: 0 }} 
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 text-center md:text-left">
+          className="text-xl sm:text-2xl md:text-3xl font-bold text-white text-center md:text-left">
             {title}
           </motion.h4>
         </div>
@@ -23,7 +23,7 @@ const Section = ({ title, desc }) => {
           initial={{ y: 20, opacity: 0 }} 
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-gray-600 text-lg text-justify">
+          className="text-zinc-300 text-lg text-justify">
             {desc}
             </motion.p>
         </div>
@@ -46,7 +46,7 @@ const Section = ({ title, desc }) => {
         initial={{ y: 20, opacity: 0 }} 
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="flex flex-wrap gap-6 justify-start sm:w-full mt-8">
+        className="flex flex-wrap gap-3 justify-center sm:w-full mt-8">
         {[...Array(3)].map((_, index) => (
           <div
             key={index}

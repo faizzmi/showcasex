@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 
 const Contact = ({ isOpen, onClose }) => {
   const [result, setResult] = useState('');
@@ -59,9 +59,14 @@ const Contact = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-end items-center" aria-hidden={!isOpen}>
-      <div className="absolute inset-0 bg-black bg-opacity-50 blur-2xl"></div>
-      <div className="bg-white w-full max-w-sm h-auto max-h-min shadow-lg m-5 rounded-lg p-6 relative z-10">
+    <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center md:justify-end items-center">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.9 }}
+        transition={{ duration: 0.3 }}
+        className="bg-white w-full max-w-sm h-auto max-h-min shadow-lg m-5 rounded-lg p-6 relative z-10"
+      >
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-xl font-bold"
@@ -70,10 +75,13 @@ const Contact = ({ isOpen, onClose }) => {
         </button>
 
         <motion.h2
-        initial={{ x: 50, opacity: 0 }} 
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.3 }} 
-        className="text-2xl font-semibold text-gray-800 mb-4">Contact Me</motion.h2>
+          initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="text-2xl font-semibold text-gray-800 mb-4"
+        >
+          Contact Me
+        </motion.h2>
 
         {result !== '' && (
           <div className="mb-4 text-sm text-center text-green-600 bg-green-100 border border-green-200 p-2 rounded">
@@ -82,22 +90,25 @@ const Contact = ({ isOpen, onClose }) => {
         )}
 
         <motion.form
-        initial={{ x: 50, opacity: 0 }} 
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.3 }}  
-        onSubmit={onSubmit}>
+          initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          onSubmit={onSubmit}
+        >
           <div className="mb-4">
             <motion.label
-              initial={{ y: 20, opacity: 0 }} 
+              initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.5 }}  
-              htmlFor="name" className="block text-sm font-medium text-gray-700">
+              transition={{ duration: 0.8, delay: 0.5 }}
+              htmlFor="name"
+              className="block text-sm font-medium text-gray-700"
+            >
               Name
             </motion.label>
             <motion.input
-              initial={{ y: 20, opacity: 0 }} 
+              initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.5 }} 
+              transition={{ duration: 0.8, delay: 0.5 }}
               type="text"
               id="name"
               name="name"
@@ -109,16 +120,18 @@ const Contact = ({ isOpen, onClose }) => {
 
           <div className="mb-4">
             <motion.label
-              initial={{ y: 20, opacity: 0 }} 
+              initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 0.6 }}  
-              htmlFor="email" className="block text-sm font-medium text-gray-700">
+              transition={{ duration: 1, delay: 0.6 }}
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700"
+            >
               Email
             </motion.label>
             <motion.input
-              initial={{ y: 20, opacity: 0 }} 
+              initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 0.6 }} 
+              transition={{ duration: 1, delay: 0.6 }}
               type="email"
               id="email"
               name="email"
@@ -130,16 +143,18 @@ const Contact = ({ isOpen, onClose }) => {
 
           <div className="mb-4">
             <motion.label
-              initial={{ y: 20, opacity: 0 }} 
+              initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1.2, delay: 0.7 }}  
-              htmlFor="message" className="block text-sm font-medium text-gray-700">
+              transition={{ duration: 1.2, delay: 0.7 }}
+              htmlFor="message"
+              className="block text-sm font-medium text-gray-700"
+            >
               Message
             </motion.label>
             <motion.textarea
-              initial={{ y: 20, opacity: 0 }} 
+              initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1.2, delay: 0.7 }} 
+              transition={{ duration: 1.2, delay: 0.7 }}
               id="message"
               name="message"
               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
@@ -151,11 +166,12 @@ const Contact = ({ isOpen, onClose }) => {
 
           <div className="flex justify-end">
             <motion.button
-              initial={{ opacity: 0 }} 
+              initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               type="submit"
-              className="btn-primary">
+              className="btn-primary"
+            >
               Send
             </motion.button>
           </div>
@@ -163,7 +179,11 @@ const Contact = ({ isOpen, onClose }) => {
 
         <hr className="mt-6 mb-2" />
 
-        <div className="mb-6">
+        <motion.div 
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mb-6">
           <p className="text-gray-600 text-sm mb-2">Or visit me on my social:</p>
           <div className="flex items-center gap-4">
             <a
@@ -196,8 +216,8 @@ const Contact = ({ isOpen, onClose }) => {
               />
             </a>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

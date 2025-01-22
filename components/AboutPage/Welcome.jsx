@@ -6,7 +6,7 @@ import { motion } from "motion/react"
 
 const Welcome = () => {
   return (
-    <section className="section max-h-[700px] py-16 flex flex-col md:justify-end relative" id="top">
+    <section className="section max-h-[700px] flex flex-col md:justify-end relative bg-[#E0E1DD]" id="top">
       <motion.div
         initial={{ opacity: 0 }} 
         whileInView={{ opacity: 1 }}

@@ -20,7 +20,7 @@ const ProjectDetails = () => {
   }
 
   return (
-    <>
+    <div className='bg-zinc-900'>
       <Header project={project}/>
       <HeaderImage img={"/images/default.png"}/>
       <div>
@@ -32,7 +32,7 @@ const ProjectDetails = () => {
       </div>
       <Highlight />
       {/*  */}
-    </>
+    </div>
   );
 };
 

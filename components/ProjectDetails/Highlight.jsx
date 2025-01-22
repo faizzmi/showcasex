@@ -21,14 +21,14 @@ const Highlight = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className='py-8 px-4 md:px-10'>
-            <h2 className='text-2xl font-bold text-gray-900'>Image Highlights</h2>
-            <p className='text-gray-700 text-base md:text-lg text-justify'>Here’s a closer look at our project through a series of images that capture the creativity and dedication behind each detail.</p>
+            <h2 className='text-2xl font-bold text-white'>Image Highlights</h2>
+            <p className='text-zinc-300 text-base md:text-lg text-justify'>Here’s a closer look at our project through a series of images that capture the creativity and dedication behind each detail.</p>
         </motion.div>
         <motion.div
         initial={{ opacity: 0 }} 
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        className="flex flex-wrap justify-center gap-1 my-8">
+        className="flex flex-wrap justify-center gap-1 pt-8 pb-20">
             {images.map((image, index) => (
                 <div key={index} className={`relative ${image.className} overflow-hidden rounded-md`}>
                 <Image
