@@ -13,37 +13,39 @@ const FAQ = () => {
     <div className="section">
       <div className="flex flex-col md:flex-row w-full gap-4">
         <div className="md:w-1/2 w-full flex flex-col px-6">
-          <p className="text-subtitle">FAQs</p>
-          <h3 className="text-title">Frequently Asked Questions</h3>
+          <p className="text-subtitle sticky top-16 z-10">FAQs</p>
+          <h3 className="text-title sticky top-24 bg-white py-4 z-10">
+            Frequently Asked Questions
+          </h3>
         </div>
 
         <div className="md:w-1/2 w-full">
           <div className="space-y">
             {faqLists.map((faq, index) => (
               <div key={index}>
-              <hr className='border-t-1 border-gray-300 my-2' />
-              <div className='rounded-lg hover:bg-gray-300'>
-                <button
-                  className="accordion-button"
-                  onClick={() => togglePanel(index)}
-                >
-                  <span>{faq.question}</span>
-                  <span className="text-gray-500">
-                    {activeIndex === index ? '−' : '＋'}
-                  </span>
-                </button>
+                <hr className="border-t-1 border-gray-300 my-2" />
+                <div className="rounded-lg hover:bg-gray-300">
+                  <button
+                    className="accordion-button"
+                    onClick={() => togglePanel(index)}
+                  >
+                    <span>{faq.question}</span>
+                    <span className="text-gray-800">
+                      {activeIndex === index ? '−' : '＋'}
+                    </span>
+                  </button>
 
-                <div
-                  className={`accordion-content  ${
-                    activeIndex === index ? 'block' : 'hidden'
-                  }`}
-                >
-                  <p>{faq.answer}</p>
+                  <div
+                    className={`accordion-content  ${
+                      activeIndex === index ? 'block' : 'hidden'
+                    }`}
+                  >
+                    <p>{faq.answer}</p>
+                  </div>
                 </div>
               </div>
-              </div>
             ))}
-            <hr className='border-t-1 border-gray-300 my-2' />
+            <hr className="border-t-1 border-gray-300 my-2" />
           </div>
         </div>
       </div>

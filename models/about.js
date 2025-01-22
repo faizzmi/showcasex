@@ -19,16 +19,16 @@ two prestigious awards and showcasing the potential of combining innovation with
 
 export const experiencesLists = [
     {
-        position: 'FRONTEND DEVELOPER',
-        location: 'ABATA COMMERCE SDN. BHD, CYBERJAYA',
-        startDate: '2024-03-03T00:00:00Z',
-        endDate: '2024-08-01T00:00:00Z',
-    },
-    {
         position: 'FREELANCER',
         location: 'REMOTE',
         startDate: '2024-03-03T00:00:00Z',
         endDate: 'NOW',
+    },
+    {
+        position: 'FRONTEND DEVELOPER',
+        location: 'ABATA COMMERCE SDN. BHD, CYBERJAYA',
+        startDate: '2024-03-03T00:00:00Z',
+        endDate: '2024-08-01T00:00:00Z',
     }
 ];
 
@@ -45,20 +45,20 @@ export const educationsLists = [
     {
         course: 'BACHELOR OF COMPUTER SCIENCE (SOFTWARE ENGINEERING) WITH HONOURS',
         location: 'UNIVERSITY MALAYSIA PAHANG AS-SULTAN ABDULLAH',
-        startDate: '2024-03-03T00:00:00Z',
+        startDate: '2020-03-03T00:00:00Z',
         endDate: '2024-08-01T00:00:00Z',
     },
     {
         course: 'PHYSICAL SCIENCE',
-        location: 'MATRICULATION',
-        startDate: '2021-01-01T00:00:00Z',
-        endDate: '2022-12-31T00:00:00Z',
+        location: 'PAHANG MATRICULATION COLLEGE',
+        startDate: '2019-04-01T00:00:00Z',
+        endDate: '2020-04-30T00:00:00Z',
     },
     {
         course: 'SIJIL PELAJARAN MALAYSIA',
         location: 'SEKOLAH MENENGAH KEBANGSAAN AGAMA TENGKU AMPUAN HAJAH AFAZAN PAHANG',
-        startDate: '2020-01-01T00:00:00Z',
-        endDate: '2020-12-31T00:00:00Z',
+        startDate: '2013-12-01T00:00:00Z',
+        endDate: '2018-12-31T00:00:00Z',
     }
 ];
 

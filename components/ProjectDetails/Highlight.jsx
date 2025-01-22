@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image';
 import React from 'react'
+import { motion } from 'motion/react';
 
 const Highlight = () => {
     
@@ -14,11 +16,19 @@ const Highlight = () => {
 
   return (
     <>
-        <div className='py-8 px-4 md:px-10'>
+        <motion.div
+          initial={{ y: 20, opacity: 0 }} 
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className='py-8 px-4 md:px-10'>
             <h2 className='text-2xl font-bold text-gray-900'>Image Highlights</h2>
             <p className='text-gray-700 text-base md:text-lg text-justify'>Here’s a closer look at our project through a series of images that capture the creativity and dedication behind each detail.</p>
-        </div>
-        <div className="flex flex-wrap justify-center gap-1 my-8">
+        </motion.div>
+        <motion.div
+        initial={{ opacity: 0 }} 
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="flex flex-wrap justify-center gap-1 my-8">
             {images.map((image, index) => (
                 <div key={index} className={`relative ${image.className} overflow-hidden rounded-md`}>
                 <Image
@@ -29,7 +39,7 @@ const Highlight = () => {
                 />
                 </div>
             ))}
-        </div>
+        </motion.div>
     </>
   )
 }

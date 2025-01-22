@@ -1,13 +1,26 @@
+'use client'
 import React from 'react'
+import { motion } from 'motion/react'
 
 const Header = ({project}) => {
   return (
     <div className="w-full h-max p-4 md:p-6" id="top">
         <div className="flex flex-col pt-[23vh] my-10">
-          <p>{project.projectName}</p>
-          <h2 className="text-5xl font-bold text-gray-900 mb-4 md:w-[60%] md:mb-0">
+          <motion.p 
+          initial={{ y: 20, opacity: 0 }} 
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }} 
+          className='text-lg font-semibold text-gray-600'>
+            {project.projectName}
+          </motion.p>
+
+          <motion.h2
+          initial={{ y: 20, opacity: 0 }} 
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.5 }} 
+          className="text-4xl font-bold text-gray-900 mb-4 md:w-[60%] md:mb-0">
             {project.projectHeader}
-          </h2>
+          </motion.h2>
         </div>
 
         <hr className="border-t-2 border-gray-300 my-6" />

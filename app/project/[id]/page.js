@@ -25,10 +25,13 @@ const ProjectDetails = () => {
       <HeaderImage img={"/images/default.png"}/>
       <div>
         <Description project={project} />
+
+        {/* check this below code */}
         <Section title="features" desc={project.projectFeatures} />
         <Section title="reflections" desc={project.reflection} />
       </div>
       <Highlight />
+      {/*  */}
     </>
   );
 };

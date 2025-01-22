@@ -6,7 +6,14 @@ const Footer = () => {
     <footer className="section bg-gray-200">
       <div className="w-max py-8 flex flex-col items-center gap-6 mx-auto text-gray-800 text-md">
         <p className='font-semibold text-gray-600 text-sm'>Looking to bring someone on board?</p>
-        <h2 className='font-bold text-slate-800 text-center text-3xl md:text-[70px]'>Let's Work Together.</h2>
+        <h2 className='font-bold text-slate-800 text-center text-3xl mb-4 md:text-[70px]'>Let's Work Together.</h2>
+        <Image
+            src="/images/logo.png"
+            alt="Profile Image"
+            width={300} 
+            height={300}
+            className='object-auto'
+        />
       </div>
 
 
@@ -45,16 +52,6 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-      </div>
-      <div className='flex flex-col items-center justify-center'>
-        <Image
-            src="/images/logo.png"
-            alt="Profile Image"
-            width={300} 
-            height={400}
-            className='object-auto'
-        />
-        <p className='font-bold text-gray-600 text-lg'>THANK YOU.</p>
       </div>
     </footer>
   );

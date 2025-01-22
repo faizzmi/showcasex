@@ -11,8 +11,10 @@ const AboutPage = () => {
   return (
     <div>
       <Welcome />
+
       <Story />
       <Hobby />
+      
       <Values />
       <FAQ />
     </div>

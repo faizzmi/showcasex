@@ -25,6 +25,10 @@
   font-family: 'Outfit', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .section {
   @apply w-full min-h-screen p-4 md:p-6;
 }
@@ -50,16 +54,17 @@
 }
 
 .accordion-button {
-  @apply w-full text-left px-4 py-2 text-gray-700
+  @apply w-full text-left px-4 py-2 text-gray-800
+          text-lg font-semibold
           transition duration-200 flex justify-between items-center;
 }
 
 .accordion-content {
-  @apply p-2 text-gray-600;
+  @apply text-lg p-2 text-gray-600;
 }
 
 .text-body {
-  @apply text-gray-700 text-base md:text-[var(--font-size-lg)] leading-relaxed whitespace-pre-line;
+  @apply text-gray-600 text-base md:text-sm leading-relaxed whitespace-pre-line;
 }
 
 .card-container {
@@ -71,7 +76,7 @@
 }
 
 .btn-url {
-  @apply border border-gray-500 text-gray-500 px-4 py-2 rounded-md bg-transparent cursor-pointer transition-colors hover:bg-gray-100;
+  @apply border border-gray-600 text-gray-600 hover:bg-black hover:text-white px-4 py-2 rounded-md cursor-pointer transition-colors;
 }
 
 .desc-title {

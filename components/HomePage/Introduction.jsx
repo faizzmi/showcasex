@@ -32,7 +32,8 @@ const Introduction = () => {
                     className="text-lg text-gray-600">
                         {introductory.subheader}
                         <Link href="/about">
-                            <span className="text-gray-800 ml-2 cursor-pointer">Read More</span>
+                            <span 
+                            className="text-gray-800 ml-2 cursor-pointer hover:underline">Read More</span>
                         </Link>
                     </motion.p>
                 </div>

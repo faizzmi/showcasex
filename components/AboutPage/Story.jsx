@@ -1,7 +1,9 @@
+'use client'
 import { awardsLists, educationsLists, experiencesLists, story } from '@/models/about';
 import React from 'react';
 import moment from 'moment';
 import CardList from './CardList';
+import { motion } from 'motion/react';
 
 const Story = () => {
   const formatDate = (dateString) => {
@@ -48,18 +50,27 @@ const Story = () => {
   );
 
   return (
-    <div className="section max-h-auto mt-20 card-container">
-      <div className="flex-gap px-6">
+    <div className="section max-h-auto mt-20 card-container w-full">
+      <div className="flex flex-col md:flex-row px-6 gap-6">
         <div className="md:w-2/3">
-          <p className="text-gray-700 text-base md:text-[30px] leading-relaxed whitespace-pre-line">{story}</p>
+          <motion.p
+            initial={{ x: -120, opacity: 0 }} 
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="text-gray-800 text-2xl font-semibold leading-relaxed whitespace-pre-line">
+            {story}
+          </motion.p>
         </div>
 
         <div className="md:w-1/3 flex justify-center">
-          <div>
+          <motion.div
+            initial={{ x: 120, opacity: 0 }} 
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 }}>
             <CardList title="experiences" list={experiencesLists} renderItem={renderExperience} />
             <CardList title="awards & recognition" list={awardsLists} renderItem={renderAward} />
             <CardList title="formal educations" list={educationsLists} renderItem={renderEducation} />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@ const NavigationBar = () => {
           </a>
         </li>
         <li className="text-sm md:text-base font-medium">
-          <button onClick={() => setOpenContact(true)}>
+          <button onClick={() => {setOpenContact(true); setIsMenuOpen(!isMenuOpen)}}>
             <span className="hover:underline"></span>Contact
           </button>
         </li>

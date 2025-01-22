@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
+import { motion } from 'motion/react';
 
 const Contact = ({ isOpen, onClose }) => {
   const [result, setResult] = useState('');
@@ -10,7 +11,7 @@ const Contact = ({ isOpen, onClose }) => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = 'auto'; // Restore scroll when closed
+      document.body.style.overflow = 'auto';
     }
 
     return () => {
@@ -68,20 +69,35 @@ const Contact = ({ isOpen, onClose }) => {
           ✕
         </button>
 
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Contact Me</h2>
+        <motion.h2
+        initial={{ x: 50, opacity: 0 }} 
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }} 
+        className="text-2xl font-semibold text-gray-800 mb-4">Contact Me</motion.h2>
 
-        {showResult && (
+        {result !== '' && (
           <div className="mb-4 text-sm text-center text-green-600 bg-green-100 border border-green-200 p-2 rounded">
             {result}
           </div>
         )}
 
-        <form onSubmit={onSubmit}>
+        <motion.form
+        initial={{ x: 50, opacity: 0 }} 
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }}  
+        onSubmit={onSubmit}>
           <div className="mb-4">
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+            <motion.label
+              initial={{ y: 20, opacity: 0 }} 
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.5 }}  
+              htmlFor="name" className="block text-sm font-medium text-gray-700">
               Name
-            </label>
-            <input
+            </motion.label>
+            <motion.input
+              initial={{ y: 20, opacity: 0 }} 
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.5 }} 
               type="text"
               id="name"
               name="name"
@@ -92,10 +108,17 @@ const Contact = ({ isOpen, onClose }) => {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <motion.label
+              initial={{ y: 20, opacity: 0 }} 
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 0.6 }}  
+              htmlFor="email" className="block text-sm font-medium text-gray-700">
               Email
-            </label>
-            <input
+            </motion.label>
+            <motion.input
+              initial={{ y: 20, opacity: 0 }} 
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 0.6 }} 
               type="email"
               id="email"
               name="email"
@@ -106,27 +129,37 @@ const Contact = ({ isOpen, onClose }) => {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+            <motion.label
+              initial={{ y: 20, opacity: 0 }} 
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1.2, delay: 0.7 }}  
+              htmlFor="message" className="block text-sm font-medium text-gray-700">
               Message
-            </label>
-            <textarea
+            </motion.label>
+            <motion.textarea
+              initial={{ y: 20, opacity: 0 }} 
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1.2, delay: 0.7 }} 
               id="message"
               name="message"
               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               rows="4"
               placeholder="Your Message"
               required
-            ></textarea>
+            ></motion.textarea>
           </div>
 
           <div className="flex justify-end">
-            <button
+            <motion.button
+              initial={{ opacity: 0 }} 
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               type="submit"
               className="btn-primary">
               Send
-            </button>
+            </motion.button>
           </div>
-        </form>
+        </motion.form>
 
         <hr className="mt-6 mb-2" />
 
