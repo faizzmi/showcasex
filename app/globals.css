@@ -32,7 +32,7 @@ body {
 }
 
 .section {
-  @apply w-full min-h-screen p-4 md:p-6;
+  @apply w-screen min-h-screen p-4 md:p-6;
 }
 
 .section-container {

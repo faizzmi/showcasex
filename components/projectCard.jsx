@@ -5,36 +5,12 @@ import React, { useState } from 'react';
 
 const ProjectCard = ({ project }) => {
   const { projectId, projectName, projectHeader, projectStack, framework } = project;
-  const [hovered, setHovered] = useState(false);
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    setCursorPosition({
-      x: e.clientX - rect.left,
-      y: e.clientY - rect.top,
-    });
-  };
 
   return (
     <Link href={`/project/${projectId}`}>
       <div
         className="relative transition-all duration-300 hover:bg-zinc-800 bg-zinc-900 cursor-pointer w-[90%] sm:w-[630px] mx-auto"
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-        onMouseMove={handleMouseMove}
       >
-        {hovered && (
-          <div
-            className="absolute z-10 flex items-center justify-center w-24 h-24 text-white bg-zinc-700 rounded-full pointer-events-none"
-            style={{
-              top: cursorPosition.y - 56,
-              left: cursorPosition.x - 56,
-            }}
-          >
-            View Project
-          </div>
-        )}
         <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px]">
           <Image
             src="/images/default.png"
@@ -44,7 +20,7 @@ const ProjectCard = ({ project }) => {
           />
         </div>
 
-        <div className="py-4">
+        <div className="py-4 px-2">
           <div className="mb-2">
             <h4 className="text-sm sm:text-md font-semibold text-zinc-100">
               {projectName} - {projectHeader}

@@ -42,14 +42,14 @@ const Section = ({ title, desc }) => {
         />
       </motion.div>
 
-      <motion.div
-        initial={{ y: 20, opacity: 0 }} 
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
+      <div
         className="flex flex-wrap gap-3 justify-center sm:w-full mt-8">
         {[...Array(3)].map((_, index) => (
-          <div
+          <motion.div
             key={index}
+            initial={{ y: 20, opacity: 0 }} 
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 + (index/5) }}
             className="relative w-full sm:w-full md:w-[calc(33%-12px)] aspect-[3/4] overflow-hidden"
           >
             <Image
@@ -58,9 +58,9 @@ const Section = ({ title, desc }) => {
               fill
               className="object-cover rounded-md"
             />
-          </div>
+          </motion.div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };
