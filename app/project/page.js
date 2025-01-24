@@ -1,6 +1,5 @@
 'use client'
 import ProjectCard from '@/components/projectCard'
-import SpalashScreen from '@/components/SpalashScreen';
 import { desc, projectList } from '@/models/projects'
 import React from 'react'
 import { motion } from "motion/react"

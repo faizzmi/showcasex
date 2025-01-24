@@ -42,11 +42,19 @@ const MenuToggle = ({ toggle, isOpen }) => (
 const NavigationBar = ({ openContact, setOpenContact }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const menuItems = [
+    { label: "home", href: "/" },
+    { label: "about", href: "/about" },
+    { label: "project", href: "/project" },
+    { label: "contact", onClick: () => setOpenContact(true) },
+    { label: "my resume", href: "/resume.pdf", target: "_blank" }
+  ];
+
   return (
     <motion.nav
       className="w-screen fixed top-0 px-4 py-3 flex items-center justify-between z-50 backdrop-blur-md rgba(255, 255, 255, 0) md:bg-opacity-30"
       initial={false}
-      animate={{ 
+      animate={{
         backgroundColor: isMenuOpen ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, 0.3)"
       }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -68,44 +76,31 @@ const NavigationBar = ({ openContact, setOpenContact }) => {
           animate={isMenuOpen ? "open" : "closed"}
         >
           <div
-            className={`
-              ${isMenuOpen ? "flex" : "hidden"} 
-              flex-col items-center gap-8 absolute top-[60px] left-0 right-0 bg-white shadow-md p-4`}
+            className={`${isMenuOpen ? "flex" : "hidden"} flex-col items-center gap-8 absolute top-[60px] left-0 right-0 bg-white shadow-md p-4`}
           >
-            <Link
-              href="/"
-              className="text-sm font-medium rounded-md hover:bg-zinc-900 px-2 hover:text-zinc-300 transition-colors"
-            >
-              home
-            </Link>
-            <Link
-              href="/about"
-              className="text-sm font-medium rounded-md hover:bg-zinc-900 px-2 hover:text-zinc-300 transition-colors"
-            >
-              about
-            </Link>
-            <Link
-              href="/project"
-              className="text-sm font-medium rounded-md hover:bg-zinc-900 hover:text-zinc-300 px-2 transition-colors"
-            >
-              project
-            </Link>
-            <button
-              onClick={() => {
-                setOpenContact(true);
-                setIsMenuOpen(false);
-              }}
-              className="text-sm font-medium hover:text-zinc-300 rounded-md hover:bg-zinc-900 px-2 transition-colors"
-            >
-              contact
-            </button>
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              className="px-4 py-2 border border-zinc-900 rounded-md bg-zinc-100 hover:bg-zinc-900 hover:text-white text-zinc-900 transition-colors text-sm font-medium"
-            >
-              my resume
-            </a>
+            {menuItems.map((item, index) => (
+              item.onClick ? (
+                <button
+                  key={index}
+                  onClick={() => {
+                    item.onClick();
+                    setIsMenuOpen(false);
+                  }}
+                  className="text-sm font-medium hover:text-zinc-300 rounded-md hover:bg-zinc-900 px-2 transition-colors"
+                >
+                  {item.label}
+                </button>
+              ) : (
+                <Link
+                  key={index}
+                  href={item.href}
+                  target={item.target}
+                  className="text-sm font-medium rounded-md hover:bg-zinc-900 px-2 hover:text-zinc-300 transition-colors"
+                >
+                  {item.label}
+                </Link>
+              )
+            ))}
           </div>
         </motion.div>
         <MenuToggle toggle={() => setIsMenuOpen(!isMenuOpen)} isOpen={isMenuOpen} />
@@ -113,32 +108,26 @@ const NavigationBar = ({ openContact, setOpenContact }) => {
 
       {/* Web View */}
       <div className="hidden md:flex items-center gap-4 pr-2 ">
-        <Link
-          href="/about"
-          className="text-sm font-medium hover:text-zinc-900 px-2 hover:underline transition-colors"
-        >
-          about
-        </Link>
-        <Link
-          href="/project"
-          className="text-sm font-medium hover:text-zinc-900 px-2 hover:underline transition-colors"
-        >
-          project
-        </Link>
-        <button
-          onClick={() => setOpenContact(true)}
-          className="text-sm font-medium hover:text-zinc-900 px-2 hover:underline transition-colors"
-        >
-          contact
-        </button>
-        <a
-          href="/resume.pdf"
-          target="_blank"
-          className="px-4 py-2 border border-zinc-900 rounded-md bg-zinc-100 hover:bg-zinc-900 hover:text-white 
-          hover:underline text-zinc-900 transition-colors text-sm font-medium"
-        >
-          my resume
-        </a>
+        {menuItems.map((item, index) => (
+          item.onClick ? (
+            <button
+              key={index}
+              onClick={() => item.onClick()}
+              className="text-sm font-medium hover:text-zinc-900 px-2 hover:underline transition-colors"
+            >
+              {item.label}
+            </button>
+          ) : (
+            <Link
+              key={index}
+              href={item.href}
+              target={item.target}
+              className={`text-sm font-medium hover:text-zinc-900 px-2 hover:underline transition-colors`}
+            >
+              {item.label}
+            </Link>
+          )
+        ))}
       </div>
     </motion.nav>
   );
