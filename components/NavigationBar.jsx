@@ -101,7 +101,7 @@ const NavigationBar = ({ openContact, setOpenContact }) => {
             </button>
             <a
               href="/resume.pdf"
-              download
+              target="_blank"
               className="px-4 py-2 border border-zinc-900 rounded-md bg-zinc-100 hover:bg-zinc-900 hover:text-white text-zinc-900 transition-colors text-sm font-medium"
             >
               my resume
@@ -133,7 +133,7 @@ const NavigationBar = ({ openContact, setOpenContact }) => {
         </button>
         <a
           href="/resume.pdf"
-          download
+          target="_blank"
           className="px-4 py-2 border border-zinc-900 rounded-md bg-zinc-100 hover:bg-zinc-900 hover:text-white 
           hover:underline text-zinc-900 transition-colors text-sm font-medium"
         >
