@@ -32,7 +32,7 @@ const ScrollToTopButton = () => {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed flex flex-row bottom-8 right-4 p-4 z-20 bg-darker text-zinc-900 items-center text-sm sm:text-2xl rounded-full shadow-lg hover:bg-darkest transition"
+          className="fixed flex flex-row bottom-8 right-4 p-4 z-20 bg-darker text-zinc-900 items-center text-sm rounded-full shadow-lg hover:bg-darkest transition"
         >
           ↑ <span className='sm:block hidden'>&nbsp;&nbsp;To Top</span>
         </button>
