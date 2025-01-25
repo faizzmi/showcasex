@@ -26,13 +26,13 @@ const ProjectCard = ({ project }) => {
               {projectName} - {projectHeader}
             </h4>
           </div>
-
+    
           <div className="mt-2">
             <ul className="flex flex-wrap gap-2">
               {framework.length > 0 &&
                 framework.map((item, index) => (
                   <li
-                    className="bg-zinc-700 text-zinc-100 text-xs sm:text-sm px-2 py-1 sm:px-3 sm:py-2 rounded-md"
+                    className="bg-darker text-zinc-900 text-xs sm:text-sm px-2 py-1 sm:px-3 sm:py-2 rounded-md"
                     key={index}
                   >
                     {item}
@@ -41,7 +41,7 @@ const ProjectCard = ({ project }) => {
               {projectStack.length > 0 &&
                 projectStack.map((item, index) => (
                   <li
-                    className="bg-zinc-800 text-zinc-200 text-xs sm:text-sm px-2 py-1 sm:px-3 sm:py-2 rounded-md"
+                    className="bg-primary text-zinc-900 text-xs sm:text-sm px-2 py-1 sm:px-3 sm:py-2 rounded-md"
                     key={index}
                   >
                     {item}

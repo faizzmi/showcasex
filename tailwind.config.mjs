@@ -8,12 +8,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#E0E1DD', // Light Gray
-        secondary: '#778DA9', // Cool Blue Gray
-        tertiary: '#1b263b', // Dark Navy
-        background: '#0d1b2a', // Deep Blue
-        accent: '#415a77', // Steel Blue
-        // dark_background: 'zinc-900'
+        primary: '#E0E1DD',         // Base color
+        lightest: '#F5F6F3',        // Lighter than primary
+        light: '#E9EAE3',           // Slightly lighter than primary
+        dark: '#D1D2C9',            // Slightly darker than primary
+        darker: '#B9B9A9',          // Darker
+        darkest: '#A0A18A',         // Darkest
         
       },
       fontFamily: {

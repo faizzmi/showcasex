@@ -169,7 +169,21 @@ export const projectList = [
         "projectFeatures": "ShowCase-X is a personal portfolio built with React and Next.js to showcase a developer's work and skills. The unique feature of this project is the integration of a smooth and interactive user interface, powered by Next.js, to deliver a fast and SEO-friendly experience. The challenge was ensuring that the portfolio would work across various devices and browsers while maintaining optimal loading speeds. I also integrated animations and transitions to make the portfolio more engaging, which required careful optimization to ensure performance wasn’t compromised.",
         "reflection": "Building ShowCase-X was an opportunity to experiment with modern web technologies and create a dynamic, engaging personal portfolio. It allowed me to refine my React and Next.js skills, especially in terms of server-side rendering and SEO optimization. The project also helped me understand the importance of user experience, as I had to ensure the site was easy to navigate and visually appealing. This portfolio has become a great showcase for my skills and projects, and the experience of building it further solidified my web development expertise.",
         "projectDesc": "ShowCase-X is a personal portfolio website built with React and Next.js. It showcases the developer's projects, skills, and experiences, featuring a smooth and interactive user interface with a focus on fast loading times and SEO optimization."
-    }
+    },
+    {
+        "projectId": "13",
+        "projectName": "scentedDreams",
+        "projectHeader": "An E-commerce Perfume Shop Developed with WordPress and PHP.",
+        "projectStack": ["WordPress", "PHP"],
+        "framework": [],
+        "projectURL": "",
+        "projectLevel": "Academic Year 2023",
+        "createdAt": "2023-06-01T00:00:00Z",
+        "projectType": "E-commerce",
+        "projectFeatures": "Developed an e-commerce website for selling perfumes, featuring a user-friendly interface, product catalog, shopping cart functionality, and secure payment processing. The website was built with WordPress and PHP to provide a dynamic, customizable platform that catered to users looking for premium fragrance products. The project aimed to improve my web development skills and practical understanding of e-commerce business logic.",
+        "reflection": "This project was an excellent opportunity to apply my WordPress and PHP knowledge in a real-world scenario. I learned a great deal about creating a functional and aesthetically pleasing e-commerce website, focusing on product display, secure payment integration, and user navigation. The project also taught me how to maintain and update an e-commerce platform, handling products, orders, and customer interactions effectively. Overall, it was an invaluable hands-on experience that improved my full-stack web development capabilities.",
+        "projectDesc": "An e-commerce perfume shop that offers a range of premium perfumes for sale. Developed using WordPress for content management and PHP for backend functionality, this project focused on creating an intuitive online shopping experience for users, including features like product listings, shopping cart, and checkout process."
+}
 ];
 
 export const desc = 'This portfolio highlights a curated selection of my work, demonstrating the variety and scope of projects I’ve completed. While certain pieces are excluded for reasons of client confidentiality, I’m confident that these examples reflect the wide range of skills and expertise I bring to every project.'
