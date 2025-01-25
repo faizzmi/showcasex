@@ -9,8 +9,8 @@ const Description = ({ project }) => {
     <div className="py-8 px-4 md:px-10">
       <div className="section-container">
         <motion.div 
-        initial={{ x: -120, opacity: 0 }} 
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ y: 20, opacity: 0 }} 
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }} 
         className="md:w-1/3 w-full">
           <div className="section-details md:pl-10">
@@ -46,8 +46,8 @@ const Description = ({ project }) => {
         </motion.div>
 
         <motion.div
-        initial={{ x: 120, opacity: 0 }} 
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ y: 20, opacity: 0 }} 
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }} 
         className="md:w-2/3 w-full flex ">
           <p className="section-desc">{project.projectDesc}</p>

@@ -27,12 +27,22 @@
   padding: 0;
 }
 
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, html {
   overflow-x: hidden;
 }
 
 .section {
-  @apply w-screen min-h-screen p-4 md:p-6;
+  @apply w-screen min-h-screen p-4 md:p-6 shrink;
+}
+
+Image {
+  @apply overflow-hidden
 }
 
 .section-container {

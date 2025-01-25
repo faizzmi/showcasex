@@ -26,9 +26,9 @@ const Highlight = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="py-8 px-4 md:px-10"
         >
-          <h2 className="text-2xl font-bold text-white">Image Highlights</h2>
+          <h2 className="text-2xl font-bold text-white">Highlights</h2>
           <p className="text-zinc-300 text-base md:text-lg text-justify">
-            Here’s a closer look at our project through a series of images that capture the creativity and dedication behind each detail.
+            A visual journey through the creativity behind our project.
           </p>
         </motion.div>
         {images.map((image, index) => (

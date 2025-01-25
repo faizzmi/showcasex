@@ -177,13 +177,43 @@ export const projectList = [
         "projectStack": ["WordPress", "PHP"],
         "framework": [],
         "projectURL": "",
-        "projectLevel": "Academic Year 2023",
+        "projectLevel": "Academic",
         "createdAt": "2023-06-01T00:00:00Z",
         "projectType": "E-commerce",
         "projectFeatures": "Developed an e-commerce website for selling perfumes, featuring a user-friendly interface, product catalog, shopping cart functionality, and secure payment processing. The website was built with WordPress and PHP to provide a dynamic, customizable platform that catered to users looking for premium fragrance products. The project aimed to improve my web development skills and practical understanding of e-commerce business logic.",
         "reflection": "This project was an excellent opportunity to apply my WordPress and PHP knowledge in a real-world scenario. I learned a great deal about creating a functional and aesthetically pleasing e-commerce website, focusing on product display, secure payment integration, and user navigation. The project also taught me how to maintain and update an e-commerce platform, handling products, orders, and customer interactions effectively. Overall, it was an invaluable hands-on experience that improved my full-stack web development capabilities.",
         "projectDesc": "An e-commerce perfume shop that offers a range of premium perfumes for sale. Developed using WordPress for content management and PHP for backend functionality, this project focused on creating an intuitive online shopping experience for users, including features like product listings, shopping cart, and checkout process."
-}
+    },
+    {
+        "projectId": "14",
+        "projectName": "PETAKOM MART MANAGEMENT SYSTEM (PMMS)",
+        "projectHeader": "Streamlining Administrative Operations with Laravel",
+        "projectStack": ["PHP"],
+        "framework": ["Laravel"],
+        "projectURL": "", 
+        "projectLevel": "Academic",
+        "createdAt": "2023-07-01T00:00:00Z",
+        "projectType": "Web Application",
+        "projectFeatures": "Directed the creation of a Laravel-based PHP system that improved administrative efficiency by 30%. The system was specifically designed for FK management and PETAKOM students, featuring five integrated modules for tasks such as student management, inventory tracking, orders processing, and reporting. The project also enhanced security and user access controls across administrative roles, optimizing workflow and increasing productivity.",
+        "reflection": "The development of PMMS was a challenging yet rewarding experience. Leading the creation of a system that directly impacted administrative efficiency allowed me to gain hands-on experience with Laravel and PHP. The process involved deep collaboration, problem-solving, and constant iteration to ensure that the system met both the functional and security requirements. A key takeaway was understanding the complexities of managing multiple integrated modules and ensuring smooth data flow across the system.",
+        "projectDesc": "PMMS is a comprehensive management system designed for PETAKOM, built with Laravel and PHP. The system integrates five modules to handle key administrative tasks for FK management and PETAKOM students, aiming to improve productivity, reduce operational errors, and enhance security. The platform features an intuitive interface for admins and students, with real-time data tracking and reporting functionalities."
+    },
+    {
+        "projectId": "15",
+        "projectName": "PETAKOM Management System - PETAKOM Club Application and Maintenance",
+        "projectHeader": "Enhancing Club Management and Operations with PETAKOM System",
+        "projectStack": ["PHP"],
+        "framework": ["Laravel"],
+        "projectURL": "", 
+        "projectLevel": "Academic",
+        "createdAt": "2023-08-01T00:00:00Z",
+        "projectType": "Web Application",
+        "projectFeatures": "Managed the application and ongoing maintenance of the PETAKOM Management System for Persatuan Teknologi Komputer (PTK) Club. The system was responsible for handling member registrations, event scheduling, internal communications, and record keeping. It also provided features for monitoring club activities, performance tracking, and generating reports. Maintenance tasks included regular updates, bug fixes, and ensuring data integrity for smooth club operations.",
+        "reflection": "This project gave me practical experience in both system maintenance and management of a real-world application. Handling the PTK Club's administrative tasks allowed me to understand the importance of ensuring system stability while adding new features. I learned the significance of user feedback, debugging, and the impact of small optimizations in improving user experience. The project was an excellent opportunity to hone my skills in Laravel and PHP while working on a real-world use case.",
+        "projectDesc": "The PETAKOM Management System for the PTK Club was built with Laravel and PHP to streamline administrative tasks, event management, and club member services. The system integrates features for managing member profiles, event scheduling, and internal communication, providing the PTK Club with an efficient and organized way to handle their daily operations. Regular maintenance ensured the system remained up-to-date with features and security improvements."
+    }
+
+
 ];
 
 export const desc = 'This portfolio highlights a curated selection of my work, demonstrating the variety and scope of projects I’ve completed. While certain pieces are excluded for reasons of client confidentiality, I’m confident that these examples reflect the wide range of skills and expertise I bring to every project.'

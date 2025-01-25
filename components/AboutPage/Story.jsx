@@ -55,7 +55,7 @@ const Story = () => {
       <div className="flex flex-col md:flex-row px-6 gap-6">
         <div className="md:w-2/3">
           <motion.p
-            initial={{ y: -20, opacity: 0 }} 
+            initial={{ y: 20, opacity: 0 }} 
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-gray-800 text-2xl font-semibold leading-relaxed whitespace-pre-line">
