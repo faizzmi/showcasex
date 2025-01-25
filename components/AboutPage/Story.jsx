@@ -55,8 +55,8 @@ const Story = () => {
       <div className="flex flex-col md:flex-row px-6 gap-6">
         <div className="md:w-2/3">
           <motion.p
-            initial={{ x: -120, opacity: 0 }} 
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: -20, opacity: 0 }} 
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-gray-800 text-2xl font-semibold leading-relaxed whitespace-pre-line">
             {story}
@@ -65,8 +65,8 @@ const Story = () => {
 
         <div className="md:w-1/3 flex justify-center">
           <motion.div
-            initial={{ x: 120, opacity: 0 }} 
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: 20, opacity: 0 }} 
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}>
             <CardList title="experiences" list={experiencesLists} renderItem={renderExperience} />
             <CardList title="awards & recognition" list={awardsLists} renderItem={renderAward} />

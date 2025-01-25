@@ -1,14 +1,19 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import React from 'react';
 
 const ProjectCard = ({ project }) => {
   const { projectId, projectName, projectHeader, projectStack, framework } = project;
 
   return (
     <Link href={`/project/${projectId}`}>
-      <div
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.95 }}
+        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         className="relative transition-all duration-300 hover:bg-zinc-800 bg-zinc-900 cursor-pointer w-[90%] sm:w-[630px] mx-auto"
       >
         <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px]">
@@ -26,7 +31,6 @@ const ProjectCard = ({ project }) => {
               {projectName} - {projectHeader}
             </h4>
           </div>
-    
           <div className="mt-2">
             <ul className="flex flex-wrap gap-2">
               {framework.length > 0 &&
@@ -50,7 +54,7 @@ const ProjectCard = ({ project }) => {
             </ul>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Link>
   );
 };

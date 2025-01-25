@@ -15,6 +15,7 @@ const Template = ({ children }) => {
   const [openContact, setOpenContact] = useState(false);
   const [delay, setDelay] = useState(false);
   const [showSplash, setShowSplash] = useState(pageName === "");
+  const [transition, setTransition] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -34,6 +35,14 @@ const Template = ({ children }) => {
     }
   }, [pathName]);
 
+  useEffect(() => {
+    if (pathName.startsWith('/project/')) {
+      setTransition(false);
+    } else {
+      setTransition(true);
+    }
+  }, [pathName]);
+
   return (
     <div>
       {showSplash ? (
@@ -47,7 +56,7 @@ const Template = ({ children }) => {
                 {children}
                 <Footer />
               </motion.div>
-              {delay && (
+              {(transition && delay) && (
                 <motion.div
                   key="motion-slide-out"
                   className="slide-out m-auto flex items-center justify-center"
@@ -56,10 +65,10 @@ const Template = ({ children }) => {
                   exit={{ scaleY: 0 }}
                   transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  <h2 className="text-white font-bold text-4xl">{pageName === "" && pageName}</h2>
+                  <h2 className="text-white font-bold text-4xl">{pageName !== "" && pageName}</h2>
                 </motion.div>
               )}
-              {!delay && (
+              {(transition && !delay) && (
                 <motion.div
                   key="motion-slide-in"
                   className="slide-in m-auto flex items-center justify-center"
@@ -68,7 +77,7 @@ const Template = ({ children }) => {
                   exit={{ scaleY: 1 }}
                   transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  <h2 className="text-white font-bold text-4xl">{pageName === "" ? "Faiz Azmi" : pageName}</h2>
+                  <h2 className="text-white font-bold text-4xl">{pageName !== "" && pageName}</h2>
                 </motion.div>
               )}
             </AnimatePresence>

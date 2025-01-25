@@ -16,7 +16,7 @@ const ProjectPage = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-4xl font-bold text-white mb-4 md:mb-0"
         >
-          my projects [{sortProject.length}]
+          my projects [{sortProject.length}.]
         </motion.h2>
 
         <motion.p
