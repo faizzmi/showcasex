@@ -8,7 +8,7 @@ const ProjectPage = () => {
   const sortProject = projectList.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 
   return (
-    <div className="section bg-zinc-900" id="top">
+    <div className="section max-w-screen bg-zinc-900" id="top">
       <div className="flex flex-col md:flex-row justify-between items-center pt-[23vh] my-10">
         <motion.h2
           initial={{ x: -120, opacity: 0 }}

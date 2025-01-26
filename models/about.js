@@ -1,3 +1,5 @@
+import { hobbyPic, hobbyPix } from "@/assets/assets";
+
 export const welcome = "Hey, I am Faiz. I am a Software Engineer. based in Malaysia."
 
 export const story = `
@@ -22,6 +24,8 @@ export const experiencesLists = [
         endDate: '2024-08-01T00:00:00Z',
     }
 ];
+
+export const hobby = hobbyPic;
 
 export const awardsLists = [
     {

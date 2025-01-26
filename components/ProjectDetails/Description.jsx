@@ -59,13 +59,13 @@ const Description = ({ project }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.5 }} 
       className="relative w-full pt-[75%] mt-6">
-        <Image
+        {/* <Image
           src="/images/default.png"
           alt="Project image"
           fill
           className="object-cover rounded-md"
-        />
-          {/* {project.videoURL && (<video 
+        /> */}
+          {project.videoURL && (<video 
             className="absolute top-0 left-0 w-full h-full object-cover"
             autoPlay
             muted
@@ -74,9 +74,7 @@ const Description = ({ project }) => {
           >
             <source src="/test_video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
-          </video>)} */}
-          {/* <p>There will be image or video here.</p> */}
-          {/* {project.videoUrl} */}
+          </video>)}
       </motion.div>
       
     </div>
