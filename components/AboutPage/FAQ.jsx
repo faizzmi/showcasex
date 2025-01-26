@@ -1,7 +1,7 @@
 'use client';
 import { faqLists } from '@/models/about';
 import React, { useState } from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -11,36 +11,46 @@ const FAQ = () => {
   };
 
   return (
-    <div className="section bg-zinc-900 text-white">
-      <div className="flex flex-col md:flex-row w-full gap-4 pb-20">
+    <div className="section max-h-fit bg-zinc-900 text-white">
+      <div className="flex flex-col md:flex-row w-full gap-4 py-20">
+        {/* FAQ Title Section */}
         <div className="md:w-1/2 w-full flex flex-col px-6">
           <motion.p
-          initial={{ y: 20, opacity: 0}}
-          whileInView={{ y: 0, opacity: 1}}
-          transition={{ duration: 0.5, delay: 0.3 }}
-           className="text-subtitle sticky top-16 z-10 text-zinc-300">FAQs</motion.p>
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="text-subtitle sticky top-16 z-10"
+          >
+            FAQs
+          </motion.p>
           <motion.h3
-          initial={{ y: 20, opacity: 0}}
-          whileInView={{ y: 0, opacity: 1}}
-          transition={{ duration: 0.8, delay: 0.5 }}
-           className="text-title sticky top-24 py-4 z-10 text-2xl font-semibold text-zinc-100">
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="text-title sticky top-24 py-4 z-10"
+          >
             Frequently Asked Questions
           </motion.h3>
         </div>
 
+        {/* FAQ Content Section */}
         <div className="md:w-1/2 w-full">
           <div className="space-y-4">
             {faqLists.map((faq, index) => (
-              <motion.div 
-              key={index}
-              initial={{ y: 20, opacity: 0}}
-              whileInView={{ y: 0, opacity: 1}}
-              transition={{ duration: 0.6 + (index/5), delay: 0.3 + (index/20) }}
+              <motion.div
+                key={index}
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  duration: 0.6 + index / 5,
+                  delay: 0.3 + index / 20,
+                }}
               >
                 <hr className="border-t-1 border-zinc-600 my-2" />
                 <div className="rounded-lg hover:bg-zinc-800">
+                  {/* Accordion Header */}
                   <button
-                    className="accordion-button text-left w-full flex justify-between items-center py-3 px-4 text-lg font-medium text-gray-200 hover:text-gray-100"
+                    className="accordion-button text-left w-full flex justify-between items-center px-4 text-lg font-medium text-gray-200 hover:text-gray-100"
                     onClick={() => togglePanel(index)}
                   >
                     <span>{faq.question}</span>
@@ -49,13 +59,20 @@ const FAQ = () => {
                     </span>
                   </button>
 
-                  <div
-                    className={`accordion-content  ${
-                      activeIndex === index ? 'block' : 'hidden'
-                    } px-4 py-2`}
+                  {/* Accordion Content */}
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={
+                      activeIndex === index
+                        ? { height: 'auto', opacity: 1 }
+                        : { height: 0, opacity: 0 }
+                    }
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.4, ease: 'easeInOut' }}
+                    className="overflow-hidden "
                   >
-                    <p>{faq.answer}</p>
-                  </div>
+                    <p className='py-2 px-4'>{faq.answer}</p>
+                  </motion.div>
                 </div>
               </motion.div>
             ))}

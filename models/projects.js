@@ -211,7 +211,22 @@ export const projectList = [
         "projectFeatures": "Managed the application and ongoing maintenance of the PETAKOM Management System for Persatuan Teknologi Komputer (PTK) Club. The system was responsible for handling member registrations, event scheduling, internal communications, and record keeping. It also provided features for monitoring club activities, performance tracking, and generating reports. Maintenance tasks included regular updates, bug fixes, and ensuring data integrity for smooth club operations.",
         "reflection": "This project gave me practical experience in both system maintenance and management of a real-world application. Handling the PTK Club's administrative tasks allowed me to understand the importance of ensuring system stability while adding new features. I learned the significance of user feedback, debugging, and the impact of small optimizations in improving user experience. The project was an excellent opportunity to hone my skills in Laravel and PHP while working on a real-world use case.",
         "projectDesc": "The PETAKOM Management System for the PTK Club was built with Laravel and PHP to streamline administrative tasks, event management, and club member services. The system integrates features for managing member profiles, event scheduling, and internal communication, providing the PTK Club with an efficient and organized way to handle their daily operations. Regular maintenance ensured the system remained up-to-date with features and security improvements."
+    },
+    {
+        "projectId": "16",
+        "projectName": "Profiling Information System (PINS)",
+        "projectHeader": "Streamlining Information Submission for LHDNM through PINS",
+        "projectStack": ["TypeScript", "Bitbucket"],
+        "framework": ["Ionic", "Angular"],
+        "projectURL": "",
+        "projectLevel": "Internship",
+        "createdAt": "2024-01-01T00:00:00Z",
+        "projectType": "Web Application",
+        "projectFeatures": "The Profiling Information System (PINS) was introduced by Lembaga Hasil Dalam Negeri Malaysia (LHDNM) to replace the Sistem Maklumat Unit Pengesanan (e-SMUP), which ceased operations on 31 December 2023. PINS serves as a centralized system for agencies to submit information requested by LHDNM via Surat Q applications. The system supports tax enforcement and compliance activities to ensure effective tax collection benefiting all Malaysians. A significant module in PINS is the FAQ module, designed to assist users with common queries regarding the submission process, system features, and guidelines for using PINS. The FAQ module is highly dynamic, allowing administrators to update questions and answers efficiently. It features an intuitive interface with animated accordion panels for seamless navigation, ensuring users can quickly find relevant information.",
+        "reflection": "Working on the Profiling Information System (PINS) allowed me to contribute to a critical system supporting LHDNM's tax enforcement initiatives. I gained hands-on experience in developing scalable, user-friendly components using Ionic Angular and TypeScript. The FAQ module was particularly rewarding to build, as it required a balance between aesthetics and functionality, ensuring accessibility for all users. The project also enhanced my skills in maintaining government-level security standards and utilizing Bitbucket for collaborative development. This experience emphasized the importance of delivering reliable systems that directly impact the nation's revenue and public services.",
+        "projectDesc": "The Profiling Information System (PINS) is a web application developed for LHDNM to streamline the submission of information by agencies via Surat Q applications. Built using Ionic Angular and TypeScript, the system includes various modules, with the FAQ module serving as a key feature. The FAQ module provides an interactive and user-friendly way for users to address common questions, minimizing support requests and improving user efficiency. PINS plays a vital role in supporting tax compliance and enforcement, benefiting Malaysians by ensuring effective tax revenue collection."
     }
+
 
 
 ];

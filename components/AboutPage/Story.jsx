@@ -50,9 +50,8 @@ const Story = () => {
   );
 
   return (
-    <div className="section max-h-auto mt-20 car
-    d-container w-full">
-      <div className="flex flex-col md:flex-row px-6 gap-6">
+    <div className="section max-h-auto card-container w-full bg-light">
+      <div className="flex flex-col md:flex-row my-20 px-6 gap-6">
         <div className="md:w-2/3">
           <motion.p
             initial={{ y: 20, opacity: 0 }} 

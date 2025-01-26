@@ -5,7 +5,7 @@ import { motion } from 'motion/react'
 
 const Values = () => {
   return (
-    <div className='section mt-20 px-4 md:px-10'>
+    <div className='section my-20 px-4 md:px-10'>
       <div className='px-6'>
         <motion.h4
         initial={{ y: 20, opacity: 0 }} 
