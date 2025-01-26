@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { skillsData } from '@/models/skill';
@@ -6,21 +6,31 @@ import { skillsData } from '@/models/skill';
 const Skills = () => {
   return (
     <section className="py-20 px-6 bg-lightest" id="skills">
-      <div className="text-center max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="text-4xl font-bold text-zinc-900 mb-12">Skills</motion.h2>
-        
-        <div
-            className="flex flex-wrap justify-center gap-8"
+            className="text-4xl font-bold text-zinc-900 px-4 "
         >
-            {skillsData.map((skill, index) => (
+          Skills
+        </motion.h2>
+        
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          className="text-lg text-zinc-600 mb-8 px-4 text-justify"
+        >
+          Here are the key skills I've acquired over time. Each of these skills has enabled me to create impactful and high-quality solutions in my projects. I continually work to improve them and stay updated with the latest advancements.
+        </motion.p>
+
+        <div className="flex flex-wrap justify-center gap-8">
+          {skillsData.map((skill, index) => (
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 + index/20, duration: 0.8 }}
+                transition={{ delay: 0.3 + index / 20, duration: 0.8 }}
                 key={skill.name}
                 className="text-center cursor-pointer"
                 whileHover={{

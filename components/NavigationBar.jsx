@@ -95,6 +95,7 @@ const NavigationBar = ({ openContact, setOpenContact }) => {
                   key={index}
                   href={item.href}
                   target={item.target}
+                  onClick={() => { setIsMenuOpen(false) }}
                   className="text-sm font-medium rounded-md hover:bg-zinc-900 px-2 hover:text-zinc-300 transition-colors"
                 >
                   {item.label}
