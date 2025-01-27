@@ -1,4 +1,4 @@
-import { project01, project02, project03, project14 } from "@/assets/assets";
+import { project01, project02, project03, project04, project05, project14 } from "@/assets/assets";
 
 export const projectList = [
     {
@@ -94,37 +94,35 @@ export const projectList = [
         "projectId": "4",
         "projectName": "GadgetVerse",
         "projectHeader": "Step Into A Realm Where Technology Meets Infinite Possibilities.",
-        "headerImage": '',
+        "headerImage": project04.headerImg,
         "projectStack": ["JavaScript"],
         "framework": ["React.JS", "Three.JS", "Tailwind.Css"],
         "projectURL": "https://github.com/faizzmi/GadgetVerse",
-        "projectLevel":"Personal",
+        "projectLevel": "Personal",
         "createdAt": "2024-12-24T16:18:31Z",
         "projectType": "Web Development",
+        "projectDesc": "GadgetVerse is a web application designed as a clone of the Apple Store, built for learning React.js, Three.js, and GSAP. It showcases tech products in an interactive 3D environment, offering users the ability to explore and interact with products in a visually appealing way. The app uses Three.js for 3D rendering and React.js for dynamic UI elements, with Tailwind CSS for quick, scalable styling.",
         "projectFeatures": {
-            title: "features",
-            headerImg: "",
-            desc: "GadgetVerse was built to showcase tech products in an interactive 3D environment. The challenge was integrating 3D rendering into the web in a way that was both visually appealing and performance-optimized. By using Three.js for 3D models and React.js for dynamic user interfaces, I was able to create a smooth user experience. The primary challenge was ensuring the website remained responsive and fast despite the complexity of rendering 3D models. It required a lot of optimization work, especially in minimizing loading times and handling large models without compromising quality. Another key feature was the integration of Tailwind CSS for styling, which allowed for quick and scalable UI designs.",
-            pics: []
+            "title": "features",
+            "desc": "The project highlights the integration of interactive 3D rendering into a web environment while maintaining performance optimization. Challenges included managing complex 3D interactions and ensuring the website remained responsive despite the high demands of rendering large 3D models. The use of GSAP was key in animating and enhancing the user experience.",
+            "pics": []
         },
         "reflection": {
-            title: "reflections",
-            headerImg: "",
-            desc: "Building GadgetVerse was a truly transformative experience in web development. It expanded my knowledge of interactive web applications and 3D rendering. One of the biggest takeaways was learning how to manage complex interactions in a web environment while keeping performance optimized. The project also introduced me to the challenges of integrating advanced technologies like Three.js and React in a way that was user-friendly and scalable. It was a great exercise in balancing visual appeal with technical constraints, and I feel much more confident in creating immersive, interactive web experiences after completing it.",
-            pics: []
+            "title": "reflections",
+            "desc": "Building GadgetVerse was a transformative experience, deepening my understanding of interactive web development and 3D rendering. I gained valuable insights into optimizing performance and integrating technologies like Three.js, React, and GSAP in a user-friendly and scalable manner. This project strengthened my ability to create immersive web experiences.",
+            "pics": []
         },
-        highlight: {
-            title: '',
-            desc: '',
-            pic: []
-        },
-        "projectDesc": "GadgetVerse is a web application that showcases tech products in an interactive 3D environment. It utilizes Three.js for 3D rendering and React.js for dynamic user interface elements. The project focuses on creating a visually engaging and performant experience, allowing users to explore and interact with products in a unique way."
+        "highlight": {
+            "title": "website",
+            "desc": "Explore GadgetVerse, a visually stunning web app where technology and design collide. Immerse yourself in interactive 3D product showcases built with React.js and Three.js.",
+            "pic": project04.highlight
+        }
     },
     {
         "projectId": "5",
         "projectName": "Purrfect Paws",
         "projectHeader": "A Journey Through The Feline World, Where Curiosity Meets Discovery.",
-        "headerImage": '',
+        "headerImage": project05.headerImg,
         "projectStack": ["TypeScript"],
         "framework": ["Angular.JS"],
         "projectURL": "https://github.com/faizzmi/purrfect-paws",
@@ -144,9 +142,9 @@ export const projectList = [
             pics: []
         },
         highlight: {
-            title: '',
-            desc: '',
-            pic: []
+            title: 'website',
+            desc: 'The highlight of Purrfect Paws lies in its dynamic filtering system, which enables users to easily select and discover the ideal cat breed based on their preferences. This feature makes the app both interactive and user-friendly, offering a personalized experience tailored to individual tastes and needs.',
+            pic: project05.highlight
         },
         "projectDesc": "Purrfect Paws is a web application that helps users find the perfect cat breed for them. It features a dynamic filtering system that allows users to select specific traits and preferences, such as coat color, size, and temperament. The application provides an interactive and engaging experience for users to explore the world of feline breeds."
     },
