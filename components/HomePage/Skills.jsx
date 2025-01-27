@@ -13,7 +13,7 @@ const Skills = () => {
             transition={{ delay: 0.3, duration: 0.5 }}
             className="text-4xl font-bold text-zinc-900 px-4 "
         >
-          Skills
+          skills
         </motion.h2>
         
         <motion.p

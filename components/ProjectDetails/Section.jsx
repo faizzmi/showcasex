@@ -30,7 +30,7 @@ const Section = ({ content }) => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
-        {/* {pics.length>0 && pics.map((pic, index) => (
+        {pics.length>0 && pics.map((pic, index) => (
           <motion.div
             key={index}
             initial={{ y: 20, opacity: 0 }} 
@@ -45,7 +45,7 @@ const Section = ({ content }) => {
               className="object-cover rounded-md"
             />
           </motion.div>
-        ))} */}
+        ))}
       </div>
     </div>
   );

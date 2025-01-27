@@ -5,7 +5,6 @@ import React from 'react';
 import { motion } from 'motion/react';
 
 const Description = ({ project }) => {
-  console.log(project)
   return (
     <div className="py-8 px-4 md:px-10">
       <div className="section-container">

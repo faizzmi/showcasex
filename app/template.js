@@ -16,7 +16,7 @@ const Template = ({ children }) => {
   const [delay, setDelay] = useState(false);
   const [showSplash, setShowSplash] = useState(pageName === "");
   const [transition, setTransition] = useState(false);
-  const [prevPathName, setPrevPathName] = useState(null); // Track the previous pathname
+  const [prevPathName, setPrevPathName] = useState(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -37,7 +37,7 @@ const Template = ({ children }) => {
   }, [pathName]);
 
   useEffect(() => {
-    if (prevPathName?.startsWith('/project/') && !pathName.startsWith('/project/')) {
+    if (prevPathName?.startsWith('/project/') && !pathName.startsWith('/project/') || pathName.startsWith('/project/')) {
       setTransition(false);
     } else {
       setTransition(true);

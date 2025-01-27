@@ -45,7 +45,7 @@ const ProjectDetails = () => {
           <Section content={project.projectFeatures} />
           <Section content={project.reflection} />
         </div>
-        {project.highlight.length > 0 && (<Highlight highlight={project.highlight}/>)}
+        {project.highlight.title !== '' && (<Highlight highlight={project.highlight}/>)}
       </motion.div>
       {( delay) && (
         <motion.div

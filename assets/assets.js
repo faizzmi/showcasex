@@ -1,10 +1,21 @@
 import gymPic from '@/assets/gym.jpeg'
 import hikingPic from '@/assets/hiking.jpeg'
 import readingPic from '@/assets/reading.jpeg'
+
 import header01 from '@/assets/project01/header01.png'
 import f101 from '@/assets/project01/f101.png'
 import f201 from '@/assets/project01/f201.jpeg'
 import f301 from '@/assets/project01/f301.png'
+
+import header02 from '@/assets/project02/foody.png'
+import login from '@/assets/project02/login_foody.png'
+import home from '@/assets/project02/home.png'
+import restaurant from '@/assets/project02/restaurant.png'
+import menu from '@/assets/project02/menu.png'
+import menu_details from '@/assets/project02/menu_details.png'
+
+import header03 from '@/assets/project03/header03.jpg'
+
 import Id14 from '@/assets/project14/Id14.png'
 
 export const project01 = {
@@ -12,6 +23,16 @@ export const project01 = {
     headerImg: header01,
     feature: [ f101, f201, f301 ],
     highlight: []
+};
+
+
+export const project02 = {
+    headerImg: header02,
+    highlight: [ login, home, restaurant, menu, menu_details ]
+};
+
+export const project03 = {
+    headerImg: header03,
 };
 
 export const project14 = {

@@ -1,4 +1,4 @@
-import { project01, project14 } from "@/assets/assets";
+import { project01, project02, project03, project14 } from "@/assets/assets";
 
 export const projectList = [
     {
@@ -23,15 +23,19 @@ export const projectList = [
             desc: "Working on this project was a tremendous learning experience in the field of computer vision. It allowed me to dive deep into the practical application of edge detection algorithms and real-time data processing. The main takeaway was understanding how to handle challenges related to variable lighting and object detection, which often lead to inaccuracies. This hands-on experience strengthened my problem-solving skills and gave me the confidence to work with OpenCV in future machine vision projects. The project was both technically demanding and rewarding as it involved translating theory into working code, providing valuable insight into spatial awareness and distance calculation.",
             pics: []
         },
-        highlight: [],
+        highlight: {
+            title: '',
+            desc: '',
+            pic: []
+        },
         "projectDesc": "This project aimed to develop a system for real-time distance measurement using computer vision techniques. It utilized Sobel edge detection to identify and analyze object boundaries within images. The primary challenges involved ensuring accurate distance calculations under varying lighting conditions and dealing with complex edge scenarios. The project successfully demonstrated the application of computer vision principles for spatial awareness and distance measurement."
     },
     {
         "projectId": "2",
         "projectName": "Foody",
         "projectHeader": "Transforming Food Delivery Into A Seamless Revolution.",
-        "headerImage": '',
-        "projectStack": ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+        "headerImage": project02.headerImg,
+        "projectStack": ["PHP", "MySQL", "HTML", "CSS"],
         "framework": ["Laravel"],
         "projectURL": "https://github.com/faizzmi/Foody",
         "projectLevel":"Academic",
@@ -40,23 +44,27 @@ export const projectList = [
         "projectFeatures": {
             title: "features",
             headerImg: "",
-            desc: "",
+            desc: "Foody was a project aimed at revolutionizing food delivery by combining food ordering and real-time delivery tracking into a seamless user experience. One of the key features was integrating a delivery tracking system, ensuring customers could track their orders from preparation to arrival. The most significant challenge was ensuring that the real-time updates of order statuses were reflected immediately for both the customer and the restaurant. I used Laravel for backend development, which enabled smooth management of user data, payment processing, and order handling. A critical part of the project was ensuring the database structure and API endpoints were efficient enough to handle large amounts of user traffic during peak times, which was a tough yet rewarding hurdle to overcome.",
             pics: []
         },
         "reflection": {
             title: "reflections",
             headerImg: "",
-            desc: "",
+            desc: "Foody is a web application designed to streamline the food delivery process. It integrates online food ordering with real-time delivery tracking, providing a seamless experience for both customers and restaurants. Key features include order management, payment processing, and real-time status updates. The project emphasizes user experience and efficiency, aiming to improve the overall food delivery process.",
             pics: []
         },
-        highlight: [],
+        highlight: {
+            title: 'website',
+            desc: 'Foody is a web application designed to streamline the food delivery process, offering a seamless experience for both customers and restaurants. As a general user, you can easily navigate through the home page, which provides quick access to restaurant listings and menu details. The restaurant list allows users to browse participating restaurants, while the menu list displays all available dishes. Once a dish is selected, the menu detail page provides an in-depth description of the food, along with options to adjust the quantity before adding it to the cart. Built with PHP, MySQL, and Laravel, the platform ensures smooth order management and real-time delivery tracking, focusing on enhancing the user experience with efficient functionality and intuitive design.',
+            pic: project02.highlight
+        },
         "projectDesc": "Foody is a web application designed to streamline the food delivery process. It integrates online food ordering with real-time delivery tracking, providing a seamless experience for both customers and restaurants. Key features include order management, payment processing, and real-time status updates. The project emphasizes user experience and efficiency, aiming to improve the overall food delivery process."
     },
     {
         "projectId": "3",
         "projectName": "VisionSense",
         "projectHeader": "Unlocking The Future Of Personalized Lens Fitting.",
-        "headerImage": '',
+        "headerImage": project03.headerImg,
         "projectStack": ["Python"],
         "framework": [],
         "projectURL": "https://github.com/faizzmi/Fuzzy-Logic-Based-Contact-Lenses-Recommendation-System",
@@ -66,16 +74,20 @@ export const projectList = [
         "projectFeatures": {
             title: "features",
             headerImg: "",
-            desc: "",
+            desc: "VisionSense utilized fuzzy logic to recommend personalized contact lenses based on a user's eye data. The project’s unique approach was using fuzzy rules to take into account various subjective factors like comfort and fit, alongside objective data such as eye measurements. A major challenge was fine-tuning these fuzzy rules to ensure the system provided accurate and suitable recommendations. Another significant aspect was gathering and processing the input data from users, which required careful attention to detail. The project applied machine learning principles and demonstrated how AI could personalize healthcare, specifically in the area of optical lenses.",
             pics: []
         },
         "reflection": {
             title: "reflections",
             headerImg: "",
-            desc: "",
+            desc: "This project was an eye-opener into the practical applications of machine learning and fuzzy logic. The most challenging part was refining the fuzzy logic rules and ensuring the recommendations were genuinely beneficial to the user. I gained valuable experience in using Python for machine learning tasks, and this project helped improve my understanding of how machine learning algorithms can be applied to real-world problems. Working with fuzzy logic was a unique experience as it gave me the opportunity to explore non-traditional approaches to problem-solving. Overall, this project enriched my knowledge in AI and data processing, especially in personalized health recommendations.",
             pics: []
         },
-        highlight: [],
+        highlight: {
+            title: '',
+            desc: '',
+            pic: []
+        },
         "projectDesc": "VisionSense is a machine learning-based system that recommends personalized contact lenses to users. It utilizes fuzzy logic to consider both objective eye measurements and subjective factors like comfort and fit. The system aims to provide tailored recommendations for optimal vision correction and user satisfaction."
     },
     {
@@ -92,16 +104,20 @@ export const projectList = [
         "projectFeatures": {
             title: "features",
             headerImg: "",
-            desc: "",
+            desc: "GadgetVerse was built to showcase tech products in an interactive 3D environment. The challenge was integrating 3D rendering into the web in a way that was both visually appealing and performance-optimized. By using Three.js for 3D models and React.js for dynamic user interfaces, I was able to create a smooth user experience. The primary challenge was ensuring the website remained responsive and fast despite the complexity of rendering 3D models. It required a lot of optimization work, especially in minimizing loading times and handling large models without compromising quality. Another key feature was the integration of Tailwind CSS for styling, which allowed for quick and scalable UI designs.",
             pics: []
         },
         "reflection": {
             title: "reflections",
             headerImg: "",
-            desc: "",
+            desc: "Building GadgetVerse was a truly transformative experience in web development. It expanded my knowledge of interactive web applications and 3D rendering. One of the biggest takeaways was learning how to manage complex interactions in a web environment while keeping performance optimized. The project also introduced me to the challenges of integrating advanced technologies like Three.js and React in a way that was user-friendly and scalable. It was a great exercise in balancing visual appeal with technical constraints, and I feel much more confident in creating immersive, interactive web experiences after completing it.",
             pics: []
         },
-        highlight: [],
+        highlight: {
+            title: '',
+            desc: '',
+            pic: []
+        },
         "projectDesc": "GadgetVerse is a web application that showcases tech products in an interactive 3D environment. It utilizes Three.js for 3D rendering and React.js for dynamic user interface elements. The project focuses on creating a visually engaging and performant experience, allowing users to explore and interact with products in a unique way."
     },
     {
@@ -118,16 +134,20 @@ export const projectList = [
         "projectFeatures": {
             title: "features",
             headerImg: "",
-            desc: "",
+            desc: "Purrfect Paws was designed to provide users with an interactive platform for learning about different cat breeds. The unique aspect of the project was its dynamic filtering system, which allowed users to select specific traits and preferences to discover the ideal cat breed for them. The most significant challenge was creating a robust filtering system that was intuitive and fast, especially when dealing with large datasets. Additionally, implementing a smooth and responsive UI with Angular.js was key to providing an engaging user experience.",
             pics: []
         },
         "reflection": {
             title: "reflections",
             headerImg: "",
-            desc: "",
+            desc: "This project improved my front-end development skills, especially with Angular.js and TypeScript. I learned how to build complex UIs and manage large datasets efficiently. The project also reinforced the importance of user-centered design, as I had to ensure that the app was easy to navigate and visually appealing. Despite the challenges of implementing dynamic filters and managing data, the project helped me improve my problem-solving skills and made me more confident in building interactive web applications",
             pics: []
         },
-        highlight: [],
+        highlight: {
+            title: '',
+            desc: '',
+            pic: []
+        },
         "projectDesc": "Purrfect Paws is a web application that helps users find the perfect cat breed for them. It features a dynamic filtering system that allows users to select specific traits and preferences, such as coat color, size, and temperament. The application provides an interactive and engaging experience for users to explore the world of feline breeds."
     },
     {
@@ -144,16 +164,20 @@ export const projectList = [
         "projectFeatures": {
             title: "features",
             headerImg: "",
-            desc: "",
+            desc: "TraceTogether was developed to provide a digital contact tracing system for public health. The key feature of the app was its ability to track proximity between users and notify them of potential exposure to infectious diseases. The biggest challenge was ensuring the app was both accurate in tracking and respectful of privacy, which required a careful design of the data collection process. Ensuring the app was lightweight and efficient for a wide range of Android devices was another key concern during development.",
             pics: []
         },
         "reflection": {
             title: "reflections",
             headerImg: "",
-            desc: "",
+            desc: "Developing TraceTogether gave me invaluable experience in mobile app development, especially with Java and Android Studio. It highlighted the importance of balancing functionality with privacy concerns, a critical aspect when developing public health tools. The project also enhanced my ability to create efficient and scalable mobile applications, and I was proud to contribute to a project that could have a real-world impact on public health.",
             pics: []
         },
-        highlight: [],
+        highlight: {
+            title: '',
+            desc: '',
+            pic: []
+        },
         "projectDesc": "TraceTogether is a mobile application designed to assist in contact tracing efforts to help control the spread of infectious diseases. It utilizes proximity tracking technology to identify potential exposure risks while prioritizing user privacy and data security."
     },
     {
@@ -179,7 +203,11 @@ export const projectList = [
             "desc": "Tribute was an important project in my web development journey, as it allowed me to focus on design principles while still developing a functional website. I learned the importance of simplicity in design, ensuring that every element served a purpose. The project also helped me improve my HTML and CSS skills, particularly in creating responsive layouts and using styles effectively to guide the user’s focus.",
             "pics": []
         },
-        highlight: [],
+        highlight: {
+            title: '',
+            desc: '',
+            pic: []
+        },
         "projectDesc": "Tribute is a web page dedicated to honoring a historical figure. It utilizes HTML and CSS to create a visually appealing and informative tribute, emphasizing simplicity and clarity in design."
     },
     {
@@ -205,7 +233,11 @@ export const projectList = [
             "desc": "Developing Trip Planner taught me valuable lessons in AI integration, especially within mobile applications. It challenged me to think about how AI can enhance user experiences in a practical and engaging way. I also gained experience working with React Native, which helped me become more versatile as a mobile app developer. The project gave me confidence in creating intelligent, data-driven apps and reinforced my interest in exploring the intersection of AI and mobile development.",
             "pics": []
         },
-        highlight: [],
+        highlight: {
+            title: '',
+            desc: '',
+            pic: []
+        },
         "projectDesc": "Trip Planner is a mobile application that utilizes AI to assist users in planning their travel itineraries. It leverages the Gemini AI engine to provide personalized recommendations for destinations and activities based on user preferences."
     },
     {
@@ -231,7 +263,11 @@ export const projectList = [
             "desc": "Developing VendPal was a great learning opportunity in web development and payment system integration. It taught me how to handle real-time transactions and manage scalability concerns, which are essential skills for handling applications in high-demand environments. The project also enhanced my understanding of integrating front-end interfaces with secure back-end services to ensure a smooth and safe user experience.",
             "pics": []
         },
-        highlight: [],
+        highlight: {
+            title: '',
+            desc: '',
+            pic: []
+        },
         "projectDesc": "VendPal is a web application that modernizes the vending machine experience. It integrates digital payment options and an intuitive user interface to enhance the product selection and purchasing process."
     },
     {
@@ -257,7 +293,11 @@ export const projectList = [
             "desc": "Building HIAS was a great experience in enterprise software development. I learned a lot about security, data management, and creating scalable systems that can grow with a company’s needs. The project also gave me valuable insights into the importance of designing systems that integrate well with existing infrastructure, as well as the challenges of working with sensitive data in a corporate environment.",
             "pics": []
         },
-        highlight: [],
+        highlight: {
+            title: '',
+            desc: '',
+            pic: []
+        },
         "projectDesc": "HIAS is an internal audit system developed for LHDN (Lembaga Hasil Dalam Negeri) to streamline and improve the efficiency of their audit processes. The system incorporates features such as automated tasks, enhanced data security, and seamless integration with existing LHDN infrastructure."
     },
     {
@@ -283,7 +323,11 @@ export const projectList = [
             "desc": "Developing MYKKP was an excellent learning experience in building enterprise-level applications. It gave me a deep understanding of how to handle sensitive data while ensuring that the platform was both secure and user-friendly. The project also required me to work with government standards and compliance requirements, which added a layer of complexity but also improved my attention to detail. This experience strengthened my skills in working with Angular and integrating large-scale systems, and provided valuable insights into building secure and reliable web platforms.",
             "pics": []
         },
-        highlight: [],
+        highlight: {
+            title: '',
+            desc: '',
+            pic: []
+        },
         "projectDesc": "MYKKP is an online service developed by Kementerian Keselamatan dan Kesihatan Pekerja (Ministry of Occupational Safety and Health) to provide users with convenient access to government services related to worker safety and health."
     },
     {
@@ -309,7 +353,11 @@ export const projectList = [
             "desc": "Building ShowCase-X was a valuable project for refining my web development skills. It provided me the opportunity to explore various technologies and frameworks like ReactJS, NextJS, and NodeJS. The project helped me better understand how to manage both front-end and back-end aspects of a site, and improve my workflow. Additionally, designing my personal portfolio allowed me to consider how to best represent myself and my work to potential employers or clients.",
             "pics": []
         },
-        highlight: [],
+        highlight: {
+            title: '',
+            desc: '',
+            pic: []
+        },
         "projectDesc": "ShowCase-X is a personal portfolio website designed to highlight my projects, achievements, and skills, aiming to present them in an attractive and user-friendly format."
     },
     {
@@ -335,7 +383,11 @@ export const projectList = [
             "desc": "This project was an excellent opportunity to apply my WordPress and PHP knowledge in a real-world scenario. I learned a great deal about creating a functional and aesthetically pleasing e-commerce website, focusing on product display, secure payment integration, and user navigation. The project also taught me how to maintain and update an e-commerce platform, handling products, orders, and customer interactions effectively. Overall, it was an invaluable hands-on experience that improved my full-stack web development capabilities.",
             "pics": []
         },
-        highlight: [],
+        highlight: {
+            title: '',
+            desc: '',
+            pic: []
+        },
         "projectDesc": "An e-commerce perfume shop that offers a range of premium perfumes for sale. Developed using WordPress for content management and PHP for backend functionality, this project focused on creating an intuitive online shopping experience for users, including features like product listings, shopping cart, and checkout process."
     },
     {
@@ -362,7 +414,11 @@ export const projectList = [
             "desc": "The development of PMMS was a challenging yet rewarding experience. Leading the creation of a system that directly impacted administrative efficiency allowed me to gain hands-on experience with Laravel and PHP. The process involved deep collaboration, problem-solving, and constant iteration to ensure that the system met both the functional and security requirements. A key takeaway was understanding the complexities of managing multiple integrated modules and ensuring smooth data flow across the system.",
             "pics": []
         },
-        highlight: [],
+        highlight: {
+            title: '',
+            desc: '',
+            pic: []
+        },
         "projectDesc": "PMMS is a comprehensive management system designed for PETAKOM, built with Laravel and PHP. The system integrates five modules to handle key administrative tasks for FK management and PETAKOM students, aiming to improve productivity, reduce operational errors, and enhance security. The platform features an intuitive interface for admins and students, with real-time data tracking and reporting functionalities."
     },
     {
@@ -388,7 +444,11 @@ export const projectList = [
             desc: "This project gave me practical experience in both system maintenance and management of a real-world application. Handling the PTK Club's administrative tasks allowed me to understand the importance of ensuring system stability while adding new features. I learned the significance of user feedback, debugging, and the impact of small optimizations in improving user experience. The project was an excellent opportunity to hone my skills in Laravel and PHP while working on a real-world use case.",
             pics: []
         },
-        highlight: [],
+        highlight: {
+            title: '',
+            desc: '',
+            pic: []
+        },
         "projectDesc": "The PETAKOM Management System for the PTK Club was built with Laravel and PHP to streamline administrative tasks, event management, and club member services. The system integrates features for managing member profiles, event scheduling, and internal communication, providing the PTK Club with an efficient and organized way to handle their daily operations. Regular maintenance ensured the system remained up-to-date with features and security improvements."
     },
     {
@@ -414,7 +474,11 @@ export const projectList = [
             desc: "Working on the Profiling Information System (PINS) allowed me to contribute to a critical system supporting LHDNM's tax enforcement initiatives. I gained hands-on experience in developing scalable, user-friendly components using Ionic Angular and TypeScript. The FAQ module was particularly rewarding to build, as it required a balance between aesthetics and functionality, ensuring accessibility for all users. The project also enhanced my skills in maintaining government-level security standards and utilizing Bitbucket for collaborative development. This experience emphasized the importance of delivering reliable systems that directly impact the nation's revenue and public services.",
             pics: []
         },
-        highlight: [],
+        highlight: {
+            title: '',
+            desc: '',
+            pic: []
+        },
         "projectDesc": "The Profiling Information System (PINS) is a web application developed for LHDNM to streamline the submission of information by agencies via Surat Q applications. Built using Ionic Angular and TypeScript, the system includes various modules, with the FAQ module serving as a key feature. The FAQ module provides an interactive and user-friendly way for users to address common questions, minimizing support requests and improving user efficiency. PINS plays a vital role in supporting tax compliance and enforcement, benefiting Malaysians by ensuring effective tax revenue collection."
     }
 ];
