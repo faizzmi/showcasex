@@ -1,4 +1,4 @@
-import { project01 } from "@/assets/assets";
+import { project01, project14 } from "@/assets/assets";
 
 export const projectList = [
     {
@@ -335,6 +335,7 @@ export const projectList = [
             "desc": "This project was an excellent opportunity to apply my WordPress and PHP knowledge in a real-world scenario. I learned a great deal about creating a functional and aesthetically pleasing e-commerce website, focusing on product display, secure payment integration, and user navigation. The project also taught me how to maintain and update an e-commerce platform, handling products, orders, and customer interactions effectively. Overall, it was an invaluable hands-on experience that improved my full-stack web development capabilities.",
             "pics": []
         },
+        highlight: [],
         "projectDesc": "An e-commerce perfume shop that offers a range of premium perfumes for sale. Developed using WordPress for content management and PHP for backend functionality, this project focused on creating an intuitive online shopping experience for users, including features like product listings, shopping cart, and checkout process."
     },
     {
@@ -345,6 +346,7 @@ export const projectList = [
         "projectStack": ["PHP", "GitLab"],
         "framework": ["Laravel"],
         "projectURL": "",
+        "descImage": project14.descImg,
         "projectLevel": "Academic",
         "createdAt": "2023-07-01T00:00:00Z",
         "projectType": "Web Application",
@@ -360,6 +362,7 @@ export const projectList = [
             "desc": "The development of PMMS was a challenging yet rewarding experience. Leading the creation of a system that directly impacted administrative efficiency allowed me to gain hands-on experience with Laravel and PHP. The process involved deep collaboration, problem-solving, and constant iteration to ensure that the system met both the functional and security requirements. A key takeaway was understanding the complexities of managing multiple integrated modules and ensuring smooth data flow across the system.",
             "pics": []
         },
+        highlight: [],
         "projectDesc": "PMMS is a comprehensive management system designed for PETAKOM, built with Laravel and PHP. The system integrates five modules to handle key administrative tasks for FK management and PETAKOM students, aiming to improve productivity, reduce operational errors, and enhance security. The platform features an intuitive interface for admins and students, with real-time data tracking and reporting functionalities."
     },
     {

@@ -11,13 +11,16 @@ const Footer = () => {
         <h2 className="font-bold text-slate-800 text-center text-3xl mb-4 md:text-[70px]">
           Let's Work Together.
         </h2>
-        <Image
-          src="/images/footer.jpeg"
-          alt="Footer Image"
-          width={650}
-          height={250}
-          className="object-cover w-full md:w-[650px] h-auto"
-        />
+        <div className="w-full md:w-[650px]">
+          <Image
+            src="/images/footer.jpeg"
+            alt="Footer Image"
+            width={650}
+            height={250}
+            className="object-cover w-full h-auto"
+          />
+        </div>
+
         <motion.h2
           className="text-lg md:text-2xl font-bold text-gray-700 mt-4 animate-bounce"
           initial={{ opacity: 0, y: 20 }}

@@ -5,6 +5,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 
 const Description = ({ project }) => {
+  console.log(project)
   return (
     <div className="py-8 px-4 md:px-10">
       <div className="section-container">
@@ -54,22 +55,16 @@ const Description = ({ project }) => {
         </motion.div>
       </div>
 
-      <div
-      className="relative w-full mt-6">
-        {/* (<Image
-          src="/images/default.png"
-          alt="Project image"
-          fill
-          className="object-cover rounded-md"
-        />) */}
-        {project.videoURL && (
+      <div className="relative w-full mt-6">
+        {project.videoURL ? (
           <motion.div
-          initial={{ opacity: 0 }} 
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.5 }}  
-          className="relative w-full h-0 pb-[56.25%]">
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="relative w-full h-0 pb-[56.25%]"
+          >
             <video
-              className="absolute top-0 left-0 w-full h-full object-cover"
+              className="absolute top-0 left-0 w-full h-full object-cover text-white"
               autoPlay
               muted
               loop
@@ -79,8 +74,19 @@ const Description = ({ project }) => {
               Your browser does not support the video tag.
             </video>
           </motion.div>
+        ) : project.descImage && (
+          <div className="relative w-full h-64 sm:h-80 md:h-screen">
+            <Image
+              src={project.descImage}
+              alt="desc image"
+              fill
+              className="object-contain rounded-md"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-20 rounded-md"></div>
+          </div>
         )}
       </div>
+
       
     </div>
   );
