@@ -16,7 +16,6 @@ const Footer = () => {
           alt="Footer Image"
           width={650}
           height={250}
-          layout="responsive"
           className="object-cover w-full md:w-[650px] h-auto"
         />
         <motion.h2

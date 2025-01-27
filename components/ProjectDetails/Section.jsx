@@ -3,7 +3,8 @@ import Image from 'next/image';
 import React from 'react';
 import { motion } from 'motion/react';
 
-const Section = ({ title, desc }) => {
+const Section = ({ content }) => {
+  const { title, desc, headerImg, pics } = content;
   return (
     <div className="py-8 px-4 md:px-10">
       <div className="flex flex-col md:flex-row items-center md:items-center gap-6 mt-4 mb-8">
@@ -28,21 +29,8 @@ const Section = ({ title, desc }) => {
         </div>
       </div>
 
-      <motion.div
-        initial={{ y: 20, opacity: 0 }} 
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
-        className="relative w-full pt-[75%] mt-6">
-        <Image
-          src="/images/default.png"
-          alt="Project image"
-          layout="fill"
-          className="object-cover rounded-md"
-        />
-      </motion.div>
-
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
-        {[...Array(3)].map((_, index) => (
+        {/* {pics.length>0 && pics.map((pic, index) => (
           <motion.div
             key={index}
             initial={{ y: 20, opacity: 0 }} 
@@ -51,13 +39,13 @@ const Section = ({ title, desc }) => {
             className="relative w-full aspect-[3/4] overflow-hidden"
           >
             <Image
-              src="/images/default.png"
-              alt={`Hobby Image ${index + 1}`}
-              layout="fill"
+              src={pic}
+              alt={`image ${index + 1}`}
+              fill
               className="object-cover rounded-md"
             />
           </motion.div>
-        ))}
+        ))} */}
       </div>
     </div>
   );

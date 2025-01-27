@@ -8,7 +8,7 @@ const Header = ({project}) => {
         <div className="flex flex-col pt-[23vh] my-10">
           <motion.p 
           initial={{ y: 20, opacity: 0 }} 
-          animate={{ y: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }} 
           className='text-lg font-semibold text-zinc-600'>
             {project.projectName}
@@ -16,7 +16,7 @@ const Header = ({project}) => {
 
           <motion.h2
           initial={{ y: 20, opacity: 0 }} 
-          animate={{ y: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }} 
           className="text-4xl font-bold text-white mb-4 md:w-[60%] md:mb-0">
             {project.projectHeader}

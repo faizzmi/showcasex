@@ -24,7 +24,7 @@ const Introduction = () => {
         <div className="mb-6 md:mb-0 md:w-2/3">
           <motion.h2
             initial={{ y: -20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-4xl font-bold mb-4 leading-snug"
           >
@@ -37,7 +37,7 @@ const Introduction = () => {
           </motion.h2>
           <motion.p
             initial={{ y: -20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg text-gray-600"
           >
@@ -60,7 +60,7 @@ const Introduction = () => {
             {introductory.servicesOffer.map((service, index) => (
               <motion.li
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
                 key={index}
                 className="text-md text-gray-800"

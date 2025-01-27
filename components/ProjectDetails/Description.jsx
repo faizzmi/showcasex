@@ -54,28 +54,33 @@ const Description = ({ project }) => {
         </motion.div>
       </div>
 
-      <motion.div
-      initial={{ opacity: 0 }} 
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.8, delay: 0.5 }} 
-      className="relative w-full pt-[75%] mt-6">
-        {/* <Image
+      <div
+      className="relative w-full mt-6">
+        {/* (<Image
           src="/images/default.png"
           alt="Project image"
           fill
           className="object-cover rounded-md"
-        /> */}
-          {project.videoURL && (<video 
-            className="absolute top-0 left-0 w-full h-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline={true}
-          >
-            <source src="/test_video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>)}
-      </motion.div>
+        />) */}
+        {project.videoURL && (
+          <motion.div
+          initial={{ opacity: 0 }} 
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.5 }}  
+          className="relative w-full h-0 pb-[56.25%]">
+            <video
+              className="absolute top-0 left-0 w-full h-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src={project.videoURL} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </motion.div>
+        )}
+      </div>
       
     </div>
   );

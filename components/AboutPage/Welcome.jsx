@@ -9,7 +9,7 @@ const Welcome = () => {
     <section className="section max-h-[700px] flex flex-col md:justify-end relative bg-[#E0E1DD]" id="top">
       <motion.div
         initial={{ opacity: 0 }} 
-        animate={{ opacity: 1 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }}
         className='absolute right-0 top-0'>
         <Image
@@ -25,7 +25,7 @@ const Welcome = () => {
         <div className="mb-6 md:mb-0 md:w-2/3">
           <motion.h2
           initial={{ y: -20, opacity: 0 }} 
-          animate={{ y: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-4xl font-bold mb-4 leading-snug">
             {welcome.split('.').map((sentence, index) => (

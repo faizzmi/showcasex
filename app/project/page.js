@@ -12,7 +12,7 @@ const ProjectPage = () => {
       <div className="flex flex-col md:flex-row justify-between items-center pt-[23vh] my-10">
         <motion.h2
           initial={{ x: -120, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-4xl font-bold text-white mb-4 md:mb-0"
         >
@@ -23,7 +23,7 @@ const ProjectPage = () => {
           initial={{ x: 120, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-lg text-zinc-300 w-full md:w-1/3 text-center md:text-justify"
+          className="text-lg text-zinc-300 w-full md:w-1/3 text-justify"
         >
           {desc}
         </motion.p>

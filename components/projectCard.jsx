@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 
 const ProjectCard = ({ project }) => {
-  const { projectId, projectName, projectHeader, projectStack, framework } = project;
+  const { projectId, projectName, projectHeader, headerImage, projectStack, framework } = project;
 
   return (
     <Link href={`/project/${projectId}`}>
@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
       >
         <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px]">
           <Image
-            src="/images/default.png"
+            src={headerImage ? headerImage : "/images/default.png"}
             alt="Project image"
             fill
             className="object-cover"

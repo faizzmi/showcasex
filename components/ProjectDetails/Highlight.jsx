@@ -3,18 +3,7 @@ import Image from 'next/image';
 import React from 'react'
 import { motion } from 'motion/react';
 
-const Highlight = () => {
-  const images = [
-    { src: '/images/default.png', alt: 'Image 1' },
-    { src: '/images/default.png', alt: 'Image 2' },
-    { src: '/images/default.png', alt: 'Image 3' },
-    { src: '/images/default.png', alt: 'Image 4' },
-    { src: '/images/default.png', alt: 'Image 5' },
-    { src: '/images/default.png', alt: 'Image 6' },
-    { src: '/images/default.png', alt: 'Image 7' },
-    { src: '/images/default.png', alt: 'Image 8' },
-    { src: '/images/default.png', alt: 'Image 9' },
-  ];
+const Highlight = ({highlight}) => {
 
   return (
     <>
@@ -26,12 +15,12 @@ const Highlight = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="py-8 px-4 md:px-10"
         >
-          <h2 className="text-2xl font-bold text-white">Highlights</h2>
+          <h2 className="text-2xl font-bold text-white">highlights</h2>
           <p className="text-zinc-300 text-base md:text-lg text-justify">
-            A visual journey through the creativity behind our project.
+            A visual journey behind this project.
           </p>
         </motion.div>
-        {images.map((image, index) => (
+        {highlight.map((image, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0 }} 

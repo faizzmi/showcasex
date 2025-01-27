@@ -39,13 +39,13 @@ const ProjectDetails = () => {
         exit={{ opacity: 0 }}
       >
         <Header project={project} />
-        <HeaderImage img={"/images/default.png"} />
+        <HeaderImage img={project.headerImage !== '' ? project.headerImage : "/images/default.png"} />
         <div>
           <Description project={project} />
-          <Section title="features" desc={project.projectFeatures} />
-          <Section title="reflections" desc={project.reflection} />
+          <Section content={project.projectFeatures} />
+          <Section content={project.reflection} />
         </div>
-        <Highlight />
+        {project.highlight.length > 0 && (<Highlight highlight={project.highlight}/>)}
       </motion.div>
       {( delay) && (
         <motion.div
@@ -55,8 +55,7 @@ const ProjectDetails = () => {
           animate={{ scaleY: 0 }}
           exit={{ scaleY: 0 }}
           transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-        >
-        </motion.div>
+        />
       )}
       {(!delay) && (
         <motion.div
@@ -66,8 +65,7 @@ const ProjectDetails = () => {
           animate={{ scaleY: 1 }}
           exit={{ scaleY: 1 }}
           transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-        >
-        </motion.div>
+        />
       )}
     </AnimatePresence>
   );
