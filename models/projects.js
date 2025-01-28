@@ -1,4 +1,4 @@
-import { project01, project02, project03, project04, project05, project14 } from "@/assets/assets";
+import { project01, project02, project03, project04, project05, project06, project14 } from "@/assets/assets";
 
 export const projectList = [
     {
@@ -152,7 +152,7 @@ export const projectList = [
         "projectId": "6",
         "projectName": "TraceTogether",
         "projectHeader": "A Digital Lifeline In The Fight For Public Health And Safety.",
-        "headerImage": '',
+        "headerImage": project06.headerImg,
         "projectStack": ["Java", "Android Studio"],
         "framework": [],
         "projectURL": "https://github.com/faizzmi/TraceTogether",
