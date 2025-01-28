@@ -1,4 +1,4 @@
-import { project01, project02, project03, project04, project05, project06, project14 } from "@/assets/assets";
+import { project01, project02, project03, project04, project05, project06, project07, project09, project14 } from "@/assets/assets";
 
 export const projectList = [
     {
@@ -182,7 +182,7 @@ export const projectList = [
         "projectId": "7",
         "projectName": "Tribute",
         "projectHeader": "Honoring The Legacy Of A Nation’s Founding Father In Pixels And Code.",
-        "headerImage": "",
+        "headerImage": project07.headerImg,
         "projectStack": ["HTML", "CSS"],
         "framework": [],
         "projectURL": "https://github.com/faizzmi/Tribute",
@@ -202,9 +202,9 @@ export const projectList = [
             "pics": []
         },
         highlight: {
-            title: '',
-            desc: '',
-            pic: []
+            title: 'website',
+            desc: 'A tribute page dedicated to Tun Abdul Razak bin Hussein',
+            pic: project07.highlight
         },
         "projectDesc": "Tribute is a web page dedicated to honoring a historical figure. It utilizes HTML and CSS to create a visually appealing and informative tribute, emphasizing simplicity and clarity in design."
     },
@@ -242,8 +242,8 @@ export const projectList = [
         "projectId": "9",
         "projectName": "VendPal",
         "projectHeader": "Reimagining The Vending Experience For The Modern World.",
-        "headerImage": "",
-        "projectStack": ["JavaScript"],
+        "headerImage": project09.headerImg,
+        "projectStack": ["Java", "NeatBeans"],
         "framework": [],
         "projectURL": "https://github.com/faizzmi/Vending-Machine",
         "projectLevel": "Academic",

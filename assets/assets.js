@@ -25,6 +25,11 @@ import home05b from '@/assets/project05/home_paws.png'
 
 import header06 from '@/assets/project06/tt.png'
 
+import header07 from '@/assets/project07/header.png'
+import home07 from '@/assets/project07/Tribute-Page.png'
+
+import header09 from '@/assets/project09/header.png'
+
 import Id14 from '@/assets/project14/Id14.png'
 
 export const project01 = {
@@ -56,6 +61,15 @@ export const project05 = {
 
 export const project06 = {
     headerImg: header06
+};
+
+export const project07 = {
+    headerImg: header07,
+    highlight: [ home07, ]
+};
+
+export const project09 = {
+    headerImg: header09
 };
 
 export const project14 = {

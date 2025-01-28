@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 const Highlight = ({ highlight }) => {
   return (
     <div className="section max-h-fit text-white">
-      <div className="flex flex-col md:flex-row w-full gap-4 py-20">
-        <div className="md:w-1/2 w-full flex max-h-fit flex-col px-6 justify-center md:sticky md:top-24">
+      <div className="flex flex-col md:flex-row w-full gap-4 md:py-20">
+        <div className="md:w-1/2 w-full flex max-h-fit flex-col md:px-6 gap-6 justify-center md:sticky md:top-24">
           <motion.h2
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -26,7 +26,7 @@ const Highlight = ({ highlight }) => {
           </motion.p>
         </div>
 
-        <div className="md:w-1/2 w-full flex flex-col px-6">
+        <div className="md:w-1/2 w-full flex flex-col md:px-6">
           <div className="space-y-2">
             {highlight.pic.map((image, index) => (
               <motion.div
