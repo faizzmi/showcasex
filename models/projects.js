@@ -360,7 +360,7 @@ export const projectList = [
     },
     {
         "projectId": "13",
-        "projectName": "scentedDreams",
+        "projectName": "Scented Dreams",
         "projectHeader": "An E-commerce Perfume Shop Developed with WordPress and PHP.",
         "headerImage": "",
         "projectStack": ["WordPress", "PHP"],

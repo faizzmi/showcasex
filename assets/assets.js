@@ -72,6 +72,11 @@ export const project09 = {
     headerImg: header09
 };
 
+export const project13 = {
+    headerImg: '',
+    highlight: []
+};
+
 export const project14 = {
     video: '',
     descImg: Id14,
