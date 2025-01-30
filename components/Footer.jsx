@@ -11,14 +11,13 @@ const Footer = () => {
         <h2 className="font-bold text-slate-800 text-center text-3xl mb-4 md:text-[70px]">
           Let's Work Together.
         </h2>
-        <div className="w-full max-w-[650px]">
+        
+        <div className="w-full max-w-[650px] relative aspect-[13/5]">
           <Image
             src="/images/footer.jpeg"
             alt="Footer Image"
-            width={650}
-            height={250}
-            className="object-cover w-full h-auto"
-            sizes="(max-width: 650px) 100vw, 650px"
+            fill
+            className="object-cover rounded-lg"
           />
         </div>
 
@@ -33,31 +32,32 @@ const Footer = () => {
       </div>
 
       <div className='flex gap-4 mt-6 justify-center md:justify-between w-full md:w-[17%]'>
-          <a
-            className="text-sm text-gray-600 hover:text-darkest transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/faizzmi"
-          >
-            GitHub ↗
-          </a>
-          <a
-            className="text-sm text-gray-600 hover:text-darkest transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/faizazmi7/"
-          >
-            LinkedIn ↗
-          </a>
-          <a
+        <a
+          className="text-sm text-gray-600 hover:text-darkest transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/faizzmi"
+        >
+          GitHub ↗
+        </a>
+        <a
+          className="text-sm text-gray-600 hover:text-darkest transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/faizazmi7/"
+        >
+          LinkedIn ↗
+        </a>
+        <a
           className="text-sm text-gray-600 hover:text-darkest transition-colors"
           target="_blank"
           rel="noopener noreferrer"
           href="mailto:faizzmi74@gmail.com"
         >
           Email ↗
-          </a>
-        </div>
+        </a>
+      </div>
+
       <hr className="border-t-2 border-gray-300 mb-2" />
       <div className="text-center sm:flex items-center justify-between">
         <p className="text-sm text-gray-600">© 2025 Faiz Azmi. All rights reserved</p>
