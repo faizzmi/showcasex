@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { motion } from 'motion/react'
-import { hobby } from '@/models/about'
+import { hobby } from '../../models/about'
 
 const Hobby = () => {
   return (

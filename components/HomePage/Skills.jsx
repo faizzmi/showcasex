@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { skillsData } from '@/models/skill';
+import { skillsData } from '../../models/skill';
 
 const Skills = () => {
   return (

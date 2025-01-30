@@ -1,5 +1,5 @@
 'use client'
-import { awardsLists, educationsLists, experiencesLists, story } from '@/models/about';
+import { awardsLists, educationsLists, experiencesLists, story } from '../../models/about';
 import React from 'react';
 import moment from 'moment';
 import CardList from './CardList';

@@ -1,10 +1,10 @@
 'use client';
-import Description from '@/components/ProjectDetails/Description';
-import Header from '@/components/ProjectDetails/Header';
-import HeaderImage from '@/components/ProjectDetails/HeaderImage';
-import Highlight from '@/components/ProjectDetails/Highlight';
-import Section from '@/components/ProjectDetails/Section';
-import { projectList } from '@/models/projects';
+import Description from '../../components/ProjectDetails/Description';
+import Header from '../../components/ProjectDetails/Header';
+import HeaderImage from '../../components/ProjectDetails/HeaderImage';
+import Highlight from '../../components/ProjectDetails/Highlight';
+import Section from '../../components/ProjectDetails/Section';
+import { projectList } from '../../models/projects';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';

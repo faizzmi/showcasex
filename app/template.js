@@ -1,12 +1,12 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import NavigationBar from "@/components/NavigationBar";
-import Footer from "@/components/Footer";
-import ScrollToTopButton from "@/components/ScrollToTopButton";
-import Contact from '@/components/Contact';
+import NavigationBar from "../components/NavigationBar";
+import Footer from "../components/Footer";
+import ScrollToTopButton from "../components/ScrollToTopButton";
+import Contact from '../components/Contact';
 import { AnimatePresence, motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
-import SplashScreen from '@/components/SplashScreen';
+import SplashScreen from '../components/SplashScreen';
 
 const Template = ({ children }) => {
   const pathName = usePathname();

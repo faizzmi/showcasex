@@ -1,5 +1,5 @@
 'use client'
-import { welcome } from '@/models/about';
+import { welcome } from '../../models/about';
 import Image from 'next/image';
 import React from 'react';
 import { motion } from "motion/react"

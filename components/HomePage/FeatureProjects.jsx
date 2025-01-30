@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import ProjectCard from '../projectCard';
-import { featureProjectsList } from '@/models';
+import { featureProjectsList } from '../../models/index';
 import { motion } from "motion/react"
 
 const FeatureProjects = () => {

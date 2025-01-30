@@ -1,5 +1,5 @@
 'use client';
-import { faqLists } from '@/models/about';
+import { faqLists } from '../../models/about';
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 

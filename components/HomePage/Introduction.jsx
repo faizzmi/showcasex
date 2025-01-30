@@ -1,5 +1,5 @@
 'use client';
-import { introductory } from '@/models';
+import { introductory } from '../../models/index';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Circulation from '../Circulation';

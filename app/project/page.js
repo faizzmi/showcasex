@@ -1,6 +1,6 @@
 'use client'
-import ProjectCard from '@/components/projectCard'
-import { desc, projectList } from '@/models/projects'
+import ProjectCard from '../../components/projectCard'
+import { desc, projectList } from '../../models/projects'
 import React from 'react'
 import { motion } from "motion/react"
 
