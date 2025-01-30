@@ -56,7 +56,7 @@ import h13e from '../assets/project13/Checkout.png'
 import h13f from '../assets/project13/Order-Confirmation.png'
 import h13g from '../assets/project13/My-Order1.png'
 import h13h from '../assets/project13/My-Order2.png'
-import h13i from '../assets/project13/Page-Not-Found.png'
+import h13i from '../assets/project13/pageNotFound.png'
 
 
 import Id14 from '../assets/project14/Id14.png'
