@@ -6,18 +6,19 @@ import { motion } from 'framer-motion';
 const Footer = () => {
   return (
     <footer className="w-full h-fit p-4 md:p-6 bg-primary">
-      <div className="w-max py-8 flex flex-col items-center gap-6 mx-auto text-gray-800 text-md">
+      <div className="max-w-screen-lg py-8 flex flex-col items-center gap-6 mx-auto text-gray-800 text-md">
         <p className="font-semibold text-gray-600 text-sm">Looking to bring someone on board?</p>
         <h2 className="font-bold text-slate-800 text-center text-3xl mb-4 md:text-[70px]">
           Let's Work Together.
         </h2>
-        <div className="w-full md:w-[650px]">
+        <div className="w-full max-w-[650px]">
           <Image
             src="/images/footer.jpeg"
             alt="Footer Image"
             width={650}
             height={250}
             className="object-cover w-full h-auto"
+            sizes="(max-width: 650px) 100vw, 650px"
           />
         </div>
 
