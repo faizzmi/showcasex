@@ -1,4 +1,4 @@
-import { project01, project02, project03, project04, project05, project06, project07, project09, project14 } from "@/assets/assets";
+import { project01, project02, project03, project04, project05, project06, project07, project08, project09, project10, project11, project12, project13, project14, project15, project16 } from "@/assets/assets";
 
 export const projectList = [
     {
@@ -212,7 +212,8 @@ export const projectList = [
         "projectId": "8",
         "projectName": "Trip Planner",
         "projectHeader": "AI-Driven Adventure Planning, Making Every Journey More Effortless And Exciting.",
-        "headerImage": "",
+        "headerImage": project08.headerImg,
+        "descImage": project08.descImg,
         "projectStack": ["JavaScript", "Gemini"],
         "framework": ["React Native"],
         "projectURL": "https://github.com/faizzmi/trip-planner",
@@ -232,9 +233,9 @@ export const projectList = [
             "pics": []
         },
         highlight: {
-            title: '',
-            desc: '',
-            pic: []
+            title: 'mobile application',
+            desc: 'Planning a trip can be overwhelming, but Trip Planner simplifies the process using AI-driven recommendations. This mobile app, built with React Native and powered by the Gemini AI engine, personalizes travel suggestions based on user preferences. Whether you are looking for hidden gems, famous landmarks, or budget-friendly options, the app intelligently curates an itinerary tailored to your needs. \n\n The biggest challenge in developing Trip Planner was ensuring AI-generated recommendations were both relevant and engaging. Fine-tuning the AI model and gathering user feedback helped improve its accuracy, making travel planning effortless. This project not only enhanced my skills in AI integration but also deepened my understanding of mobile app development. Trip Planner represents my passion for creating intelligent, user-centric applications that blend technology with real-world convenience.',
+            pic: project08.highlight
         },
         "projectDesc": "Trip Planner is a mobile application that utilizes AI to assist users in planning their travel itineraries. It leverages the Gemini AI engine to provide personalized recommendations for destinations and activities based on user preferences."
     },
@@ -272,10 +273,10 @@ export const projectList = [
         "projectId": "10",
         "projectName": "HASIL INTERNAL AUDIT SYSTEM (HIAS)",
         "projectHeader": "An Internal Audit System for LHDN to streamline audit processes.",
-        "headerImage": "",
+        "headerImage": project10.headerImg,
         "projectStack": ["TypeScript", "BitBucket"],
         "framework": ["Angular", "Ionic"],
-        "projectURL": "",
+        "projectURL": "https://hias.hasil.gov.my/log-masuk",
         "projectLevel": "Internship",
         "createdAt": "2025-01-16T15:00:00Z",
         "projectType": "Enterprise Software",
@@ -302,10 +303,10 @@ export const projectList = [
         "projectId": "11",
         "projectName": "MYKKP",
         "projectHeader": "MyKKP is an online service provided by Kementerian Keselamatan dan Kesihatan Pekerja for its users.",
-        "headerImage": "",
+        "headerImage": project11.headerImg,
         "projectStack": ["JavaScript", "Typescript", "BitBucket"],
         "framework": ["AngularJS", "Angular", "Ionic"],
-        "projectURL": "",
+        "projectURL": "https://mykkp.dosh.gov.my/myKKP/#/home",
         "projectLevel": "Internship",
         "createdAt": "2024-03-01T00:00:00Z",
         "projectType": "Web Development",
@@ -332,7 +333,7 @@ export const projectList = [
         "projectId": "12",
         "projectName": "ShowCase-X",
         "projectHeader": "A personal portfolio with all projects and achievements.",
-        "headerImage": "",
+        "headerImage": project12.headerImg,
         "projectStack": ["JavaScript", "HTML", "CSS", "Node.js"],
         "framework": ["ReactJS", "React Native", "ExpressJS", "NextJS"],
         "projectURL": "",
@@ -362,7 +363,7 @@ export const projectList = [
         "projectId": "13",
         "projectName": "Scented Dreams",
         "projectHeader": "An E-commerce Perfume Shop Developed with WordPress and PHP.",
-        "headerImage": "",
+        "headerImage": project13.headerImg,
         "projectStack": ["WordPress", "PHP"],
         "framework": [],
         "projectURL": "",
@@ -382,9 +383,9 @@ export const projectList = [
             "pics": []
         },
         highlight: {
-            title: '',
-            desc: '',
-            pic: []
+            title: 'website',
+            desc: 'In the heart of a bustling digital city, there existed a magical website called Scented Dreams, where fragrances came to life. Each click transported visitors to a world of enchanting aromas—amber forests, blooming gardens, and sunlit citrus groves. Soon, Scented Dreams became more than a store; it was a portal to dreams bottled in glass, where every spritz told a story.',
+            pic: project13.highlight
         },
         "projectDesc": "An e-commerce perfume shop that offers a range of premium perfumes for sale. Developed using WordPress for content management and PHP for backend functionality, this project focused on creating an intuitive online shopping experience for users, including features like product listings, shopping cart, and checkout process."
     },
@@ -392,7 +393,7 @@ export const projectList = [
         "projectId": "14",
         "projectName": "PETAKOM MART MANAGEMENT SYSTEM (PMMS)",
         "projectHeader": "Streamlining Administrative Operations with Laravel",
-        "headerImage": "",
+        "headerImage": project14.headerImg,
         "projectStack": ["PHP", "GitLab"],
         "framework": ["Laravel"],
         "projectURL": "",
@@ -423,7 +424,7 @@ export const projectList = [
         "projectId": "15",
         "projectName": "PETAKOM Management System - PETAKOM Club Application and Maintenance",
         "projectHeader": "Enhancing Club Management and Operations with PETAKOM System",
-        "headerImage": '',
+        "headerImage": project15.headerImg,
         "projectStack": ["PHP", "GitHub"],
         "framework": ["Laravel"],
         "projectURL": "", 
@@ -453,10 +454,10 @@ export const projectList = [
         "projectId": "16",
         "projectName": "Profiling Information System (PINS)",
         "projectHeader": "Streamlining Information Submission for LHDNM through PINS",
-        "headerImage": '',
+        "headerImage": project16.headerImg,
         "projectStack": ["TypeScript", "Bitbucket"],
         "framework": ["Ionic", "Angular"],
-        "projectURL": "",
+        "projectURL": "https://pins.hasil.gov.my/laman-utama/log-masuk",
         "projectLevel": "Internship",
         "createdAt": "2024-01-01T00:00:00Z",
         "projectType": "Web Application",

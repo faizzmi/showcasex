@@ -28,9 +28,42 @@ import header06 from '@/assets/project06/tt.png'
 import header07 from '@/assets/project07/header.png'
 import home07 from '@/assets/project07/Tribute-Page.png'
 
+import header08 from '@/assets/project08/header.png'
+import Id08 from '@/assets/project08/descImage.png'
+import h08a from '@/assets/project08/splashscreen.png'
+import h08b from '@/assets/project08/signIn.png'
+import h08c from '@/assets/project08/create.png'
+import h08d from '@/assets/project08/home.png'
+import h08g from '@/assets/project08/search.png'
+import h08h from '@/assets/project08/date.png'
+import h08i from '@/assets/project08/date.png'
+import h08j from '@/assets/project08/review.png'
+import h08k from '@/assets/project08/load.png'
+import h08l from '@/assets/project08/tripdetail.png'
+
 import header09 from '@/assets/project09/header.png'
+import header10 from '@/assets/9.png'
+import header11 from '@/assets/10.png'
+
+import header12 from '@/assets/project12/header.png'
+
+import header13 from '@/assets/project13/header.png'
+import h13a from '@/assets/project13/My-account.png'
+import h13b from '@/assets/project13/Scented-Dreams.png'
+import h13c from '@/assets/project13/Shop.png'
+import h13d from '@/assets/project13/Cart.png'
+import h13e from '@/assets/project13/Checkout.png'
+import h13f from '@/assets/project13/Order-Confirmation.png'
+import h13g from '@/assets/project13/My-Order1.png'
+import h13h from '@/assets/project13/My-Order2.png'
+import h13i from '@/assets/project13/Page-Not-Found.png'
+
 
 import Id14 from '@/assets/project14/Id14.png'
+import header14 from '@/assets/project14/6.png'
+
+import header15 from '@/assets/project15/7.png'
+import header16 from '@/assets/8.png'
 
 export const project01 = {
     video: '/car_detection.mp4',
@@ -68,21 +101,47 @@ export const project07 = {
     highlight: [ home07, ]
 };
 
+export const project08 = {
+    headerImg: header08,
+    descImg: Id08,
+    highlight: [h08a, h08b, h08c, h08d, h08g, h08h, h08i, h08j, h08k, h08l]
+};
+
 export const project09 = {
     headerImg: header09
 };
 
+export const project10 = {
+    headerImg: header10
+};
+
+export const project11 = {
+    headerImg: header11
+};
+
+export const project12 = {
+    headerImg: header12
+};
+
 export const project13 = {
-    headerImg: '',
-    highlight: []
+    headerImg: header13,
+    highlight: [ h13a, h13b, h13c, h13d, h13e, h13f, h13g, h13h, h13i]
 };
 
 export const project14 = {
-    video: '',
     descImg: Id14,
-    headerImg: '',
-    feature: [],
+    headerImg: header14,
     highlight: []
+};
+
+export const project15 = {
+    headerImg: header15,
+    highlight: []
+};
+
+
+export const project16 = {
+    headerImg: header16,
 };
 
 export const hobbyPic = [

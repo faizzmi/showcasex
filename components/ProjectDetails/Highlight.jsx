@@ -27,14 +27,14 @@ const Highlight = ({ highlight }) => {
         </div>
 
         <div className="md:w-1/2 w-full flex flex-col md:px-6">
-          <div className="space-y-2">
+          <div className="space-y-2 flex flex-col items-center">
             {highlight.pic.map((image, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-                className="relative w-full overflow-hidden rounded-md mb-4"
+                className="relative w-full overflow-hidden rounded-md mb-4 flex justify-center items-center"
               >
                 <Image
                   src={image.src}

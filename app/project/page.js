@@ -21,7 +21,7 @@ const ProjectPage = () => {
 
         <motion.p
           initial={{ x: 120, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-lg text-zinc-300 w-full md:w-1/3 text-justify"
         >
