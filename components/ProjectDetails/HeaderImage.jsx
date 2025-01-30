@@ -9,14 +9,14 @@ const HeaderImage = ({ img }) => {
       initial={{ scale: 0.8 }}
       whileInView={{ scale: 1 }}
       transition={{ duration: 0.8, type: 'spring', stiffness: 100, bounce: 0 }}
-      className="relative w-full h-screen overflow-hidden"
+      className="relative w-full md:w-[80%] lg:w-[70%] h-screen mx-auto overflow-hidden"
     >
       <Image
         src={img}
         alt="Project image"
         fill
         sizes="100vw"
-        className="object-cover" 
+        className="object-cover"
       />
     </motion.div>
   )
