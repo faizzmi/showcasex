@@ -9,7 +9,7 @@ const HeaderImage = ({ img }) => {
       initial={{ scale: 0.8 }}
       whileInView={{ scale: 1 }}
       transition={{ duration: 0.8, type: 'spring', stiffness: 100, bounce: 0 }}
-      className="relative w-full md:w-[80%] lg:w-[70%] h-[60vh] md:h-[70vh] lg:h-[80vh] mx-auto overflow-hidden"
+      className="relative w-full md:w-[80%] lg:w-[70%] h-auto md:h-[70vh] lg:h-[80vh] mx-auto overflow-hidden"
     >
       <Image
         src={img}
