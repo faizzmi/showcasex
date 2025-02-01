@@ -12,9 +12,12 @@ export const introductory = {
 }
 
 export const featureProjectsList = () => {
+    const featuredProjectIds = ["10", "11", "16"];
+
     const feature = projectList
-        .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
-        .slice(0, 3)
+        // .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+        // .slice(0, 3)
+        .filter((project) => featuredProjectIds.includes(project.projectId))
         .map(({ projectId, projectName, projectHeader, headerImage, framework, projectStack }) => ({
             projectId,
             projectName,

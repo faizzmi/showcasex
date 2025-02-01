@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { assets } from '@/assets/assets';
 
 const Footer = () => {
   return (
@@ -31,14 +32,17 @@ const Footer = () => {
         </motion.h2>
       </div>
 
-      <div className='flex gap-4 mt-6 justify-center md:justify-between w-full md:w-[17%]'>
+      <div className='flex gap-4 mt-6 justify-center md:justify-between w-full md:w-[20%]'>
         <a
           className="text-sm text-gray-600 hover:text-darkest transition-colors"
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/faizzmi"
         >
-          GitHub ↗
+          <span className='flex items-center gap-1'>
+            GitHub 
+            <Image src={ assets.arrow_icon} alt='' className='w-2'/>
+          </span>
         </a>
         <a
           className="text-sm text-gray-600 hover:text-darkest transition-colors"
@@ -46,7 +50,10 @@ const Footer = () => {
           rel="noopener noreferrer"
           href="https://www.linkedin.com/in/faizazmi7/"
         >
-          LinkedIn ↗
+          <span className='flex items-center gap-1'>
+            Linkedin  
+            <Image src={ assets.arrow_icon} alt='' className='w-2'/>
+          </span>
         </a>
         <a
           className="text-sm text-gray-600 hover:text-darkest transition-colors"
@@ -54,7 +61,10 @@ const Footer = () => {
           rel="noopener noreferrer"
           href="mailto:faizzmi74@gmail.com"
         >
-          Email ↗
+          <span className='flex items-center gap-1'>
+            Email 
+            <Image src={ assets.arrow_icon} alt='' className='w-2'/>
+          </span>
         </a>
       </div>
 

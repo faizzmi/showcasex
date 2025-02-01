@@ -64,6 +64,11 @@ import header14 from '../assets/project14/6.png'
 
 import header15 from '../assets/project15/7.png'
 import header16 from '../assets/8.png'
+import arrow_icon from './arrow-icon.png'
+
+export const assets = {
+    arrow_icon: arrow_icon
+}
 
 export const project01 = {
     video: '/car_detection.mp4',
