@@ -42,7 +42,7 @@ const ProjectDetails = () => {
         <HeaderImage img={project.headerImage !== '' ? project.headerImage : "/images/default.png"} />
         <div>
           <Description project={project} />
-          <Section content={project.projectFeatures} />
+          <Section content={project.projectfeatures} />
           <Section content={project.reflection} />
         </div>
         {project.highlight.title !== '' && (<Highlight highlight={project.highlight}/>)}

@@ -13,7 +13,7 @@ export const projectList = [
         "createdAt": "2024-02-04T03:10:42Z",
         "projectType": "Computer Vision",
         "videoURL": project01.video,
-        "projectFeatures": {
+        "projectfeatures": {
             title: "features",
             desc: "The core feature of this project, implementing real-time distance measurement using Sobel edge detection, lies in its ability to detect and quantify distances between objects by analyzing edge information in images. The Sobel edge detection algorithm identifies areas of rapid intensity change, which correspond to edges, allowing the system to locate object boundaries in real-time. The distance measurement is derived from the spatial relationship between these detected edges, providing an estimate of how far objects are from the camera or sensor. The system's accuracy and effectiveness are enhanced by incorporating preprocessing techniques to address challenges like illumination changes, and segmentation methods to handle multiple objects or occlusions, ensuring precise and reliable distance calculations across different environments. This combination of edge detection, real-time processing, and spatial recognition features offers a robust solution for applications like autonomous vehicles, robotic navigation, or augmented reality.",
             pics: project01.feature
@@ -41,7 +41,7 @@ export const projectList = [
         "projectLevel":"Academic",
         "createdAt": "2024-11-09T14:56:03Z",
         "projectType": "Web Development",
-        "projectFeatures": {
+        "projectfeatures": {
             title: "features",
             headerImg: "",
             desc: "Foody was a project aimed at revolutionizing food delivery by combining food ordering and real-time delivery tracking into a seamless user experience. One of the key features was integrating a delivery tracking system, ensuring customers could track their orders from preparation to arrival. The most significant challenge was ensuring that the real-time updates of order statuses were reflected immediately for both the customer and the restaurant. I used Laravel for backend development, which enabled smooth management of user data, payment processing, and order handling. A critical part of the project was ensuring the database structure and API endpoints were efficient enough to handle large amounts of user traffic during peak times, which was a tough yet rewarding hurdle to overcome.",
@@ -71,7 +71,7 @@ export const projectList = [
         "projectLevel":"Academic",
         "createdAt": "2024-11-09T14:56:03Z",
         "projectType": "Machine Learning",
-        "projectFeatures": {
+        "projectfeatures": {
             title: "features",
             headerImg: "",
             desc: "VisionSense utilized fuzzy logic to recommend personalized contact lenses based on a user's eye data. The project’s unique approach was using fuzzy rules to take into account various subjective factors like comfort and fit, alongside objective data such as eye measurements. A major challenge was fine-tuning these fuzzy rules to ensure the system provided accurate and suitable recommendations. Another significant aspect was gathering and processing the input data from users, which required careful attention to detail. The project applied machine learning principles and demonstrated how AI could personalize healthcare, specifically in the area of optical lenses.",
@@ -102,7 +102,7 @@ export const projectList = [
         "createdAt": "2024-12-24T16:18:31Z",
         "projectType": "Web Development",
         "projectDesc": "GadgetVerse is a web application designed as a clone of the Apple Store, built for learning React.js, Three.js, and GSAP. It showcases tech products in an interactive 3D environment, offering users the ability to explore and interact with products in a visually appealing way. The app uses Three.js for 3D rendering and React.js for dynamic UI elements, with Tailwind CSS for quick, scalable styling.",
-        "projectFeatures": {
+        "projectfeatures": {
             "title": "features",
             "desc": "The project highlights the integration of interactive 3D rendering into a web environment while maintaining performance optimization. Challenges included managing complex 3D interactions and ensuring the website remained responsive despite the high demands of rendering large 3D models. The use of GSAP was key in animating and enhancing the user experience.",
             "pics": []
@@ -129,7 +129,7 @@ export const projectList = [
         "projectLevel":"Personal",
         "createdAt": "2024-02-16T00:28:18Z",
         "projectType": "Web Development",
-        "projectFeatures": {
+        "projectfeatures": {
             title: "features",
             headerImg: "",
             desc: "Purrfect Paws was designed to provide users with an interactive platform for learning about different cat breeds. The unique aspect of the project was its dynamic filtering system, which allowed users to select specific traits and preferences to discover the ideal cat breed for them. The most significant challenge was creating a robust filtering system that was intuitive and fast, especially when dealing with large datasets. Additionally, implementing a smooth and responsive UI with Angular.js was key to providing an engaging user experience.",
@@ -159,7 +159,7 @@ export const projectList = [
         "projectLevel":"Academic",
         "createdAt": "2024-11-07T00:00:00Z",
         "projectType": "Mobile App Development",
-        "projectFeatures": {
+        "projectfeatures": {
             title: "features",
             headerImg: "",
             desc: "TraceTogether was developed to provide a digital contact tracing system for public health. The key feature of the app was its ability to track proximity between users and notify them of potential exposure to infectious diseases. The biggest challenge was ensuring the app was both accurate in tracking and respectful of privacy, which required a careful design of the data collection process. Ensuring the app was lightweight and efficient for a wide range of Android devices was another key concern during development.",
@@ -189,14 +189,14 @@ export const projectList = [
         "projectLevel": "Personal",
         "createdAt": "2024-11-12T00:00:00Z",
         "projectType": "Web Development",
-        "projectFeatures": {
-            "title": "Features",
+        "projectfeatures": {
+            "title": "features",
             "headerImg": "",
             "desc": "Tribute was a simple yet impactful project built to honor a historical figure through a well-designed tribute page. The project’s uniqueness lies in its focus on visual storytelling, where I used HTML and CSS to design a page that both conveyed information and evoked emotion. The challenge was ensuring that the design was both minimalistic and informative, without overwhelming the visitor with too much text or imagery. The project also required creating a clean, responsive layout that could work across different devices.",
             "pics": []
         },
         "reflection": {
-            "title": "Reflections",
+            "title": "reflections",
             "headerImg": "",
             "desc": "Tribute was an important project in my web development journey, as it allowed me to focus on design principles while still developing a functional website. I learned the importance of simplicity in design, ensuring that every element served a purpose. The project also helped me improve my HTML and CSS skills, particularly in creating responsive layouts and using styles effectively to guide the user’s focus.",
             "pics": []
@@ -220,14 +220,14 @@ export const projectList = [
         "projectLevel": "Personal",
         "createdAt": "2024-12-29T09:45:43Z",
         "projectType": "Mobile App Development",
-        "projectFeatures": {
-            "title": "Features",
+        "projectfeatures": {
+            "title": "features",
             "headerImg": "",
             "desc": "The Trip Planner app leverages AI to help users plan their trips with personalized recommendations. The most unique aspect of this app is its use of the Gemini AI engine to suggest destinations and activities based on the user’s preferences. The biggest challenge was integrating AI effectively into the app while keeping the UI intuitive and responsive. Ensuring the AI recommendations were accurate and useful required careful tuning of the algorithm, as well as user testing to gather feedback.",
             "pics": []
         },
         "reflection": {
-            "title": "Reflections",
+            "title": "reflections",
             "headerImg": "",
             "desc": "Developing Trip Planner taught me valuable lessons in AI integration, especially within mobile applications. It challenged me to think about how AI can enhance user experiences in a practical and engaging way. I also gained experience working with React Native, which helped me become more versatile as a mobile app developer. The project gave me confidence in creating intelligent, data-driven apps and reinforced my interest in exploring the intersection of AI and mobile development.",
             "pics": []
@@ -250,14 +250,14 @@ export const projectList = [
         "projectLevel": "Academic",
         "createdAt": "2024-11-27T15:46:38Z",
         "projectType": "Software Development",
-        "projectFeatures": {
-            "title": "Features",
+        "projectfeatures": {
+            "title": "features",
             "headerImg": "",
             "desc": "VendPal aimed at creating an enhanced vending machine experience by implementing a digital payment and interaction system. The major challenge was creating an intuitive interface for users to select products and make payments seamlessly. Another difficulty was ensuring the backend could handle simultaneous requests during peak usage times, and maintaining security for user transactions. The project was unique because it integrated traditional vending with modern digital technologies for a seamless user experience.",
             "pics": []
         },
         "reflection": {
-            "title": "Reflections",
+            "title": "reflections",
             "headerImg": "",
             "desc": "Developing VendPal was a great learning opportunity in web development and payment system integration. It taught me how to handle real-time transactions and manage scalability concerns, which are essential skills for handling applications in high-demand environments. The project also enhanced my understanding of integrating front-end interfaces with secure back-end services to ensure a smooth and safe user experience.",
             "pics": []
@@ -280,14 +280,14 @@ export const projectList = [
         "projectLevel": "Internship",
         "createdAt": "2025-01-16T15:00:00Z",
         "projectType": "Enterprise Software",
-        "projectFeatures": {
-            "title": "Features",
+        "projectfeatures": {
+            "title": "features",
             "headerImg": "",
             "desc": "HIAS was developed to streamline the internal audit process at LHDN, automating many manual tasks and improving the overall efficiency of the department. The system needed to be highly secure, as it handled sensitive financial data. The challenge was ensuring the security of the data while maintaining usability. Another difficulty was ensuring the system could integrate smoothly with the existing infrastructure at LHDN. The system was designed to be scalable, ensuring that it could adapt to the growing needs of the department over time.",
             "pics": []
         },
         "reflection": {
-            "title": "Reflections",
+            "title": "reflections",
             "headerImg": "",
             "desc": "Building HIAS was a great experience in enterprise software development. I learned a lot about security, data management, and creating scalable systems that can grow with a company’s needs. The project also gave me valuable insights into the importance of designing systems that integrate well with existing infrastructure, as well as the challenges of working with sensitive data in a corporate environment.",
             "pics": []
@@ -310,14 +310,14 @@ export const projectList = [
         "projectLevel": "Internship",
         "createdAt": "2024-03-01T00:00:00Z",
         "projectType": "Web Development",
-        "projectFeatures": {
-            "title": "Features",
+        "projectfeatures": {
+            "title": "features",
             "headerImg": "",
             "desc": "MYKKP is a service designed to streamline and provide easy access to government services related to workers' health and safety. The project required the creation of a user-friendly platform that could handle large amounts of data and integrate seamlessly with existing government systems. One of the main challenges was ensuring that the platform was secure and met compliance standards, especially considering the sensitive nature of the data. Angular was used for developing a responsive and interactive frontend that allowed users to access various features with ease.",
             "pics": []
         },
         "reflection": {
-            "title": "Reflections",
+            "title": "reflections",
             "headerImg": "",
             "desc": "Developing MYKKP was an excellent learning experience in building enterprise-level applications. It gave me a deep understanding of how to handle sensitive data while ensuring that the platform was both secure and user-friendly. The project also required me to work with government standards and compliance requirements, which added a layer of complexity but also improved my attention to detail. This experience strengthened my skills in working with Angular and integrating large-scale systems, and provided valuable insights into building secure and reliable web platforms.",
             "pics": []
@@ -340,14 +340,14 @@ export const projectList = [
         "projectLevel": "Personal",
         "createdAt": "2025-01-20T00:00:00Z",
         "projectType": "Web Development",
-        "projectFeatures": {
-            "title": "Features",
+        "projectfeatures": {
+            "title": "features",
             "headerImg": "",
             "desc": "ShowCase-X is a personal portfolio website designed to showcase my projects and achievements. The project focuses on creating a modern and clean design to present my work in the best possible light. The challenge was ensuring the site was both aesthetically pleasing and easy to navigate, while also optimizing for performance. ReactJS and NextJS were used for frontend development, while NodeJS and ExpressJS powered the backend to manage server-side requests and data.",
             "pics": []
         },
         "reflection": {
-            "title": "Reflections",
+            "title": "reflections",
             "headerImg": "",
             "desc": "Building ShowCase-X was a valuable project for refining my web development skills. It provided me the opportunity to explore various technologies and frameworks like ReactJS, NextJS, and NodeJS. The project helped me better understand how to manage both front-end and back-end aspects of a site, and improve my workflow. Additionally, designing my personal portfolio allowed me to consider how to best represent myself and my work to potential employers or clients.",
             "pics": []
@@ -370,7 +370,7 @@ export const projectList = [
         "projectLevel": "Academic",
         "createdAt": "2023-06-01T00:00:00Z",
         "projectType": "E-commerce",
-        "projectFeatures": {
+        "projectfeatures": {
             "title": "features",
             "headerImg": "",
             "desc": "Developed an e-commerce website for selling perfumes, featuring a user-friendly interface, product catalog, shopping cart functionality, and secure payment processing. The website was built with WordPress and PHP to provide a dynamic, customizable platform that catered to users looking for premium fragrance products. The project aimed to improve my web development skills and practical understanding of e-commerce business logic.",
@@ -401,7 +401,7 @@ export const projectList = [
         "projectLevel": "Academic",
         "createdAt": "2023-07-01T00:00:00Z",
         "projectType": "Web Application",
-        "projectFeatures": {
+        "projectfeatures": {
             "title": "features",
             "headerImg": "",
             "desc": "Directed the creation of a Laravel-based PHP system that improved administrative efficiency by 30%. The system was specifically designed for FK management and PETAKOM students, featuring five integrated modules for tasks such as student management, inventory tracking, orders processing, and reporting. The project also enhanced security and user access controls across administrative roles, optimizing workflow and increasing productivity.",
@@ -431,7 +431,7 @@ export const projectList = [
         "projectLevel": "Academic",
         "createdAt": "2023-08-01T00:00:00Z",
         "projectType": "Web Application",
-        "projectFeatures": {
+        "projectfeatures": {
             title: "features",
             headerImg: "",
             desc: "Managed the application and ongoing maintenance of the PETAKOM Management System for Persatuan Teknologi Komputer (PTK) Club. The system was responsible for handling member registrations, event scheduling, internal communications, and record keeping. It also provided features for monitoring club activities, performance tracking, and generating reports. Maintenance tasks included regular updates, bug fixes, and ensuring data integrity for smooth club operations.",
@@ -461,7 +461,7 @@ export const projectList = [
         "projectLevel": "Internship",
         "createdAt": "2024-01-01T00:00:00Z",
         "projectType": "Web Application",
-        "projectFeatures": {
+        "projectfeatures": {
             title: "features",
             headerImg: "",
             desc: "The Profiling Information System (PINS) was introduced by Lembaga Hasil Dalam Negeri Malaysia (LHDNM) to replace the Sistem Maklumat Unit Pengesanan (e-SMUP), which ceased operations on 31 December 2023. PINS serves as a centralized system for agencies to submit information requested by LHDNM via Surat Q applications. The system supports tax enforcement and compliance activities to ensure effective tax collection benefiting all Malaysians. A significant module in PINS is the FAQ module, designed to assist users with common queries regarding the submission process, system features, and guidelines for using PINS. The FAQ module is highly dynamic, allowing administrators to update questions and answers efficiently. It features an intuitive interface with animated accordion panels for seamless navigation, ensuring users can quickly find relevant information.",

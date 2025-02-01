@@ -89,7 +89,15 @@ const Contact = ({ isOpen, onClose }) => {
         </motion.h2>
 
         {result !== '' && (
-          <div className="mb-4 text-sm text-center text-green-600 bg-green-100 border border-green-200 p-2 rounded">
+          <div
+            className={`mb-4 text-sm text-center p-2 rounded border ${
+              result === 'Sending...'
+                ? 'text-blue-600 bg-blue-100 border-blue-200'
+                : result.includes('Successfully')
+                ? 'text-green-600 bg-green-100 border-green-200'
+                : 'text-red-600 bg-red-100 border-red-200'
+            }`}
+          >
             {result}
           </div>
         )}

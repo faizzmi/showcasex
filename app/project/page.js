@@ -8,7 +8,7 @@ const ProjectPage = () => {
   const sortProject = projectList.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 
   return (
-    <div className="section max-w-screen bg-zinc-900" id="top">
+    <div className="section max-w-screen bg-zinc-900 overflow-x-hidden" id="top">
       <div className="flex flex-col md:flex-row justify-between items-center pt-[23vh] my-10">
         <motion.h2
           initial={{ x: -120, opacity: 0 }}
@@ -31,11 +31,12 @@ const ProjectPage = () => {
 
       <hr className="border-t-2 border-zinc-800 my-6" />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {sortProject.length > 0 ? (
           sortProject.map((item, index) => (
             <motion.div
               key={index}
+              layout
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
