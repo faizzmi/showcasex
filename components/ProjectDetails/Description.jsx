@@ -3,6 +3,7 @@ import moment from 'moment';
 import Image from 'next/image';
 import React from 'react';
 import { motion } from 'motion/react';
+import { assets } from '@/assets/assets';
 
 const Description = ({ project }) => {
   return (
@@ -38,7 +39,15 @@ const Description = ({ project }) => {
           </div>
           {project.projectURL !== "" && (
             <div className='mb-3'>
-              <a className='btn-url' target='_blank' href={project.projectURL}>Open Website ↗</a>
+              <a 
+                className='btn-url inline-flex items-center gap-2' 
+                rel="noopener noreferrer" 
+                target='_blank' 
+                href={project.projectURL}
+              >
+                Open Website
+                <Image src={ assets.arrow_icon} alt='' className='w-2'/>
+              </a>
             </div>
           )}
         </div>

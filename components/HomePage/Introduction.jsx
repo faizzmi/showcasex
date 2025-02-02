@@ -7,13 +7,9 @@ import { motion } from 'framer-motion';
 
 const Introduction = () => {
   const [hovered, setHovered] = useState(false);
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseEnter = () => setHovered(true);
   const handleMouseLeave = () => setHovered(false);
-  const handleMouseMove = (e) => {
-    setCursorPosition({ x: e.clientX, y: e.clientY });
-  };
 
   return (
     <section className="section h-screen flex flex-col justify-end relative bg-[#E0E1DD]" id="top">
@@ -47,9 +43,19 @@ const Introduction = () => {
                 className="text-gray-800 ml-2 cursor-pointer hover:underline relative"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                onMouseMove={handleMouseMove}
               >
                 Read More
+                
+                {hovered && (
+                  <span className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2">
+                    <img
+                      src="/images/hover.jpg"
+                      alt="Hover Preview"
+                      fill={true}
+                      className="max-w-[150px] object-contain rounded-lg shadow-xl"
+                    />
+                  </span>
+                )}
               </span>
             </Link>
           </motion.p>
@@ -72,23 +78,6 @@ const Introduction = () => {
         </div>
       </div>
 
-      {hovered && (
-        <div
-          className="absolute pointer-events-none"
-          style={{
-            top: cursorPosition.y - 100,
-            left: cursorPosition.x + 20,
-            transform: 'translate(-50%, -50%)',
-            zIndex: 50,
-          }}
-        >
-          <img
-            src="/images/hover.jpg"
-            alt="Hover Preview"
-            className="w-40 h-60 object-cover rounded-lg shadow-lg"
-          />
-        </div>
-      )}
     </section>
   );
 };

@@ -109,7 +109,7 @@ Image {
 }
 
 .btn-url {
-  @apply border border-zinc-600 text-zinc-300 hover:bg-white hover:text-zinc-900 px-4 py-2 rounded-md cursor-pointer transition-colors;
+  @apply inline-flex items-center border border-zinc-600 text-zinc-300 hover:bg-white hover:text-zinc-900 px-4 py-2 rounded-md cursor-pointer transition-colors;
 }
 
 .desc-title {

@@ -40,7 +40,7 @@ export const educationsLists = [
     {
         course: 'BACHELOR OF COMPUTER SCIENCE (SOFTWARE ENGINEERING) WITH HONOURS',
         location: 'UNIVERSITY MALAYSIA PAHANG AS-SULTAN ABDULLAH',
-        startDate: '2020-03-03T00:00:00Z',
+        startDate: '2020-08-01T00:00:00Z',
         endDate: '2024-08-01T00:00:00Z',
     },
     {

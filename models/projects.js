@@ -10,7 +10,7 @@ export const projectList = [
         "framework": [],
         "projectURL": "https://github.com/faizzmi/distance-measurement",
         "projectLevel":"Final Year Project",
-        "createdAt": "2024-02-04T03:10:42Z",
+        "createdAt": "2023-03-16T03:10:42Z",
         "projectType": "Computer Vision",
         "videoURL": project01.video,
         "projectfeatures": {
@@ -39,7 +39,7 @@ export const projectList = [
         "framework": ["Laravel"],
         "projectURL": "https://github.com/faizzmi/Foody",
         "projectLevel":"Academic",
-        "createdAt": "2024-11-09T14:56:03Z",
+        "createdAt": "2022-06-21T14:56:03Z",
         "projectType": "Web Development",
         "projectfeatures": {
             title: "features",
@@ -69,7 +69,7 @@ export const projectList = [
         "framework": [],
         "projectURL": "https://github.com/faizzmi/Fuzzy-Logic-Based-Contact-Lenses-Recommendation-System",
         "projectLevel":"Academic",
-        "createdAt": "2024-11-09T14:56:03Z",
+        "createdAt": "2022-03-28T14:56:03Z",
         "projectType": "Machine Learning",
         "projectfeatures": {
             title: "features",
@@ -157,7 +157,7 @@ export const projectList = [
         "framework": [],
         "projectURL": "https://github.com/faizzmi/TraceTogether",
         "projectLevel":"Academic",
-        "createdAt": "2024-11-07T00:00:00Z",
+        "createdAt": "2022-01-25T00:00:00Z",
         "projectType": "Mobile App Development",
         "projectfeatures": {
             title: "features",
@@ -248,7 +248,7 @@ export const projectList = [
         "framework": [],
         "projectURL": "https://github.com/faizzmi/Vending-Machine",
         "projectLevel": "Academic",
-        "createdAt": "2024-11-27T15:46:38Z",
+        "createdAt": "2022-01-26T15:46:38Z",
         "projectType": "Software Development",
         "projectfeatures": {
             "title": "features",
@@ -278,7 +278,7 @@ export const projectList = [
         "framework": ["Angular", "Ionic"],
         "projectURL": "https://hias.hasil.gov.my/log-masuk",
         "projectLevel": "Internship",
-        "createdAt": "2025-01-16T15:00:00Z",
+        "createdAt": "2024-03-16T15:00:00Z",
         "projectType": "Enterprise Software",
         "projectfeatures": {
             "title": "features",
@@ -308,7 +308,7 @@ export const projectList = [
         "framework": ["AngularJS", "Angular", "Ionic"],
         "projectURL": "https://mykkp.dosh.gov.my/myKKP/#/home",
         "projectLevel": "Internship",
-        "createdAt": "2024-03-01T00:00:00Z",
+        "createdAt": "2024-03-21T00:00:00Z",
         "projectType": "Web Development",
         "projectfeatures": {
             "title": "features",
@@ -368,7 +368,7 @@ export const projectList = [
         "framework": [],
         "projectURL": "",
         "projectLevel": "Academic",
-        "createdAt": "2023-06-01T00:00:00Z",
+        "createdAt": "2024-01-06T00:00:00Z",
         "projectType": "E-commerce",
         "projectfeatures": {
             "title": "features",
@@ -399,7 +399,7 @@ export const projectList = [
         "projectURL": "",
         "descImage": project14.descImg,
         "projectLevel": "Academic",
-        "createdAt": "2023-07-01T00:00:00Z",
+        "createdAt": "2023-05-07T00:00:00Z",
         "projectType": "Web Application",
         "projectfeatures": {
             "title": "features",
@@ -459,7 +459,7 @@ export const projectList = [
         "framework": ["Ionic", "Angular"],
         "projectURL": "https://pins.hasil.gov.my/laman-utama/log-masuk",
         "projectLevel": "Internship",
-        "createdAt": "2024-01-01T00:00:00Z",
+        "createdAt": "2024-06-01T00:00:00Z",
         "projectType": "Web Application",
         "projectfeatures": {
             title: "features",
