@@ -362,7 +362,7 @@ export const projectList = [
     {
         "projectId": "13",
         "projectName": "Scented Dreams",
-        "projectHeader": "An E-commerce Perfume Shop Developed with WordPress and PHP.",
+        "projectHeader": "Awaken Your Sense.",
         "headerImage": project13.headerImg,
         "projectStack": ["WordPress", "PHP"],
         "framework": [],
@@ -414,9 +414,9 @@ export const projectList = [
             "pics": []
         },
         highlight: {
-            title: '',
-            desc: '',
-            pic: []
+            title: 'website',
+            desc: 'The PMMS (PETAKOM Management System) is a Laravel-based web application designed to enhance administrative efficiency for FK management and PETAKOM students. Featuring five integrated modules, the system streamlines student management, inventory tracking, order processing, and reporting while ensuring secure access controls for different administrative roles',
+            pic: project14.highlight
         },
         "projectDesc": "PMMS is a comprehensive management system designed for PETAKOM, built with Laravel and PHP. The system integrates five modules to handle key administrative tasks for FK management and PETAKOM students, aiming to improve productivity, reduce operational errors, and enhance security. The platform features an intuitive interface for admins and students, with real-time data tracking and reporting functionalities."
     },

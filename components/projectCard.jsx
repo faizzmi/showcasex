@@ -10,8 +10,8 @@ const ProjectCard = ({ project }) => {
   return (
     <Link href={`/project/${projectId}`}>
       <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, y: 20, scale: 0.95 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, scale: 0.95 }}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         className="relative transition-all duration-300 hover:bg-zinc-800 bg-zinc-900 cursor-pointer w-[90%] sm:w-[630px] mx-auto"
@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => {
 
         <div className="py-4 px-2">
           <div className="mb-2">
-            <h4 className="text-sm sm:text-md font-semibold text-zinc-100">
+            <h4 className="text-sm sm:text-md font-semibold text-justify text-zinc-100">
               {projectName} - {projectHeader}
             </h4>
           </div>

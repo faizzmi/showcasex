@@ -57,7 +57,7 @@ const Story = () => {
             initial={{ y: 20, opacity: 0 }} 
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-gray-800 text-2xl font-semibold leading-relaxed whitespace-pre-line">
+            className="text-gray-800 text-2xl font-semibold leading-relaxed text-justify whitespace-pre-line">
             {story}
           </motion.p>
         </div>

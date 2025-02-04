@@ -3,11 +3,13 @@ import { hobbyPic, hobbyPix } from "@/assets/assets";
 export const welcome = "Hey, I am Faiz. I am a Software Engineer. based in Malaysia."
 
 export const story = `
-I believe every project has the potential to transform and impact the world in meaningful ways. That’s why I focus on creating innovative web and mobile applications that spark curiosity, foster engagement, and leave a lasting impression. My process is rooted in understanding user needs, collaborating effectively, and transforming ideas into intuitive and powerful solutions.
+I believe every project has the potential to create meaningful impact. That’s why I focus on developing innovative web and mobile applications that enhance user experiences, improve efficiency, and solve real-world problems.
 
-While I specialize in front-end development and enjoy the creative challenges of building responsive, interactive websites and applications, I’m also learning 3D manual drawing and have experience in computer drafting. Whether I’m coding with Angular and React or exploring the world of 3D design, my passion for creating seamless and visually appealing products extends beyond just development—it’s about designing for the future.
+As a frontend developer, I specialize in building responsive, interactive, and user-friendly interfaces using modern frameworks like React and Next.js. I continuously refine my skills, exploring new technologies to stay ahead in the ever-evolving tech landscape.
 
-I’m also deeply interested in artificial intelligence which drives me to explore its integration into applications for smarter, user-centric solutions. I developed an AI-based system to calculate car distances, earning two prestigious awards and showcasing the potential of combining innovation with real-world needs.
+Beyond web development, I’m also keen on artificial intelligence and its practical applications. I developed an AI-powered distance measurement system for smart cars, earning recognition with a Silver Award at CITREX 2024. This experience reinforced my passion for leveraging technology to solve real-world challenges.
+
+I may not have years of experience, but I am highly motivated to learn, grow, and contribute meaningfully to impactful projects. Every challenge is an opportunity to improve, and I embrace that journey wholeheartedly.
 `;
 
 export const experiencesLists = [
@@ -62,88 +64,89 @@ export const certificationList = [
 
 export const valuesList = [
   {
-    "name": "Problem-Solving",
-    "description": "I value the ability to break down complex problems and find innovative, efficient solutions through code, always striving to improve the way challenges are tackled."
+    name: "Problem-Solving",
+    description: "I thrive on breaking down complex challenges and crafting efficient, innovative solutions through code."
   },
   {
-    "name": "Continuous Learning",
-    "description": "I focus on learning new technologies like Next.js and enhancing my React Native skills to stay ahead in the ever-evolving field of software development."
+    name: "Continuous Learning",
+    description: "Staying ahead in tech is key—I actively learn Next.js, React Native, and emerging technologies to grow as a developer."
   },
   {
-    "name": "Code Quality",
-    "description": "I prioritize writing clean, maintainable, and efficient code, avoiding shortcuts like optional chaining unless absolutely necessary to ensure precision and longevity."
+    name: "Code Quality",
+    description: "I write clean, maintainable, and efficient code, ensuring long-term readability and performance without unnecessary shortcuts."
   },
   {
-    "name": "Efficiency and Productivity",
-    "description": "I value optimizing processes, whether it’s in project management, workflows, or system performance, to work smarter, faster, and more effectively."
+    name: "Efficiency & Productivity",
+    description: "I streamline workflows and optimize performance to build faster, smarter, and more scalable applications."
   },
   {
-    "name": "User-Centric Design",
-    "description": "I am focused on creating solutions like a money tracker app that directly address real-world problems and improve user experiences."
+    name: "User-Centric Design",
+    description: "I develop solutions that solve real-world problems, ensuring seamless, intuitive, and engaging user experiences."
   },
   {
-    "name": "Collaboration and Teamwork",
-    "description": "As a software engineer, I value working alongside other developers and stakeholders to create impactful products that are stronger through collaboration."
+    name: "Collaboration & Teamwork",
+    description: "I believe great software is built through teamwork—clear communication, shared goals, and strong collaboration."
   },
   {
-    "name": "Adaptability",
-    "description": "I embrace my ability to quickly learn new frameworks and technologies, adapting to industry changes and leveraging flexibility to stay relevant."
+    name: "Adaptability",
+    description: "Tech evolves fast—I stay flexible, learning and adapting to new tools and frameworks to stay relevant and efficient."
   },
   {
-    "name": "Efficiency in Tools and Frameworks",
-    "description": "I value selecting the right tools, libraries, and frameworks that empower faster development, higher performance, and superior outcomes."
+    name: "Smart Tooling",
+    description: "Choosing the right frameworks and tools makes a difference. I prioritize performance, scalability, and developer experience."
   },
   {
-    "name": "Achievement and Recognition",
-    "description": "I am motivated by recognition like winning the Silver Award at CITREX 2024, but I focus more on the sense of accomplishment and the drive to refine my craft."
+    name: "Achievement & Growth",
+    description: "Recognition, like my CITREX Silver Award, fuels my drive—but my real goal is continuous improvement and mastery of my craft."
   },
   {
-    "name": "Impact and Contribution",
-    "description": "I aim to build software that makes a meaningful impact, solving real-world problems and improving workflows to contribute positively to the world."
+    name: "Impact & Contribution",
+    description: "I strive to build software that matters—enhancing lives, improving workflows, and making a positive impact."
   }
 ];
 
 
 export const faqLists = [
-    {
-      "question": "What kind of projects have you worked on?",
-      "answer": "I have worked on a variety of projects, including responsive websites, e-commerce platforms, mobile applications, and personal portfolio sites. I focus on delivering high-quality frontend experiences and ensuring seamless user interactions."
-    },
-    {
-      "question": "How do you ensure code quality in your projects?",
-      "answer": "I follow best practices like writing clean and readable code, adhering to coding standards, and using version control (Git). Additionally, I use automated testing frameworks to ensure functionality, and conduct code reviews to maintain high-quality code."
-    },
-    {
-      "question": "What are your strengths as a developer?",
-      "answer": "My strengths lie in problem-solving, attention to detail, and communication. I’m quick to learn new technologies, and I excel at breaking down complex problems and finding efficient, user-centric solutions."
-    },
-    {
-      "question": "What are some of your favorite tools and libraries?",
-      "answer": "I enjoy working with React, Next.js, and Tailwind CSS for building responsive and interactive interfaces. I also use Git for version control, Figma for design, and testing tools like Jest and Cypress to ensure quality."
-    },
-    {
-      "question": "Can you integrate third-party APIs into your projects?",
-      "answer": "Yes, I have experience integrating third-party APIs into web applications. This includes integrating payment gateways, weather services, social media logins, and other data-driven services."
-    },
-    {
-      "question": "How do you ensure performance optimization in your web projects?",
-      "answer": "I focus on optimizing both frontend and backend performance. On the frontend, I optimize images, use lazy loading, and minimize JavaScript and CSS files. On the backend, I ensure efficient database queries and API endpoints."
-    },
-    {
-      "question": "What is your experience with version control and collaborative workflows?",
-      "answer": "I am highly proficient in Git and GitHub for version control. I use branches for feature development, create pull requests, and participate in code reviews to ensure smooth collaboration in teams."
-    },
-    {
-      "question": "Do you have experience working with Agile methodologies?",
-      "answer": "Yes, I have worked in Agile environments, where I’ve collaborated in sprints, attended daily stand-ups, and participated in sprint planning and retrospectives. I am comfortable working in iterative cycles with regular feedback."
-    },
-    {
-      "question": "How do you handle client feedback or changes to a project?",
-      "answer": "I take client feedback seriously and consider it an opportunity for improvement. I listen carefully, clarify any questions, and implement changes in an efficient and timely manner while ensuring the project stays on track."
-    },
-    {
-      "question": "What kind of support do you offer after completing a project?",
-      "answer": "I offer post-launch support for bug fixes, feature enhancements, and performance improvements. I also provide training if needed, to ensure the client can manage the project independently moving forward."
-    }
-  ]
+  {
+    question: "What makes you a strong candidate as a developer?",
+    answer: "I may not have professional experience yet, but I am highly committed to learning and improving. I continuously explore new technologies, build personal projects, and challenge myself to grow."
+  },
+  {
+    question: "How do you approach learning new technologies?",
+    answer: "I take a hands-on approach by building projects, following documentation, and solving real-world problems. I also engage in online communities and seek feedback to improve."
+  },
+  {
+    question: "What personal projects have you worked on?",
+    answer: "I’ve built projects like 'GadgetVerse,' a 3D interactive store using Three.js and React, and a money tracker app that integrates AI for receipt scanning. These projects help me practice real-world development concepts."
+  },
+  {
+    question: "How do you ensure continuous improvement as a developer?",
+    answer: "I consistently challenge myself with new projects, learn from experienced developers, and keep up with industry trends through blogs, courses, and open-source contributions."
+  },
+  {
+    question: "What challenges have you faced while learning development?",
+    answer: "One challenge I faced was optimizing performance in React applications. I tackled it by learning about state management, memoization, and lazy loading, improving my ability to write efficient code."
+  },
+  {
+    question: "What technologies are you currently learning?",
+    answer: "I’m actively learning Next.js for SSR, React Native for mobile development, and performance optimization techniques to build scalable applications."
+  },
+  {
+    question: "How do you handle tasks you're unfamiliar with?",
+    answer: "I break down the problem, research best practices, and apply what I learn step by step. If needed, I ask for guidance from experienced developers or community forums."
+  },
+  {
+    question: "How do you approach problem-solving in coding?",
+    answer: "I analyze the problem, research possible solutions, and experiment with different approaches. I also use debugging tools and structured testing to refine my code."
+  },
+  {
+    question: "What motivates you to pursue software development?",
+    answer: "I love the challenge of solving problems and creating useful applications. The ability to turn an idea into reality through coding excites me and drives me to keep improving."
+  },
+  {
+    question: "How do you plan to gain real-world experience?",
+    answer: "I am actively working on personal projects, contributing to open source, and seeking internship or freelance opportunities to gain practical experience."
+  }
+];
+
 

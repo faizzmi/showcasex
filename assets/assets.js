@@ -61,6 +61,8 @@ import h13i from '../assets/project13/pageNotFound.png'
 
 import Id14 from '../assets/project14/Id14.png'
 import header14 from '../assets/project14/6.png'
+import h14a from '../assets/project14/pmmsLogin.png'
+import h14b from '../assets/project14/pmmsHome.png'
 
 import header15 from '../assets/project15/7.png'
 import header16 from '../assets/8.png'
@@ -136,7 +138,7 @@ export const project13 = {
 export const project14 = {
     descImg: Id14,
     headerImg: header14,
-    highlight: []
+    highlight: [ h14a, h14b]
 };
 
 export const project15 = {
