@@ -1,4 +1,4 @@
-'use client'
+6'use client'
 import { awardsLists, educationsLists, experiencesLists, story } from '../../models/about';
 import React from 'react';
 import moment from 'moment';
@@ -21,7 +21,7 @@ const Story = () => {
         : moment(endDate, moment.ISO_8601, true);
 
     const startMoment = moment(startDate, moment.ISO_8601, true);
-    const totalMonths = adjustedEndDate.diff(startMoment, 'months');
+    const totalMonths = adjustedEndDate.diff(startMoment, 'months') + 1;
     const years = Math.floor(totalMonths / 12);
     const remainingMonths = totalMonths % 12;
 
