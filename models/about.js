@@ -23,7 +23,7 @@ export const experiencesLists = [
         position: 'FRONTEND DEVELOPER',
         location: 'ABATA COMMERCE SDN. BHD, CYBERJAYA',
         startDate: '2024-03-03T00:00:00Z',
-        endDate: '2024-08-01T00:00:00Z',
+        endDate: '2024-08-31T00:00:00Z',
     }
 ];
 
