@@ -36,8 +36,8 @@ const FeatureProjects = () => {
                     projects.map((item, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0 }} 
-                            whileInView={{ opacity: 1 }}
+                            initial={{ y: 20, opacity: 0 }} 
+                            whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.6, delay: 0.5 }}
                             className={`mb-10 flex flex-col ${index === 1 ? 'items-end' : 'items-start'}`}
                         >
