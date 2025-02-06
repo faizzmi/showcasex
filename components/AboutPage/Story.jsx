@@ -20,9 +20,18 @@ const Story = () => {
         ? moment()
         : moment(endDate, moment.ISO_8601, true);
 
-    const duration = adjustedEndDate.diff(moment(startDate, moment.ISO_8601, true), 'months') / 12;
+    const startMoment = moment(startDate, moment.ISO_8601, true);
+    const totalMonths = adjustedEndDate.diff(startMoment, 'months');
+    const years = Math.floor(totalMonths / 12);
+    const remainingMonths = totalMonths % 12;
 
-    return `${duration.toFixed(1)} ${duration < 1 ? 'YEAR' : 'YEARS'}`;
+    if (years === 1 && remainingMonths === 0) {
+      return '1 YEAR';
+    } else if (years >= 1) {
+      return `${years} YEARS`;
+    } else {
+      return `${totalMonths} MONTH${totalMonths > 1 ? 'S' : ''}`;
+    }
   };
 
   const renderExperience = (item) => (
