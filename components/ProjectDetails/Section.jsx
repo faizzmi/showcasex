@@ -41,8 +41,10 @@ const Section = ({ content }) => {
             <Image
               src={pic}
               alt={`image ${index + 1}`}
-              fill
+              fill="true"
               className="object-cover rounded-md"
+              onContextMenu={(e) => e.preventDefault()}
+              draggable={false}
             />
           </motion.div>
         ))}

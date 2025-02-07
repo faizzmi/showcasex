@@ -20,8 +20,10 @@ const ProjectCard = ({ project }) => {
           <Image
             src={headerImage ? headerImage : "/images/default.png"}
             alt="Project image"
-            fill
+            fill="true"
             className="object-cover"
+            onContextMenu={(e) => e.preventDefault()}
+            draggable={false}
           />
         </div>
 

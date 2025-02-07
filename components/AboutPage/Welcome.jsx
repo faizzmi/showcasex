@@ -18,6 +18,8 @@ const Welcome = () => {
           width={500} 
           height={700}
           className='object-cover w-full h-screen'
+          onContextMenu={(e) => e.preventDefault()}
+          draggable={false}
         />
       </motion.div>
 

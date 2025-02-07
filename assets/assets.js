@@ -111,7 +111,8 @@ export const project07 = {
 export const project08 = {
     headerImg: header08,
     descImg: Id08,
-    highlight: [h08a, h08b, h08c, h08d, h08g, h08h, h08i, h08j, h08k, h08l]
+    // highlight: [h08a, h08b, h08c, h08d, h08g, h08h, h08i, h08j, h08k, h08l]
+    highlight: [h08l]
 };
 
 export const project09 = {

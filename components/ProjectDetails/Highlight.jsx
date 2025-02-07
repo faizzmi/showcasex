@@ -42,6 +42,8 @@ const Highlight = ({ highlight }) => {
                   width={image.width}
                   height={image.height}
                   className="object-contain"
+                  onContextMenu={(e) => e.preventDefault()}
+                  draggable={false}
                 />
               </motion.div>
             ))}

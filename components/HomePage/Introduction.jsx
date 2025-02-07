@@ -51,7 +51,7 @@ const Introduction = () => {
                     <img
                       src="/images/hover.jpg"
                       alt="Hover Preview"
-                      fill={true}
+                      fill="true"
                       className="max-w-[150px] object-contain rounded-lg shadow-xl"
                     />
                   </span>

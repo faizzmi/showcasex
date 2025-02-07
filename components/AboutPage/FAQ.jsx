@@ -69,7 +69,7 @@ const FAQ = () => {
                     }
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.4, ease: 'easeInOut' }}
-                    className="overflow-hidden "
+                    className="overflow-hidden text-justify "
                   >
                     <p className='py-2 px-4'>{faq.answer}</p>
                   </motion.div>

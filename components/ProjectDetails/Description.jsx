@@ -45,7 +45,7 @@ const Description = ({ project }) => {
                 target='_blank' 
                 href={project.projectURL}
               >
-                Open Website
+              Open {project.type}
                 <Image src={ assets.arrow_icon} alt='' className='w-2'/>
               </a>
             </div>
@@ -77,6 +77,9 @@ const Description = ({ project }) => {
               muted
               loop
               playsInline
+              onContextMenu={(e) => e.preventDefault()}
+              controlsList="nodownload"
+              disablePictureInPicture 
             >
               <source src={project.videoURL} type="video/mp4" />
               Your browser does not support the video tag.

@@ -19,6 +19,8 @@ const HeaderImage = ({ img }) => {
         className="object-cover object-center w-full h-auto md:h-full"
         sizes="(max-width: 768px) 100vw, 100vw"
         priority
+        onContextMenu={(e) => e.preventDefault()}
+        draggable={false}
       />
     </motion.div>
   )

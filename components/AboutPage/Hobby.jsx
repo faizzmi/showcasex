@@ -31,8 +31,10 @@ const Hobby = () => {
               <Image
                 src={pic.pic}
                 alt={`Hobby Image ${index + 1}`}
-                fill
+                fill="true"
                 className="object-cover"
+                onContextMenu={(e) => e.preventDefault()}
+                draggable={false}
               />
 
               <motion.div
