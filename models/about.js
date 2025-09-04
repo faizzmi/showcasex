@@ -15,13 +15,13 @@ I may not have years of experience, but I am highly motivated to learn, grow, an
 export const experiencesLists = [
     {
         position: 'DATA ANALYTICS',
-        location: 'KHAZANAH NASIONAL (EXECELERATE)',
+        location: 'KHAZANAH NASIONAL (EXECELERATE), MALAYSIA',
         startDate: '2025-09-03T00:00:00Z',
         endDate: 'NOW',
     },
     {
         position: 'FREELANCER',
-        location: 'REMOTE',
+        location: 'SONTIQO & CO., MALAYSIA',
         startDate: '2024-03-03T00:00:00Z',
         endDate: 'NOW',
     },
