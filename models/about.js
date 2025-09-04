@@ -15,7 +15,7 @@ I may not have years of experience, but I am highly motivated to learn, grow, an
 export const experiencesLists = [
     {
         position: 'DATA ANALYTICS',
-        location: 'Khazanah Nasional (Execelerate)',
+        location: 'KHAZANAH NASIONAL (EXECELERATE)',
         startDate: '2025-09-03T00:00:00Z',
         endDate: 'NOW',
     },
