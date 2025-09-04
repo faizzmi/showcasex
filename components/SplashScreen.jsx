@@ -14,7 +14,7 @@ const cardsData = [
 const SplashScreen = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [skipped, setSkipped] = useState(false);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Auto-advance
   useEffect(() => {
@@ -37,7 +37,7 @@ const SplashScreen = () => {
     if (timerRef.current) clearTimeout(timerRef.current); // stop timer immediately
     setCurrentIndex(cardsData.length - 1); // jump to last card
   };
-
+  
   return (
     <motion.div
       className="fixed inset-0 z-50 flex flex-col md:flex-row items-center justify-center bg-zinc-900 h-screen"
