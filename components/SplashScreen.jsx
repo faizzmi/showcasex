@@ -13,8 +13,11 @@ const cardsData = [
 
 const SplashScreen = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [skipped, setSkipped] = useState(false);
 
   useEffect(() => {
+    if (skipped) return;
+
     const interval = setTimeout(() => {
       setCurrentIndex((prevIndex) =>
         prevIndex < cardsData.length - 1 ? prevIndex + 1 : 0
@@ -22,7 +25,12 @@ const SplashScreen = () => {
     }, 1500);
 
     return () => clearTimeout(interval);
-  }, [currentIndex]);
+  }, [currentIndex, skipped]);
+
+  const handleSkip = () => {
+    setSkipped(true);
+    setCurrentIndex(cardsData.length - 1);
+  };
 
   return (
     <motion.div
@@ -31,6 +39,8 @@ const SplashScreen = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8, ease: easeInOut }}
+      onClick={handleSkip}
+      onTouchStart={handleSkip}
     >
       <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center px-6 md:px-10 mb-10">
         <p className="text-3xl md:text-4xl font-bold text-white">Welcome to My Portfolio</p>
