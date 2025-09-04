@@ -5,7 +5,7 @@ export const introductory = {
     subheader: 'My work revolves around transforming abstract concepts into functional, visually compelling solutions.',
     servicesOffer: [
         'Frontend Developemnet',
-        'Mobile Developemnet',
+        'Data Analytics',
         'Agile Development',
         'AI Integration'
     ]
