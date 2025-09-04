@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { easeInOut, motion } from "motion/react";
 
 const cardsData = [
@@ -14,22 +14,28 @@ const cardsData = [
 const SplashScreen = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [skipped, setSkipped] = useState(false);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
+  // Auto-advance
   useEffect(() => {
-    if (skipped) return;
+    if (skipped) return; // stop auto-play if skipped
 
-    const interval = setTimeout(() => {
+    timerRef.current = setTimeout(() => {
       setCurrentIndex((prevIndex) =>
         prevIndex < cardsData.length - 1 ? prevIndex + 1 : 0
       );
     }, 1500);
 
-    return () => clearTimeout(interval);
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
   }, [currentIndex, skipped]);
 
+  // Handle skip on click/touch
   const handleSkip = () => {
     setSkipped(true);
-    setCurrentIndex(cardsData.length - 1);
+    if (timerRef.current) clearTimeout(timerRef.current); // stop timer immediately
+    setCurrentIndex(cardsData.length - 1); // jump to last card
   };
 
   return (
