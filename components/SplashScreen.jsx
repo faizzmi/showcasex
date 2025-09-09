@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { easeInOut, motion } from "motion/react";
 
 const cardsData = [
@@ -13,31 +13,17 @@ const cardsData = [
 
 const SplashScreen = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [skipped, setSkipped] = useState(false);
-  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Auto-advance
   useEffect(() => {
-    if (skipped) return; // stop auto-play if skipped
-
-    timerRef.current = setTimeout(() => {
+    const interval = setTimeout(() => {
       setCurrentIndex((prevIndex) =>
         prevIndex < cardsData.length - 1 ? prevIndex + 1 : 0
       );
     }, 1500);
 
-    return () => {
-      if (timerRef.current) clearTimeout(timerRef.current);
-    };
-  }, [currentIndex, skipped]);
+    return () => clearTimeout(interval);
+  }, [currentIndex]);
 
-  // Handle skip on click/touch
-  const handleSkip = () => {
-    setSkipped(true);
-    if (timerRef.current) clearTimeout(timerRef.current); // stop timer immediately
-    setCurrentIndex(cardsData.length - 1); // jump to last card
-  };
-  
   return (
     <motion.div
       className="fixed inset-0 z-50 flex flex-col md:flex-row items-center justify-center bg-zinc-900 h-screen"
@@ -45,8 +31,6 @@ const SplashScreen = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8, ease: easeInOut }}
-      onClick={handleSkip}
-      onTouchStart={handleSkip}
     >
       <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center px-6 md:px-10 mb-10">
         <p className="text-3xl md:text-4xl font-bold text-white">Welcome to My Portfolio</p>
