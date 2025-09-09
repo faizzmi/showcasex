@@ -25,7 +25,7 @@ export const skillsData = [
   },
   {
     "name": "Python",
-    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/python-original.svg"
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
   },
   {
     "name": "Angular",
