@@ -3,7 +3,7 @@ import { project01, project02, project03, project04, project05, project06, proje
 export const projectList = [
     {
         "projectId": "1",
-        "projectName": "Distance Measurement",
+        "projectName": "⭐ Distance Measurement",
         "projectHeader": "Redefining The Art of Spatial Awareness in Machines.",
         "headerImage": project01.headerImg,
         "projectStack": ["Python", "OpenCV", "Sobel Edge Detection"],
