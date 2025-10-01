@@ -1,4 +1,4 @@
-import { project01, project02, project03, project04, project05, project06, project07, project08, project09, project10, project11, project12, project13, project14, project15, project16 } from "@/assets/assets";
+import { project01, project02, project03, project04, project05, project06, project07, project08, project09, project10, project11, project12, project13, project14, project15, project16, project17 } from "@/assets/assets";
 
 export const projectList = [
     {
@@ -495,6 +495,37 @@ export const projectList = [
             pic: []
         },
         "projectDesc": "The Profiling Information System (PINS) is a web application developed for LHDNM to streamline the submission of information by agencies via Surat Q applications. Built using Ionic Angular and TypeScript, the system includes various modules, with the FAQ module serving as a key feature. The FAQ module provides an interactive and user-friendly way for users to address common questions, minimizing support requests and improving user efficiency. PINS plays a vital role in supporting tax compliance and enforcement, benefiting Malaysians by ensuring effective tax revenue collection."
+    },
+    {
+        "projectId": "17",
+        "projectName": "Cost of Living Pressures for Low-Income Households in Malaysia",
+        "projectHeader": "Analyzing Inflation and Demographic Impacts on Low-Income Households in Malaysia",
+        "headerImage": project17.headerImg,
+        "projectStack": ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter Notebook", "GitHub"],
+        "framework": ["Data Analysis", "Statistical Modeling"],
+        "projectURL": "https://github.com/faizzmi/capstone-project-kyouth",
+        "type": "Data Analysis Project",
+        "projectLevel": "Capstone / Training",
+        "createdAt": "2025-09-25T00:00:00Z",
+        "projectType": "Research & Data Analytics",
+        "projectfeatures": {
+          "title": "features",
+          "headerImg": "",
+          "desc": "This project investigates the rising cost of living for low-income households (earning less than RM3000 per month) in Malaysia. By integrating multiple datasets—including household CPI, state-level inflation, demographic structures, and expenditure classifications—the project uncovers how inflation impacts vulnerable groups. Key features include: comparative analysis of national vs state-level CPI trends, category-specific inflation analysis (food, housing, transport, etc.), and correlation of demographic attributes (sex, ethnicity, DUN-level structures) with cost-of-living pressures. The project delivers actionable insights through data cleaning, correlation analysis, regression models, and visualization dashboards.",
+          "pics": []
+        },
+        "reflection": {
+          "title": "reflections",
+          "headerImg": "",
+          "desc": "Building this capstone project deepened my skills in data wrangling, statistical analysis, and visualization. I learned how to clean, align, and integrate multiple government datasets, as well as perform correlation and regression analysis to derive meaningful insights. Working on inflation and cost-of-living trends taught me the importance of linking macroeconomic indicators with demographic vulnerabilities, making data storytelling crucial for real-world policy and financial planning. Additionally, this project strengthened my ability to communicate complex data patterns visually and provided me with experience using GitHub for version control and collaboration.",
+          "pics": []
+        },
+        "highlight": {
+          "title": "Insights",
+          "desc": "• Identified key inflation drivers such as food and housing that disproportionately impact low-income households.\n• Compared national CPI trends with state-level variations, revealing regional disparities.\n• Linked demographic structures (ethnicity, sex, DUN-level populations) with inflation exposure, uncovering vulnerable household groups.\n• Produced visualizations (heatmaps, time-series trends) to illustrate affordability challenges.",
+          "pic": project17.highlight 
+        },
+        "projectDesc": "The Cost of Living Pressures project is a data analytics capstone study focusing on Malaysian households earning under RM3000 per month. Using datasets from DOSM and Data.gov.my, the analysis compares national CPI trends with state-level inflation, identifies key goods and services driving cost increases, and examines how demographics interact with inflationary pressures. The study produces insights for policymakers, businesses, and households, offering strategies to strengthen financial resilience and affordability amidst rising living costs."
     }
 ];
 

@@ -66,6 +66,13 @@ import h14b from '../assets/project14/pmmsHome.png'
 
 import header15 from '../assets/project15/7.png'
 import header16 from '../assets/8.png'
+
+import header17 from '../assets/project17/ImageHeader.png'
+import h17a from '../assets/project17/graph1.png'
+import h17b from '../assets/project17/graph2.png'
+import h17c from '../assets/project17/graph3.png'
+import h17d from '../assets/project17/graph4.png'
+
 import arrow_icon from './arrow-icon.png'
 
 export const assets = {
@@ -150,6 +157,11 @@ export const project15 = {
 
 export const project16 = {
     headerImg: header16,
+};
+
+export const project17 = {
+    headerImg: header17,
+    highlight: [ h17a, h17b, h17c, h17d]
 };
 
 export const hobbyPic = [
