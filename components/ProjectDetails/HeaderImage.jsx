@@ -21,7 +21,7 @@ const HeaderImage = ({ img }) => {
         priority
         onContextMenu={(e) => e.preventDefault()}
         draggable={false}
-      />
+      /> 
     </motion.div>
   )
 }

@@ -1,23 +1,29 @@
 import { hobbyPic, hobbyPix } from "@/assets/assets";
 
-export const welcome = "Hey, I am Faiz. I am a Software Engineer. based in Malaysia."
+export const welcome = "Hey, I'm Faiz. A Software Engineer based in Malaysia — I build things that look good and work even better."
 
 export const story = `
-I believe every project has the potential to create meaningful impact. That’s why I focus on developing innovative web and mobile applications that enhance user experiences, improve efficiency, and solve real-world problems.
+I believe great software is felt before it's understood. That's why I obsess over both the experience and the engineering behind every product I build.
 
-As a frontend developer, I specialize in building responsive, interactive, and user-friendly interfaces using modern frameworks like React and Next.js. I continuously refine my skills, exploring new technologies to stay ahead in the ever-evolving tech landscape.
+As a frontend-focused full-stack developer, I specialize in crafting responsive, interactive, and intuitive interfaces using React, Next.js, Angular, and Ionic. I don't just write code — I think about how it feels to use it.
 
-Beyond web development, I’m also keen on artificial intelligence and its practical applications. I developed an AI-powered distance measurement system for smart cars, earning recognition with a Silver Award at CITREX 2024. This experience reinforced my passion for leveraging technology to solve real-world challenges.
+Beyond the frontend, I've shipped enterprise systems for government agencies, led backend integrations for agricultural analytics platforms, and built AI-powered mobile apps that solve real problems. I was recognized with a Silver Award at CITREX 2024 for an AI-driven distance measurement system for smart vehicles — a project that deepened my respect for applied intelligence.
 
-I may not have years of experience, but I am highly motivated to learn, grow, and contribute meaningfully to impactful projects. Every challenge is an opportunity to improve, and I embrace that journey wholeheartedly.
+I'm early in my career, but I move fast, learn faster, and I care deeply about the craft. Every project is an opportunity to grow, and I don't take that lightly.
 `;
 
 export const experiencesLists = [
     {
+        position: 'FULL STACK DEVELOPER',
+        location: 'Pro Ladang PLT, BUKIT JALIL',
+        startDate: '2025-12-02T00:00:00Z',
+        endDate: 'NOW',
+    },
+    {
         position: 'DATA ANALYTICS',
         location: 'Pro Ladang PLT, BANGSAR SOUTH',
-        startDate: '2025-10-2T00:00:00Z',
-        endDate: 'NOW',
+        startDate: '2025-10-02T00:00:00Z',
+        endDate: '2025-12-02T00:00:00Z',
     },
     {
         position: 'DATA ANALYTICS',
@@ -71,8 +77,7 @@ export const educationsLists = [
     }
 ];
 
-export const certificationList = [
-];
+export const certificationList = [];
 
 export const valuesList = [
   {
@@ -117,11 +122,10 @@ export const valuesList = [
   }
 ];
 
-
 export const faqLists = [
   {
     question: "What makes you a strong candidate as a developer?",
-    answer: "I may not have professional experience yet, but I am highly committed to learning and improving. I continuously explore new technologies, build personal projects, and challenge myself to grow."
+    answer: "I may not have years of professional experience yet, but I am highly committed to learning and improving. I've shipped enterprise-level systems for government clients, contributed to agricultural analytics platforms, and built AI-powered applications. My CITREX Silver Award reflects my ability to deliver in high-stakes environments."
   },
   {
     question: "How do you approach learning new technologies?",
@@ -129,7 +133,7 @@ export const faqLists = [
   },
   {
     question: "What personal projects have you worked on?",
-    answer: "I’ve built projects like 'GadgetVerse,' a 3D interactive store using Three.js and React, and a money tracker app that integrates AI for receipt scanning. These projects help me practice real-world development concepts."
+    answer: "I've built projects like 'GadgetVerse,' a 3D interactive store using Three.js and React, a Trip Planner powered by Gemini AI, and Ring-It — a behavioral finance web app built with Vue 3, FastAPI, and Supabase. These projects span the full stack and reflect my range as a developer."
   },
   {
     question: "How do you ensure continuous improvement as a developer?",
@@ -141,7 +145,7 @@ export const faqLists = [
   },
   {
     question: "What technologies are you currently learning?",
-    answer: "I’m actively learning Next.js for SSR, React Native for mobile development, and performance optimization techniques to build scalable applications."
+    answer: "I'm actively learning Next.js for SSR, React Native for mobile development, and data analytics using Python — including Pandas, Matplotlib, and statistical modeling."
   },
   {
     question: "How do you handle tasks you're unfamiliar with?",
@@ -153,12 +157,10 @@ export const faqLists = [
   },
   {
     question: "What motivates you to pursue software development?",
-    answer: "I love the challenge of solving problems and creating useful applications. The ability to turn an idea into reality through coding excites me and drives me to keep improving."
+    answer: "I love the challenge of solving problems and creating useful applications. The ability to turn an idea into reality through code excites me and drives me to keep improving."
   },
   {
     question: "How do you plan to gain real-world experience?",
-    answer: "I am actively working on personal projects, contributing to open source, and seeking internship or freelance opportunities to gain practical experience."
+    answer: "I actively work on personal and freelance projects, and I've already shipped enterprise systems for government clients during my internship at ABATA Commerce. I continue seeking opportunities that push my limits."
   }
 ];
-
-

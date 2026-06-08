@@ -1,31 +1,34 @@
 import { projectList } from "./projects"
 
 export const introductory = {
-    header: 'Crafting Sophisticated,/ Intuitive Digital Experiences.',
-    subheader: 'My work revolves around transforming abstract concepts into functional, visually compelling solutions.',
+    header: 'I Build Things/ That Ship.',
+    subheader: 'Full-stack developer with a frontend obsession. I turn ideas into fast, beautiful, and functional products — from government enterprise systems to AI-powered apps.',
     servicesOffer: [
-        'Frontend Developemnet',
+        'Frontend Development',
+        'Full-Stack Engineering',
         'Data Analytics',
-        'Agile Development',
         'AI Integration'
     ]
 }
 
 export const featureProjectsList = () => {
-    const featuredProjectIds = ["10", "11", "16"];
-
-    const feature = projectList
-        // .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
-        // .slice(0, 3)
-        .filter((project) => featuredProjectIds.includes(project.projectId))
-        .map(({ projectId, projectName, projectHeader, headerImage, framework, projectStack }) => ({
-            projectId,
-            projectName,
-            projectHeader,
-            headerImage,
-            framework,
-            projectStack
-        }));
-
-    return feature;
+    const primaryFeaturedIds = ["18", "19", "20"];
+    const fallbackFeaturedIds = ["16", "10", "17"];
+ 
+    const primaryFeature = projectList.filter((project) =>
+        primaryFeaturedIds.includes(project.projectId)
+    );
+ 
+    const featured = primaryFeature.length >= 3
+        ? primaryFeature
+        : projectList.filter((project) => fallbackFeaturedIds.includes(project.projectId));
+ 
+    return featured.map(({ projectId, projectName, projectHeader, headerImage, framework, projectStack }) => ({
+        projectId,
+        projectName,
+        projectHeader,
+        headerImage,
+        framework,
+        projectStack
+    }));
 }

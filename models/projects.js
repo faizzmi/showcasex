@@ -242,7 +242,7 @@ export const projectList = [
         },
         highlight: {
             title: 'mobile application',
-            desc: 'Planning a trip can be overwhelming, but Trip Planner simplifies the process using AI-driven recommendations. This mobile app, built with React Native and powered by the Gemini AI engine, personalizes travel suggestions based on user preferences. Whether you are looking for hidden gems, famous landmarks, or budget-friendly options, the app intelligently curates an itinerary tailored to your needs. \n\n The biggest challenge in developing Trip Planner was ensuring AI-generated recommendations were both relevant and engaging. Fine-tuning the AI model and gathering user feedback helped improve its accuracy, making travel planning effortless. This project not only enhanced my skills in AI integration but also deepened my understanding of mobile app development. Trip Planner represents my passion for creating intelligent, user-centric applications that blend technology with real-world convenience.',
+            desc: 'Planning a trip can be overwhelming, but Trip Planner simplifies the process using AI-driven recommendations. This mobile app, built with React Native and powered by the Gemini AI engine, personalizes travel suggestions based on user preferences. Whether you are looking for hidden gems, famous landmarks, or budget-friendly options, the app intelligently curates an itinerary tailored to your needs. The biggest challenge in developing Trip Planner was ensuring AI-generated recommendations were both relevant and engaging. Fine-tuning the AI model and gathering user feedback helped improve its accuracy, making travel planning effortless. This project not only enhanced my skills in AI integration but also deepened my understanding of mobile app development. Trip Planner represents my passion for creating intelligent, user-centric applications that blend technology with real-world convenience.',
             pic: project08.highlight
         },
         "projectDesc": "Trip Planner is a mobile application that utilizes AI to assist users in planning their travel itineraries. It leverages the Gemini AI engine to provide personalized recommendations for destinations and activities based on user preferences."
@@ -522,10 +522,103 @@ export const projectList = [
         },
         "highlight": {
           "title": "Insights",
-          "desc": "• Identified key inflation drivers such as food and housing that disproportionately impact low-income households.\n• Compared national CPI trends with state-level variations, revealing regional disparities.\n• Linked demographic structures (ethnicity, sex, DUN-level populations) with inflation exposure, uncovering vulnerable household groups.\n• Produced visualizations (heatmaps, time-series trends) to illustrate affordability challenges.",
-          "pic": project17.highlight 
+          "desc": "Low-income households earning below RM3000/month are hit hardest by rising costs, as essentials consume a larger share of their spending. Inflation is primarily driven by essentials like food, beverages, restaurants, and alcohol & tobacco, while non-essentials remain stable. Regional disparities amplify the issue, with densely populated states such as Selangor experiencing stronger pressures compared to others. Demographics also shape the impact, with non-citizens and certain state populations facing higher effects in places like Penang and Negeri Sembilan but lower in Sabah and Sarawak. To address these challenges, policies and budgeting should focus on controlling essential goods, tailoring support by region and demographic, and enhancing household financial resilience.",
+          "pic": []
         },
         "projectDesc": "The Cost of Living Pressures project is a data analytics capstone study focusing on Malaysian households earning under RM3000 per month. Using datasets from DOSM and Data.gov.my, the analysis compares national CPI trends with state-level inflation, identifies key goods and services driving cost increases, and examines how demographics interact with inflationary pressures. The study produces insights for policymakers, businesses, and households, offering strategies to strengthen financial resilience and affordability amidst rising living costs."
+    },
+    
+    // PROJECT 18: Ring-It
+    {
+        projectId: "18",
+        projectName: "Ring-It",
+        projectHeader: "A Behavioral Finance System Built for Wealth Accumulation.",
+        headerImage: "",
+        projectStack: ["TypeScript", "Python", "PostgreSQL"],
+        framework: ["Vue 3", "FastAPI", "Supabase", "Vuetify", "Tailwind CSS", "Pinia"],
+        projectURL: "https://github.com/ringit-my/ring-it",
+        projectLevel: "Personal",
+        createdAt: "2025-01-01T00:00:00Z",
+        projectType: "Full-Stack Web Application",
+        type: "Source Code",
+        projectDesc: "Ring-It is a full-stack behavioral finance web app engineered at the intersection of financial psychology and Malaysian regulatory compliance. It uses friction-by-design, habit anchoring, and instant reward loops to make saving effortless and impulsive spending deliberately hard. Built with Vue 3, FastAPI, Supabase, and a custom dark industrial UI theme.",
+        projectfeatures: {
+            title: "features",
+            desc: "Ring-It implements three core behavioral levers: friction-by-design (purchases over RM50 require a typed justification before saving), immediate reward (every saving instantly shows a 10-year compounding projection), and habit anchoring (a daily gauge that resets at midnight via the fresh-start effect). The system features a double-entry bookkeeping schema, AES-256-GCM field-level encryption for PDPA 2010 compliance, RS256 JWT and WebAuthn biometric authentication, BNM RMIT-aligned rate limiting with idempotency keys, and a Cloudinary-powered encrypted receipt vault with 7-year retention. All Malaysian compliance constants (LHDN, EPF, Zakat, Nisab) are maintained internally via versioned Policy Config JSON — no third-party government APIs.",
+            pics: []
+        },
+        reflection: {
+            title: "reflections",
+            desc: "Building Ring-It taught me how to architect a serious full-stack system from scratch — from double-entry database schema design with Row Level Security, to building a full Vue 3 component library, to wiring a FastAPI backend with strict Pydantic v2 validation. The most valuable lesson was learning how behavioral psychology translates into deliberate product decisions. Writing IEEE 830 SRS and IEEE 1016 SDD documentation also sharpened my ability to think systematically before writing code.",
+            pics: []
+        },
+        highlight: {
+            title: "system design",
+            desc: "Ring-It ships with a complete CI/CD pipeline: ruff, mypy, vue-tsc, pytest (>90% coverage target), and trivy container scanning. The Sovereign UI theme — obsidian black and oxblood red — frames personal finance as a serious vault, not a pastel consumer app. Every design and engineering decision was intentional.",
+            pic: []
+        }
+    },
+    
+    // PROJECT 19: SPTR
+    {
+        projectId: "19",
+        projectName: "Sistem Pengurusan Tahlil Raya (SPTR)",
+        projectHeader: "Real-Time Hari Raya Coordination, Built for the Community.",
+        headerImage: "",
+        projectStack: ["JavaScript", "Python"],
+        framework: ["Vue 3", "FastAPI", "Supabase", "Tailwind CSS", "Leaflet.js", "Pinia"],
+        projectURL: "https://github.com/faizzmi/sptr",
+        projectLevel: "Personal",
+        createdAt: "2025-03-01T00:00:00Z",
+        projectType: "Full-Stack Web Application",
+        type: "Source Code",
+        projectDesc: "SPTR replaces the manual, WhatsApp-driven coordination of house-to-house Tahlil visits during Hari Raya. Organisers track groups on a live GPS map, get smart route suggestions, and push automated notifications to hosts — no phone calls needed. Built for Malaysian Muslim communities.",
+        projectfeatures: {
+            title: "features",
+            desc: "SPTR provides real-time group tracking via Supabase Realtime and Leaflet.js. Three user roles — Organiser, Jemaah Member, and Host — each have tailored dashboards. Smart route suggestions use the Haversine algorithm to prioritize the nearest registered houses. Web Push notifications automatically alert hosts as the group approaches. GPS auto-detection with manual fallback ensures usability in rural, low-signal areas. All data is protected with Supabase Row Level Security.",
+            pics: []
+        },
+        reflection: {
+            title: "reflections",
+            desc: "SPTR was driven by a real problem I observed every Raya season. Building it taught me multi-role system design, real-time data synchronization, and mobile-first UX for non-technical users. Choosing Supabase Realtime over a custom Socket.io server was a key architectural decision that significantly reduced complexity while maintaining reliability. Writing formal SRS and SDD documentation for a self-initiated project also reinforced disciplined engineering habits.",
+            pics: []
+        },
+        highlight: {
+            title: "live map",
+            desc: "The core experience is the live map — hosts and jemaah members can open the app and instantly see the group location, visited houses, and what's coming next. The organiser dashboard supports real-time status updates and one-tap Web Push notifications to the next host.",
+            pic: []
+        }
+    },
+    
+    // PROJECT 20: AgriAssist (Pro Ladang)
+    {
+        projectId: "20",
+        projectName: "AgriAssist — Pro Ladang Report Automation",
+        projectHeader: "Agricultural Data Reporting, Automated.",
+        headerImage: "",
+        projectStack: ["TypeScript", "Python"],
+        framework: ["Vue 3", "Vuetify", "FastAPI", "Pinia", "Tailwind CSS"],
+        projectURL: "",
+        projectLevel: "Professional",
+        createdAt: "2025-10-02T00:00:00Z",
+        projectType: "Enterprise Web Application",
+        type: "Confidential",
+        projectDesc: "AgriAssist is a professional report automation platform built for Pro Ladang PLT. The system streamlines agricultural data collection and structured report generation for field analysts — covering satellite imagery, vegetation indices, weather data, and infestation analysis. I contributed to the UI/UX redesign and key backend integrations.",
+        projectfeatures: {
+            title: "features",
+            desc: "The platform supports four core reporting workflows: historical data downloads (satellite imagery, vegetation indices, weather), Qarbotech-formatted research reports, infestation analysis via file upload or direct data input, and customizable layout reports for field analysis. Backend integrations include the EOSDA satellite API for geospatial data retrieval, Cloudinary for image storage, Gemini AI for intelligent report content generation, and a PostgreSQL database managed via Supabase. Reports are exported as structured DOCX and Excel files.",
+            pics: []
+        },
+        reflection: {
+            title: "reflections",
+            desc: "Working on AgriAssist within a professional team gave me hands-on experience in enterprise frontend development and real-world backend API integration. I focused on understanding the workflow of agricultural analysts before redesigning the UI — which led to meaningful improvements in clarity and task completion speed. This project reinforced how important domain knowledge is when building tools for specialized users.",
+            pics: []
+        },
+        highlight: {
+            title: "contributions",
+            desc: "My key contributions included redesigning core report generation UI flows for improved usability, integrating the EOSDA satellite API for automated historical data retrieval, and supporting FastAPI backend endpoints for report generation. As this is a company project, detailed implementation specifics remain confidential.",
+            pic: []
+        }
     }
 ];
 

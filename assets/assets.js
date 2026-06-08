@@ -161,8 +161,22 @@ export const project16 = {
 
 export const project17 = {
     headerImg: header17,
-    highlight: [ h17a, h17b, h17c, h17d]
-};
+    graph: {
+      pic: [h17a, h17b, h17c, h17d],
+      title: [
+        "Who’s Feeling the Squeeze?",
+        "What’s Driving the Price Spike?",
+        "Not All Wallets Are Equal",
+        "The True Driver of Inflation"
+      ],
+      desc: [
+        "Our analysis shows that low-income households are particularly affected by rising living costs. However, inflation is not only hitting this group, the trend is broad-based across the population. So in my graph, we can see that national CPI has been higher since 2019 and peaked in 2022, widening the gap between low-income households and the overall population. By 2023, the trends started aligning, indicating that inflation pressures were affecting most groups similarly. The gap shows who is more affected by price increases: a positive gap means low-income households are hit harder, while a negative gap means the national average faces more pressure.",
+        "The main drivers of inflation are essentials, particularly Food & Beverages, Restaurants, and Alcohol & Tobacco. These categories are where households spend the most, so even moderate price increases have a big impact on budgets. Non-essential categories like Clothing, Communication, and Finance/Insurance are relatively stable or even declining. This uneven pattern highlights that inflation doesn’t affect all spending equally — essentials rise higher, while discretionary spending is less affected.",
+        "Population distribution matters: states with higher citizen populations or higher population density see more inflationary pressure. Selangor, for instance, has both a high population and high cost-of-living pressures. Non-citizens face mixed impacts depending on location. In Penang and Negeri Sembilan, they experience higher price pressure, while in Sabah and Sarawak, the effect is lower. This shows that demographics and regional factors shape how households experience inflation, which is crucial for targeted policy-making.",
+        "Rising food costs are the dominant factor driving cost-of-living increases for households in Selangor. Even though prices for non-essential categories are falling or stable, they cannot offset the impact of essentials. This is especially true because essentials take up a larger portion of household budgets. Policy and household budgeting should therefore focus on essentials, particularly food, restaurants, and household maintenance costs to relieve the pressure on low-income households."
+      ]
+    }
+  };
 
 export const hobbyPic = [
     {name: 'workout ⛹🏻', pic: gymPic},

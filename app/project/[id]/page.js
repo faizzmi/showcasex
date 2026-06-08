@@ -8,6 +8,7 @@ import { projectList } from '../../../models/projects';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import Graph from '@/components/ProjectDetails/Graph';
 
 const ProjectDetails = () => {
   const pathName = usePathname();
@@ -46,6 +47,7 @@ const ProjectDetails = () => {
           <Section content={project.reflection} />
         </div>
         {project.highlight.title !== '' && (<Highlight highlight={project.highlight}/>)}
+        {/* {project.graph && <Graph graph={project.graph}/>} */}
       </motion.div>
       {( delay) && (
         <motion.div
