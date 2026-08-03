@@ -46,10 +46,15 @@ const Template = ({ children }) => {
     setPrevPathName(pathName);
   }, [pathName, prevPathName]);
 
+  // Function to skip the splash screen
+  const handleSkipSplash = () => {
+    setShowSplash(false);
+  };
+
   return (
     <div>
       {showSplash ? (
-        <SplashScreen />
+        <SplashScreen onSkip={handleSkipSplash} />
       ) : (
         <AnimatePresence>
           <motion.div key="main-content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>

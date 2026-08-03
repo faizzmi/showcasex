@@ -11,7 +11,7 @@ const cardsData = [
   { id: 6, color: "bg-lightest", title: "Let's Go!", description: " " },
 ];
 
-const SplashScreen = () => {
+const SplashScreen = ({ onSkip }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -24,22 +24,34 @@ const SplashScreen = () => {
     return () => clearTimeout(interval);
   }, [currentIndex]);
 
+  // Handle click/tap anywhere on the splash screen
+  const handleSkip = () => {
+    if (onSkip) {
+      onSkip();
+    }
+  };
+
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex flex-col md:flex-row items-center justify-center bg-zinc-900 h-screen"
+      className="fixed inset-0 z-50 flex flex-col md:flex-row items-center justify-center bg-zinc-900 h-screen cursor-pointer"
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8, ease: easeInOut }}
+      onClick={handleSkip}  // <-- Click anywhere to skip
     >
-      <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center px-6 md:px-10 mb-10">
+      <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center px-6 md:px-10 mb-10 pointer-events-none">
         <p className="text-3xl md:text-4xl font-bold text-white">Welcome to My Portfolio</p>
         <p className="mt-4 text-lg md:text-xl text-zinc-300">
           Explore my journey as a developer, my projects, and how to connect with me.
         </p>
+        {/* Optional: Add a subtle hint that tapping skips */}
+        <p className="mt-8 text-sm text-zinc-500 animate-pulse">
+          Tap anywhere to skip
+        </p>
       </div>
 
-      <div className="w-full md:w-1/2 relative h-[400px] md:h-[500px]">
+      <div className="w-full md:w-1/2 relative h-[400px] md:h-[500px] pointer-events-none">
         {cardsData.map((card, index) => {
           const isAway = index < currentIndex;
           const angle = isAway ? -48 : -(index - currentIndex) * 10;
